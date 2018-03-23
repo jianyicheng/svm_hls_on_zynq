@@ -1,0 +1,243 @@
+
+
+================================================================
+== Vivado HLS Report for 'svm_classifier'
+================================================================
+* Date:           Fri Mar 16 00:07:00 2018
+
+* Version:        2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)
+* Project:        svm_classifier_prj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.66|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |  148|  148|  145|  145| dataflow |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 4
+* Pipeline: 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 4, States = { 1 2 3 4 }
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+* FSM state operations: 
+
+ <State 1>: 4.38ns
+ST_1: in_V_channel [1/1] 0.00ns
+codeRepl:0  %in_V_channel = alloca i256, align 8
+
+ST_1: stg_6 [1/1] 4.38ns
+codeRepl:10  call void @svm_classifier_svm_classifier.entry3(i256* %in_V, i256* %in_V_channel)
+
+
+ <State 2>: 0.00ns
+ST_2: tmp [1/1] 0.00ns
+codeRepl:11  %tmp = call fastcc { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } @svm_classifier_Block__proc(i256* nocapture %in_V_channel) readonly
+
+ST_2: s_in_0_V_loc_channel [1/1] 0.00ns
+codeRepl:12  %s_in_0_V_loc_channel = extractvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %tmp, 0
+
+ST_2: s_in_1_V_loc_channel [1/1] 0.00ns
+codeRepl:13  %s_in_1_V_loc_channel = extractvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %tmp, 1
+
+ST_2: s_in_2_V_loc_channel [1/1] 0.00ns
+codeRepl:14  %s_in_2_V_loc_channel = extractvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %tmp, 2
+
+ST_2: s_in_3_V_loc_channel [1/1] 0.00ns
+codeRepl:15  %s_in_3_V_loc_channel = extractvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %tmp, 3
+
+ST_2: s_in_4_V_loc_channel [1/1] 0.00ns
+codeRepl:16  %s_in_4_V_loc_channel = extractvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %tmp, 4
+
+ST_2: s_in_5_V_loc_channel [1/1] 0.00ns
+codeRepl:17  %s_in_5_V_loc_channel = extractvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %tmp, 5
+
+ST_2: s_in_6_V_loc_channel [1/1] 0.00ns
+codeRepl:18  %s_in_6_V_loc_channel = extractvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %tmp, 6
+
+ST_2: s_in_7_V_loc_channel [1/1] 0.00ns
+codeRepl:19  %s_in_7_V_loc_channel = extractvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %tmp, 7
+
+ST_2: s_in_8_V_loc_channel [1/1] 0.00ns
+codeRepl:20  %s_in_8_V_loc_channel = extractvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %tmp, 8
+
+ST_2: s_in_9_V_loc_channel [1/1] 0.00ns
+codeRepl:21  %s_in_9_V_loc_channel = extractvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %tmp, 9
+
+ST_2: s_in_10_V_loc_channel [1/1] 0.00ns
+codeRepl:22  %s_in_10_V_loc_channel = extractvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %tmp, 10
+
+ST_2: s_in_11_V_loc_channel [1/1] 0.00ns
+codeRepl:23  %s_in_11_V_loc_channel = extractvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %tmp, 11
+
+ST_2: s_in_12_V_loc_channel [1/1] 0.00ns
+codeRepl:24  %s_in_12_V_loc_channel = extractvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %tmp, 12
+
+ST_2: s_in_13_V_loc_channel [1/1] 0.00ns
+codeRepl:25  %s_in_13_V_loc_channel = extractvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %tmp, 13
+
+ST_2: s_in_14_V_loc_channel [1/1] 0.00ns
+codeRepl:26  %s_in_14_V_loc_channel = extractvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %tmp, 14
+
+ST_2: s_in_15_V_loc_channel [1/1] 0.00ns
+codeRepl:27  %s_in_15_V_loc_channel = extractvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %tmp, 15
+
+ST_2: call_ret [2/2] 0.00ns
+codeRepl:28  %call_ret = call fastcc { i18, i18, i18, i18, i18, i18, i18, i18, i18 } @svm_classifier_Loop_Sum_loop_proc1(i13 %s_in_0_V_loc_channel, i13 %s_in_1_V_loc_channel, i13 %s_in_2_V_loc_channel, i13 %s_in_3_V_loc_channel, i13 %s_in_4_V_loc_channel, i13 %s_in_5_V_loc_channel, i13 %s_in_6_V_loc_channel, i13 %s_in_7_V_loc_channel, i13 %s_in_8_V_loc_channel, i13 %s_in_9_V_loc_channel, i13 %s_in_10_V_loc_channel, i13 %s_in_11_V_loc_channel, i13 %s_in_12_V_loc_channel, i13 %s_in_13_V_loc_channel, i13 %s_in_14_V_loc_channel, i13 %s_in_15_V_loc_channel)
+
+
+ <State 3>: 7.74ns
+ST_3: call_ret [1/2] 0.00ns
+codeRepl:28  %call_ret = call fastcc { i18, i18, i18, i18, i18, i18, i18, i18, i18 } @svm_classifier_Loop_Sum_loop_proc1(i13 %s_in_0_V_loc_channel, i13 %s_in_1_V_loc_channel, i13 %s_in_2_V_loc_channel, i13 %s_in_3_V_loc_channel, i13 %s_in_4_V_loc_channel, i13 %s_in_5_V_loc_channel, i13 %s_in_6_V_loc_channel, i13 %s_in_7_V_loc_channel, i13 %s_in_8_V_loc_channel, i13 %s_in_9_V_loc_channel, i13 %s_in_10_V_loc_channel, i13 %s_in_11_V_loc_channel, i13 %s_in_12_V_loc_channel, i13 %s_in_13_V_loc_channel, i13 %s_in_14_V_loc_channel, i13 %s_in_15_V_loc_channel)
+
+ST_3: ch_sums_V_8_loc_channel [1/1] 0.00ns
+codeRepl:29  %ch_sums_V_8_loc_channel = extractvalue { i18, i18, i18, i18, i18, i18, i18, i18, i18 } %call_ret, 0
+
+ST_3: ch_sums_V_7_loc_channel [1/1] 0.00ns
+codeRepl:30  %ch_sums_V_7_loc_channel = extractvalue { i18, i18, i18, i18, i18, i18, i18, i18, i18 } %call_ret, 1
+
+ST_3: ch_sums_V_6_loc_channel [1/1] 0.00ns
+codeRepl:31  %ch_sums_V_6_loc_channel = extractvalue { i18, i18, i18, i18, i18, i18, i18, i18, i18 } %call_ret, 2
+
+ST_3: ch_sums_0_V_loc_channel [1/1] 0.00ns
+codeRepl:32  %ch_sums_0_V_loc_channel = extractvalue { i18, i18, i18, i18, i18, i18, i18, i18, i18 } %call_ret, 3
+
+ST_3: ch_sums_1_V_loc_channel [1/1] 0.00ns
+codeRepl:33  %ch_sums_1_V_loc_channel = extractvalue { i18, i18, i18, i18, i18, i18, i18, i18, i18 } %call_ret, 4
+
+ST_3: ch_sums_2_V_loc_channel [1/1] 0.00ns
+codeRepl:34  %ch_sums_2_V_loc_channel = extractvalue { i18, i18, i18, i18, i18, i18, i18, i18, i18 } %call_ret, 5
+
+ST_3: ch_sums_3_V_loc_channel [1/1] 0.00ns
+codeRepl:35  %ch_sums_3_V_loc_channel = extractvalue { i18, i18, i18, i18, i18, i18, i18, i18, i18 } %call_ret, 6
+
+ST_3: ch_sums_4_V_loc_channel [1/1] 0.00ns
+codeRepl:36  %ch_sums_4_V_loc_channel = extractvalue { i18, i18, i18, i18, i18, i18, i18, i18, i18 } %call_ret, 7
+
+ST_3: ch_sums_5_V_loc_channel [1/1] 0.00ns
+codeRepl:37  %ch_sums_5_V_loc_channel = extractvalue { i18, i18, i18, i18, i18, i18, i18, i18, i18 } %call_ret, 8
+
+ST_3: stg_35 [2/2] 7.74ns
+codeRepl:38  call fastcc void @svm_classifier_Block_.preheader.0_proc1(i18 %ch_sums_1_V_loc_channel, i18 %ch_sums_0_V_loc_channel, i18 %ch_sums_2_V_loc_channel, i18 %ch_sums_3_V_loc_channel, i18 %ch_sums_4_V_loc_channel, i18 %ch_sums_5_V_loc_channel, i18 %ch_sums_V_6_loc_channel, i18 %ch_sums_V_7_loc_channel, i18 %ch_sums_V_8_loc_channel, i1* %out_r)
+
+
+ <State 4>: 7.74ns
+ST_4: stg_36 [1/1] 0.00ns
+codeRepl:1  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str41) nounwind
+
+ST_4: stg_37 [1/1] 0.00ns
+codeRepl:2  call void (...)* @_ssdm_op_SpecBitsMap(i256* %in_V), !map !7
+
+ST_4: stg_38 [1/1] 0.00ns
+codeRepl:3  call void (...)* @_ssdm_op_SpecBitsMap(i1* %out_r), !map !88
+
+ST_4: stg_39 [1/1] 0.00ns
+codeRepl:4  call void (...)* @_ssdm_op_SpecTopModule([15 x i8]* @svm_classifier_str) nounwind
+
+ST_4: stg_40 [1/1] 0.00ns
+codeRepl:5  call void (...)* @_ssdm_op_SpecInterface(i1* %out_r, [10 x i8]* @p_str543, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str41, [1 x i8]* @p_str41, [1 x i8]* @p_str41, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str41) nounwind
+
+ST_4: stg_41 [1/1] 0.00ns
+codeRepl:6  call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str543, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str41, [1 x i8]* @p_str41, [1 x i8]* @p_str41, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str41) nounwind
+
+ST_4: stg_42 [1/1] 0.00ns
+codeRepl:7  call void (...)* @_ssdm_op_SpecInterface(i256* %in_V, [10 x i8]* @p_str543, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str41, [1 x i8]* @p_str41, [1 x i8]* @p_str41, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str41) nounwind
+
+ST_4: empty [1/1] 0.00ns
+codeRepl:8  %empty = call i32 (...)* @_ssdm_op_SpecChannel([13 x i8]* @in_OC_V_channel_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1, i32 0, i256* %in_V_channel, i256* %in_V_channel)
+
+ST_4: stg_44 [1/1] 0.00ns
+codeRepl:9  call void (...)* @_ssdm_op_SpecInterface(i256* %in_V_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str)
+
+ST_4: stg_45 [1/2] 7.74ns
+codeRepl:38  call fastcc void @svm_classifier_Block_.preheader.0_proc1(i18 %ch_sums_1_V_loc_channel, i18 %ch_sums_0_V_loc_channel, i18 %ch_sums_2_V_loc_channel, i18 %ch_sums_3_V_loc_channel, i18 %ch_sums_4_V_loc_channel, i18 %ch_sums_5_V_loc_channel, i18 %ch_sums_V_6_loc_channel, i18 %ch_sums_V_7_loc_channel, i18 %ch_sums_V_8_loc_channel, i1* %out_r)
+
+ST_4: stg_46 [1/1] 0.00ns
+codeRepl:39  ret void
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ No timing violations. 
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

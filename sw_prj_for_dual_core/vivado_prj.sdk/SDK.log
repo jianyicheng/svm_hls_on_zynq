@@ -1,0 +1,688 @@
+23:01:25 INFO  : Launching XSDB server: xsdb.bat -interactive H:\MATLAB\MATLAB_2\MATLAB\svm_vivado\songze\songze.sdk\temp_xsdb_launch_script.tcl
+23:01:27 INFO  : XSDB server has started successfully.
+23:01:27 INFO  : Processing command line option -hwspec H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper.hdf.
+23:05:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:05:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1' command is executed.
+23:05:57 INFO  : FPGA configured successfully with bitstream "H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:06:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1' command is executed.
+23:06:09 INFO  : 'fpga -state' command is executed.
+23:06:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:06:09 INFO  : Jtag cable 'Digilent Zed 210248586045' is selected.
+23:06:09 INFO  : 'jtag frequency' command is executed.
+23:06:09 INFO  : Sourcing of 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:06:09 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+23:06:09 INFO  : Hardware design information is loaded from 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:06:09 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+23:06:10 INFO  : 'stop' command is executed.
+23:06:10 INFO  : 'ps7_init' command is executed.
+23:06:10 INFO  : 'ps7_post_config' command is executed.
+23:06:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:06:10 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:06:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:06:11 INFO  : The application 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm0/Debug/svm0.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:06:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+loadhw H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+dow H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm0/Debug/svm0.elf
+----------------End of Script----------------
+
+23:06:11 INFO  : Memory regions updated for context APU
+23:06:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:06:11 INFO  : 'con' command is executed.
+23:06:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+con
+----------------End of Script----------------
+
+23:06:11 INFO  : Launch script is exported to file 'H:\MATLAB\MATLAB_2\MATLAB\svm_vivado\songze\songze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_svm0.elf.tcl'
+23:06:32 INFO  : Disconnected from the channel tcfchan#1.
+23:06:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1' command is executed.
+23:06:32 INFO  : 'fpga -state' command is executed.
+23:06:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:06:32 INFO  : Jtag cable 'Digilent Zed 210248586045' is selected.
+23:06:32 INFO  : 'jtag frequency' command is executed.
+23:06:32 INFO  : Sourcing of 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:06:32 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+23:06:40 INFO  : Hardware design information is loaded from 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:06:40 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+23:06:40 INFO  : 'stop' command is executed.
+23:06:41 INFO  : 'ps7_init' command is executed.
+23:06:41 INFO  : 'ps7_post_config' command is executed.
+23:06:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:06:41 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:06:41 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+23:06:41 INFO  : The application 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm1/Debug/svm1.elf' is downloaded to processor 'ps7_cortexa9_1'.
+23:06:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:06:42 INFO  : The application 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm0/Debug/svm0.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:06:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+loadhw H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#1" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+dow H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm1/Debug/svm1.elf
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+dow H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm0/Debug/svm0.elf
+----------------End of Script----------------
+
+23:06:42 INFO  : Memory regions updated for context APU
+23:06:42 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+23:06:42 INFO  : 'con' command is executed.
+23:06:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:06:42 INFO  : 'con' command is executed.
+23:06:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#1" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+con
+----------------End of Script----------------
+
+23:06:42 INFO  : Launch script is exported to file 'H:\MATLAB\MATLAB_2\MATLAB\svm_vivado\songze\songze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_svm0.elf.tcl'
+23:07:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:07:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1' command is executed.
+23:07:22 INFO  : FPGA configured successfully with bitstream "H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:07:27 INFO  : Disconnected from the channel tcfchan#2.
+23:07:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1' command is executed.
+23:07:27 INFO  : 'fpga -state' command is executed.
+23:07:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:07:28 INFO  : Jtag cable 'Digilent Zed 210248586045' is selected.
+23:07:28 INFO  : 'jtag frequency' command is executed.
+23:07:28 INFO  : Sourcing of 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:07:28 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+23:07:35 INFO  : Hardware design information is loaded from 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:07:35 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+23:07:35 INFO  : 'stop' command is executed.
+23:07:36 INFO  : 'ps7_init' command is executed.
+23:07:36 INFO  : 'ps7_post_config' command is executed.
+23:07:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:07:36 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:07:36 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+23:07:37 INFO  : The application 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm1/Debug/svm1.elf' is downloaded to processor 'ps7_cortexa9_1'.
+23:07:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:07:37 INFO  : The application 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm0/Debug/svm0.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:07:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+loadhw H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#1" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+dow H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm1/Debug/svm1.elf
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+dow H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm0/Debug/svm0.elf
+----------------End of Script----------------
+
+23:07:37 INFO  : Memory regions updated for context APU
+23:07:37 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+23:07:37 INFO  : 'con' command is executed.
+23:07:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:07:37 INFO  : 'con' command is executed.
+23:07:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#1" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+con
+----------------End of Script----------------
+
+23:07:37 INFO  : Launch script is exported to file 'H:\MATLAB\MATLAB_2\MATLAB\svm_vivado\songze\songze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_svm0.elf.tcl'
+23:08:17 INFO  : Disconnected from the channel tcfchan#3.
+23:08:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1' command is executed.
+23:08:17 INFO  : 'fpga -state' command is executed.
+23:08:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:08:19 INFO  : Jtag cable 'Digilent Zed 210248586045' is selected.
+23:08:19 INFO  : 'jtag frequency' command is executed.
+23:08:19 INFO  : Sourcing of 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:08:19 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+23:08:26 INFO  : Hardware design information is loaded from 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:08:26 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+23:08:26 INFO  : 'stop' command is executed.
+23:08:27 INFO  : 'ps7_init' command is executed.
+23:08:27 INFO  : 'ps7_post_config' command is executed.
+23:08:27 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+23:08:27 INFO  : Processor reset is completed for 'ps7_cortexa9_1'.
+23:08:27 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+23:08:27 INFO  : The application 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm1/Debug/svm1.elf' is downloaded to processor 'ps7_cortexa9_1'.
+23:08:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+loadhw H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#1" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#1" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+dow H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm1/Debug/svm1.elf
+----------------End of Script----------------
+
+23:08:27 INFO  : Memory regions updated for context APU
+23:08:27 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+23:08:27 INFO  : 'con' command is executed.
+23:08:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#1" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+con
+----------------End of Script----------------
+
+23:08:27 INFO  : Launch script is exported to file 'H:\MATLAB\MATLAB_2\MATLAB\svm_vivado\songze\songze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_svm1.elf.tcl'
+23:09:31 INFO  : Disconnected from the channel tcfchan#4.
+23:09:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1' command is executed.
+23:09:32 INFO  : 'fpga -state' command is executed.
+23:09:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:09:33 INFO  : Jtag cable 'Digilent Zed 210248586045' is selected.
+23:09:33 INFO  : 'jtag frequency' command is executed.
+23:09:33 INFO  : Sourcing of 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:09:33 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+23:09:40 INFO  : Hardware design information is loaded from 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:09:40 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+23:09:40 INFO  : 'stop' command is executed.
+23:09:42 INFO  : 'ps7_init' command is executed.
+23:09:42 INFO  : 'ps7_post_config' command is executed.
+23:09:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:09:42 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:09:42 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+23:09:42 INFO  : The application 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm1/Debug/svm1.elf' is downloaded to processor 'ps7_cortexa9_1'.
+23:09:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:09:42 INFO  : The application 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm0/Debug/svm0.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:09:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+loadhw H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#1" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+dow H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm1/Debug/svm1.elf
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+dow H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm0/Debug/svm0.elf
+----------------End of Script----------------
+
+23:09:42 INFO  : Memory regions updated for context APU
+23:09:43 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+23:09:43 INFO  : 'con' command is executed.
+23:09:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:09:43 INFO  : 'con' command is executed.
+23:09:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#1" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+con
+----------------End of Script----------------
+
+23:09:43 INFO  : Launch script is exported to file 'H:\MATLAB\MATLAB_2\MATLAB\svm_vivado\songze\songze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_svm0.elf.tcl'
+23:19:04 INFO  : Launching XSDB server: xsdb.bat -interactive H:\MATLAB\MATLAB_2\MATLAB\svm_vivado\songze\songze.sdk\temp_xsdb_launch_script.tcl
+23:19:06 INFO  : XSDB server has started successfully.
+23:19:06 INFO  : Processing command line option -hwspec H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper.hdf.
+23:19:06 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+23:28:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:28:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1' command is executed.
+23:28:31 INFO  : FPGA configured successfully with bitstream "H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:28:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1' command is executed.
+23:28:54 INFO  : 'fpga -state' command is executed.
+23:28:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:28:55 INFO  : Jtag cable 'Digilent Zed 210248586045' is selected.
+23:28:55 INFO  : 'jtag frequency' command is executed.
+23:28:55 INFO  : Sourcing of 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:28:55 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+23:28:55 INFO  : Hardware design information is loaded from 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:28:55 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+23:28:55 INFO  : 'stop' command is executed.
+23:28:55 INFO  : 'ps7_init' command is executed.
+23:28:55 INFO  : 'ps7_post_config' command is executed.
+23:28:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:28:56 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:28:56 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+23:28:56 INFO  : The application 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm1/Debug/svm1.elf' is downloaded to processor 'ps7_cortexa9_1'.
+23:28:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:28:57 INFO  : The application 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm0/Debug/svm0.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:28:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+loadhw H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#1" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+dow H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm1/Debug/svm1.elf
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+dow H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm0/Debug/svm0.elf
+----------------End of Script----------------
+
+23:28:57 INFO  : Memory regions updated for context APU
+23:28:57 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+23:28:57 INFO  : 'con' command is executed.
+23:28:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:28:57 INFO  : 'con' command is executed.
+23:28:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#1" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+con
+----------------End of Script----------------
+
+23:28:57 INFO  : Launch script is exported to file 'H:\MATLAB\MATLAB_2\MATLAB\svm_vivado\songze\songze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_svm0.elf.tcl'
+23:35:16 INFO  : Disconnected from the channel tcfchan#1.
+23:35:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1' command is executed.
+23:35:16 INFO  : 'fpga -state' command is executed.
+23:35:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:35:16 INFO  : Jtag cable 'Digilent Zed 210248586045' is selected.
+23:35:16 INFO  : 'jtag frequency' command is executed.
+23:35:16 INFO  : Sourcing of 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:35:16 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+23:35:23 INFO  : Hardware design information is loaded from 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:35:23 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+23:35:23 INFO  : 'stop' command is executed.
+23:35:23 INFO  : 'ps7_init' command is executed.
+23:35:23 INFO  : 'ps7_post_config' command is executed.
+23:35:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:35:24 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:35:24 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+23:35:24 ERROR : MMU section translation fault
+23:35:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+loadhw H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#1" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+dow H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm1/Debug/svm1.elf
+----------------End of Script----------------
+
+23:35:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:35:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1' command is executed.
+23:35:44 INFO  : FPGA configured successfully with bitstream "H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:35:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1' command is executed.
+23:35:51 INFO  : 'fpga -state' command is executed.
+23:35:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:35:51 INFO  : Jtag cable 'Digilent Zed 210248586045' is selected.
+23:35:51 INFO  : 'jtag frequency' command is executed.
+23:35:51 INFO  : Sourcing of 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:35:51 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+23:35:51 INFO  : Hardware design information is loaded from 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:35:51 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+23:35:51 INFO  : 'stop' command is executed.
+23:35:52 INFO  : 'ps7_init' command is executed.
+23:35:52 INFO  : 'ps7_post_config' command is executed.
+23:35:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:35:52 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:35:52 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+23:35:53 INFO  : The application 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm1/Debug/svm1.elf' is downloaded to processor 'ps7_cortexa9_1'.
+23:35:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:35:54 INFO  : The application 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm0/Debug/svm0.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:35:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+loadhw H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#1" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+dow H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm1/Debug/svm1.elf
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+dow H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm0/Debug/svm0.elf
+----------------End of Script----------------
+
+23:35:54 INFO  : Memory regions updated for context APU
+23:35:54 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+23:35:54 INFO  : 'con' command is executed.
+23:35:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:35:54 INFO  : 'con' command is executed.
+23:35:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#1" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+con
+----------------End of Script----------------
+
+23:35:54 INFO  : Launch script is exported to file 'H:\MATLAB\MATLAB_2\MATLAB\svm_vivado\songze\songze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_svm0.elf.tcl'
+23:36:38 INFO  : Disconnected from the channel tcfchan#2.
+23:36:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1' command is executed.
+23:36:38 INFO  : 'fpga -state' command is executed.
+23:36:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:36:38 INFO  : Jtag cable 'Digilent Zed 210248586045' is selected.
+23:36:38 INFO  : 'jtag frequency' command is executed.
+23:36:38 INFO  : Sourcing of 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:36:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+23:36:45 INFO  : Hardware design information is loaded from 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:36:45 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+23:36:45 INFO  : 'stop' command is executed.
+23:36:45 INFO  : 'ps7_init' command is executed.
+23:36:45 INFO  : 'ps7_post_config' command is executed.
+23:36:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:36:45 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:36:45 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+23:36:47 INFO  : The application 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm1/Debug/svm1.elf' is downloaded to processor 'ps7_cortexa9_1'.
+23:36:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:36:50 INFO  : The application 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm0/Debug/svm0.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:36:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+loadhw H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#1" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+dow H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm1/Debug/svm1.elf
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+dow H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm0/Debug/svm0.elf
+----------------End of Script----------------
+
+23:36:50 INFO  : Memory regions updated for context APU
+23:36:50 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+23:36:50 INFO  : 'con' command is executed.
+23:36:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:36:50 INFO  : 'con' command is executed.
+23:36:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#1" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+con
+----------------End of Script----------------
+
+23:36:50 INFO  : Launch script is exported to file 'H:\MATLAB\MATLAB_2\MATLAB\svm_vivado\songze\songze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_svm0.elf.tcl'
+23:37:16 INFO  : Disconnected from the channel tcfchan#3.
+14:55:19 INFO  : Launching XSDB server: xsdb.bat -interactive H:\MATLAB\MATLAB_2\MATLAB\svm_vivado\songze\songze.sdk\temp_xsdb_launch_script.tcl
+14:55:21 INFO  : XSDB server has started successfully.
+14:55:22 INFO  : Processing command line option -hwspec H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper.hdf.
+14:55:22 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+15:12:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:12:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1' command is executed.
+15:12:43 INFO  : FPGA configured successfully with bitstream "H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:19:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1' command is executed.
+15:19:42 INFO  : 'fpga -state' command is executed.
+15:19:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:19:42 INFO  : Jtag cable 'Digilent Zed 210248586045' is selected.
+15:19:42 INFO  : 'jtag frequency' command is executed.
+15:19:42 INFO  : Sourcing of 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:19:42 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+15:19:42 INFO  : Hardware design information is loaded from 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:19:42 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+15:19:42 INFO  : 'stop' command is executed.
+15:19:44 INFO  : 'ps7_init' command is executed.
+15:19:44 INFO  : 'ps7_post_config' command is executed.
+15:19:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:19:44 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:19:44 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+15:19:45 INFO  : The application 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm1/Debug/svm1.elf' is downloaded to processor 'ps7_cortexa9_1'.
+15:19:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:19:48 INFO  : The application 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm0/Debug/svm0.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:19:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+loadhw H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#1" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+dow H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm1/Debug/svm1.elf
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+dow H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm0/Debug/svm0.elf
+----------------End of Script----------------
+
+15:19:48 INFO  : Memory regions updated for context APU
+15:19:48 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+15:19:48 INFO  : 'con' command is executed.
+15:19:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:19:48 INFO  : 'con' command is executed.
+15:19:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#1" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+con
+----------------End of Script----------------
+
+15:19:48 INFO  : Launch script is exported to file 'H:\MATLAB\MATLAB_2\MATLAB\svm_vivado\songze\songze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_svm0.elf.tcl'
+15:20:08 INFO  : Disconnected from the channel tcfchan#1.
+15:20:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:20:08 INFO  : Jtag cable 'Digilent Zed 210248586045' is selected.
+15:20:08 INFO  : 'jtag frequency' command is executed.
+15:20:08 INFO  : Sourcing of 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:20:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1' command is executed.
+15:20:11 INFO  : FPGA configured successfully with bitstream "H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:20:11 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+15:20:16 INFO  : Hardware design information is loaded from 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:20:16 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+15:20:17 INFO  : 'stop' command is executed.
+15:20:17 ERROR : AP transaction error, DAP status f0000021
+15:20:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1
+fpga -file H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+loadhw H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+15:21:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:21:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1' command is executed.
+15:21:24 INFO  : FPGA configured successfully with bitstream "H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:21:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:21:31 INFO  : Jtag cable 'Digilent Zed 210248586045' is selected.
+15:21:31 INFO  : 'jtag frequency' command is executed.
+15:21:31 INFO  : Sourcing of 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:21:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1' command is executed.
+15:21:34 INFO  : FPGA configured successfully with bitstream "H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:21:34 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+15:21:34 INFO  : Hardware design information is loaded from 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:21:34 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+15:21:34 INFO  : 'stop' command is executed.
+15:21:35 INFO  : 'ps7_init' command is executed.
+15:21:36 INFO  : 'ps7_post_config' command is executed.
+15:21:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:21:36 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:21:36 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+15:21:37 INFO  : The application 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm1/Debug/svm1.elf' is downloaded to processor 'ps7_cortexa9_1'.
+15:21:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:21:39 INFO  : The application 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm0/Debug/svm0.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:21:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1
+fpga -file H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+loadhw H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#1" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+dow H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm1/Debug/svm1.elf
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+dow H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm0/Debug/svm0.elf
+----------------End of Script----------------
+
+15:21:39 INFO  : Memory regions updated for context APU
+15:21:39 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+15:21:39 INFO  : 'con' command is executed.
+15:21:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:21:39 INFO  : 'con' command is executed.
+15:21:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#1" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+con
+----------------End of Script----------------
+
+15:21:39 INFO  : Launch script is exported to file 'H:\MATLAB\MATLAB_2\MATLAB\svm_vivado\songze\songze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_svm0.elf.tcl'
+15:22:26 INFO  : Disconnected from the channel tcfchan#2.
+15:22:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:22:26 INFO  : Jtag cable 'Digilent Zed 210248586045' is selected.
+15:22:26 INFO  : 'jtag frequency' command is executed.
+15:22:26 INFO  : Sourcing of 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:22:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1' command is executed.
+15:22:29 INFO  : FPGA configured successfully with bitstream "H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:22:29 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+15:22:34 INFO  : Hardware design information is loaded from 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:22:34 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+15:22:34 INFO  : 'stop' command is executed.
+15:22:34 ERROR : AP transaction error, DAP status f0000021
+15:22:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1
+fpga -file H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+loadhw H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+15:23:06 INFO  : ps7_init is completed.
+15:23:06 INFO  : ps7_post_config is completed.
+15:23:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:23:59 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:24:06 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:1011)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:534)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:24:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:24:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1' command is executed.
+15:24:23 INFO  : FPGA configured successfully with bitstream "H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:25:38 INFO  : ps7_init is completed.
+15:25:39 INFO  : ps7_post_config is completed.
+15:25:39 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:33:14 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:53:11 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not powered-on
+
+15:53:11 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not powered-on
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:409)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:303)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:53:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:53:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1' command is executed.
+15:53:22 INFO  : FPGA configured successfully with bitstream "H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:53:30 INFO  : ps7_init is completed.
+15:53:31 INFO  : ps7_post_config is completed.
+15:53:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:54:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:54:29 INFO  : Jtag cable 'Digilent Zed 210248586045' is selected.
+15:54:29 INFO  : 'jtag frequency' command is executed.
+15:54:29 INFO  : Sourcing of 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:54:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1' command is executed.
+15:54:32 INFO  : FPGA configured successfully with bitstream "H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:54:32 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+15:54:32 INFO  : Hardware design information is loaded from 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:54:32 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0' command is executed.
+15:54:32 INFO  : 'stop' command is executed.
+15:54:32 INFO  : 'ps7_init' command is executed.
+15:54:32 INFO  : 'ps7_post_config' command is executed.
+15:54:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:54:32 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:54:32 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+15:54:34 INFO  : The application 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm1/Debug/svm1.elf' is downloaded to processor 'ps7_cortexa9_1'.
+15:54:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:54:36 INFO  : The application 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm0/Debug/svm0.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:54:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586045" && level==0} -index 1
+fpga -file H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+loadhw H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#1" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+dow H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm1/Debug/svm1.elf
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+dow H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.sdk/svm0/Debug/svm0.elf
+----------------End of Script----------------
+
+15:54:36 INFO  : Memory regions updated for context APU
+15:54:36 INFO  : Context for processor 'ps7_cortexa9_1' is selected.
+15:54:36 INFO  : 'con' command is executed.
+15:54:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:54:36 INFO  : 'con' command is executed.
+15:54:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#1" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586045"} -index 0
+con
+----------------End of Script----------------
+
+15:54:36 INFO  : Launch script is exported to file 'H:\MATLAB\MATLAB_2\MATLAB\svm_vivado\songze\songze.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local_svm0.elf.tcl'
+17:21:32 INFO  : Disconnected from the channel tcfchan#3.
+17:21:36 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

@@ -1,0 +1,147 @@
+
+
+================================================================
+== Vivado HLS Report for 'svm_classifier_Block_preheader_0_proc1'
+================================================================
+* Date:           Fri Mar 16 00:07:07 2018
+
+* Version:        2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)
+* Project:        svm_classifier_prj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      7.74|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    1|    1|    1|    1|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|    110|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      2|
+|Register         |        -|      -|      22|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|      22|    112|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |p_Val2_80_8_fu_132_p2  |     +    |      0|  0|   9|          18|          18|
+    |r_V_fu_142_p2          |     +    |      0|  0|  19|          19|          16|
+    |tmp10_fu_109_p2        |     +    |      0|  0|  18|          18|          18|
+    |tmp11_fu_127_p2        |     +    |      0|  0|   9|          18|          18|
+    |tmp12_fu_121_p2        |     +    |      0|  0|   9|          18|          18|
+    |tmp13_fu_97_p2         |     +    |      0|  0|   9|          18|          18|
+    |tmp14_fu_91_p2         |     +    |      0|  0|   9|          18|          18|
+    |tmp9_fu_103_p2         |     +    |      0|  0|  18|          18|          18|
+    |tmp_fu_115_p2          |     +    |      0|  0|   9|          18|          18|
+    |ap_sig_43              |    or    |      0|  0|   1|           1|           1|
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |Total                  |          |      0|  0| 110|         164|         161|
+    +-----------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------+----+-----------+-----+-----------+
+    |    Name   | LUT| Input Size| Bits| Total Bits|
+    +-----------+----+-----------+-----+-----------+
+    |ap_NS_fsm  |   1|          3|    1|          3|
+    |out_r      |   1|          2|    1|          2|
+    +-----------+----+-----------+-----+-----------+
+    |Total      |   2|          5|    2|          5|
+    +-----------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------+----+----+-----+-----------+
+    |      Name     | FF | LUT| Bits| Const Bits|
+    +---------------+----+----+-----+-----------+
+    |ap_CS_fsm      |   2|   0|    2|          0|
+    |ap_done_reg    |   1|   0|    1|          0|
+    |out_r_preg     |   1|   0|    1|          0|
+    |tmp13_reg_157  |  18|   0|   18|          0|
+    +---------------+----+----+-----+-----------+
+    |Total          |  22|   0|   22|          0|
+    +---------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------+-----+-----+------------+-----------------------------------------+--------------+
+|   RTL Ports  | Dir | Bits|  Protocol  |              Source Object              |    C Type    |
++--------------+-----+-----+------------+-----------------------------------------+--------------+
+|ap_clk        |  in |    1| ap_ctrl_hs | svm_classifier_Block_.preheader.0_proc1 | return value |
+|ap_rst        |  in |    1| ap_ctrl_hs | svm_classifier_Block_.preheader.0_proc1 | return value |
+|ap_start      |  in |    1| ap_ctrl_hs | svm_classifier_Block_.preheader.0_proc1 | return value |
+|ap_done       | out |    1| ap_ctrl_hs | svm_classifier_Block_.preheader.0_proc1 | return value |
+|ap_continue   |  in |    1| ap_ctrl_hs | svm_classifier_Block_.preheader.0_proc1 | return value |
+|ap_idle       | out |    1| ap_ctrl_hs | svm_classifier_Block_.preheader.0_proc1 | return value |
+|ap_ready      | out |    1| ap_ctrl_hs | svm_classifier_Block_.preheader.0_proc1 | return value |
+|p_read        |  in |   18|   ap_none  |                  p_read                 |    scalar    |
+|p_read1       |  in |   18|   ap_none  |                 p_read1                 |    scalar    |
+|p_read2       |  in |   18|   ap_none  |                 p_read2                 |    scalar    |
+|p_read3       |  in |   18|   ap_none  |                 p_read3                 |    scalar    |
+|p_read4       |  in |   18|   ap_none  |                 p_read4                 |    scalar    |
+|p_read5       |  in |   18|   ap_none  |                 p_read5                 |    scalar    |
+|p_read6       |  in |   18|   ap_none  |                 p_read6                 |    scalar    |
+|p_read7       |  in |   18|   ap_none  |                 p_read7                 |    scalar    |
+|p_read8       |  in |   18|   ap_none  |                 p_read8                 |    scalar    |
+|out_r         | out |    1|   ap_vld   |                  out_r                  |    pointer   |
+|out_r_ap_vld  | out |    1|   ap_vld   |                  out_r                  |    pointer   |
++--------------+-----+-----+------------+-----------------------------------------+--------------+
+

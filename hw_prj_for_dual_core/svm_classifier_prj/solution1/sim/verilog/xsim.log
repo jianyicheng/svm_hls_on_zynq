@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# xsim v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Mar 16 00:10:38 2018
+# Process ID: 4864
+# Current directory: C:/Users/about/Desktop/ADSD/CW2/svm_classifier_prj_Beta1.0_Ch9_For_Double_Core/svm_classifier_prj/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/svm_classifier/xsim_script.tcl}
+# Log file: C:/Users/about/Desktop/ADSD/CW2/svm_classifier_prj_Beta1.0_Ch9_For_Double_Core/svm_classifier_prj/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/about/Desktop/ADSD/CW2/svm_classifier_prj_Beta1.0_Ch9_For_Double_Core/svm_classifier_prj/solution1/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/svm_classifier/xsim_script.tcl
+# xsim {svm_classifier} -autoloadwcfg -tclbatch {svm_classifier.tcl}
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source svm_classifier.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 2000 [0.00%] @ "125000"
+// RTL Simulation : 2000 / 2000 [0.00%] @ "4380135000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 4380175 ns : File "C:/Users/about/Desktop/ADSD/CW2/svm_classifier_prj_Beta1.0_Ch9_For_Double_Core/svm_classifier_prj/solution1/sim/verilog/svm_classifier.autotb.v" Line 273
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:04:47 . Memory (MB): peak = 54.258 ; gain = 0.016
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Mar 16 00:15:29 2018...

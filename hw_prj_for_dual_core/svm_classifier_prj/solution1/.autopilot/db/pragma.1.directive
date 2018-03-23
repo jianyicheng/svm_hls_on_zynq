@@ -1,0 +1,31 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="dotProduct" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="dotProduct" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="pro_temp_12"/>
+<option name="core" value="Mul_LUT"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="dotProduct" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="pro_temp_13"/>
+<option name="core" value="Mul_LUT"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="dotProduct" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="pro_temp_14"/>
+<option name="core" value="Mul_LUT"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="dotProduct" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="pro_temp_15"/>
+<option name="core" value="Mul_LUT"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

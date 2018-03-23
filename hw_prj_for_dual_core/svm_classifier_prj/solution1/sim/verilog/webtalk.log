@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Mar 16 00:15:28 2018
+# Process ID: 10996
+# Current directory: C:/Users/about/Desktop/ADSD/CW2/svm_classifier_prj_Beta1.0_Ch9_For_Double_Core/svm_classifier_prj/solution1/sim/verilog
+# Command line: wbtcv.exe -mode batch -source C:/Users/about/Desktop/ADSD/CW2/svm_classifier_prj_Beta1.0_Ch9_For_Double_Core/svm_classifier_prj/solution1/sim/verilog/xsim.dir/svm_classifier/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/about/Desktop/ADSD/CW2/svm_classifier_prj_Beta1.0_Ch9_For_Double_Core/svm_classifier_prj/solution1/sim/verilog/webtalk.log
+# Journal file: C:/Users/about/Desktop/ADSD/CW2/svm_classifier_prj_Beta1.0_Ch9_For_Double_Core/svm_classifier_prj/solution1/sim/verilog\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/about/Desktop/ADSD/CW2/svm_classifier_prj_Beta1.0_Ch9_For_Double_Core/svm_classifier_prj/solution1/sim/verilog/xsim.dir/svm_classifier/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 16 00:15:28 2018...

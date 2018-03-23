@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;svm0/src/sw_tanh_classifier.cpp&apos; to &apos;sw_tanh_classifier.c&apos;" description="Rename resource &apos;sw_tanh_classifier.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/sw_tanh_classifier.cpp" name="sw_tanh_classifier.c" stamp="1521069888897" updateReferences="true"/>
+</session>

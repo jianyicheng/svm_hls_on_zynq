@@ -1,0 +1,760 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Mar 14 22:44:22 2018
+# Process ID: 8336
+# Current directory: H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.runs/impl_1
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.runs/impl_1/design_1_wrapper.vdi
+# Journal file: H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 7354 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [h:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [h:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Parsing XDC File [h:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc] for cell 'design_1_i/rst_processing_system7_0_100M/U0'
+Finished Parsing XDC File [h:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0_board.xdc] for cell 'design_1_i/rst_processing_system7_0_100M/U0'
+Parsing XDC File [h:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc] for cell 'design_1_i/rst_processing_system7_0_100M/U0'
+Finished Parsing XDC File [h:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/design_1_rst_processing_system7_0_100M_0.xdc] for cell 'design_1_i/rst_processing_system7_0_100M/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:20 ; elapsed = 00:01:48 . Memory (MB): peak = 725.672 ; gain = 502.242
+write_hwdef: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 725.672 ; gain = 0.000
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.547 . Memory (MB): peak = 725.672 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 1ff56af48
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 26 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1c24155da
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1250.832 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 14 cells.
+Phase 2 Constant Propagation | Checksum: 13ebce857
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1250.832 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 20931 unconnected nets.
+INFO: [Opt 31-11] Eliminated 545 unconnected cells.
+Phase 3 Sweep | Checksum: 18785ca25
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 1250.832 ; gain = 0.000
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.242 . Memory (MB): peak = 1250.832 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 18785ca25
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 1250.832 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 126 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 252 newly gated: 0 Total Ports: 252
+Number of Flops added for Enable Generation: 10
+
+Ending PowerOpt Patch Enables Task | Checksum: 19390d0c7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.537 . Memory (MB): peak = 1742.230 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 19390d0c7
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:20 . Memory (MB): peak = 1742.230 ; gain = 491.398
+INFO: [Common 17-83] Releasing license: Implementation
+25 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:18 ; elapsed = 00:00:57 . Memory (MB): peak = 1742.230 ; gain = 1016.559
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1742.230 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1742.230 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.416 . Memory (MB): peak = 1742.230 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 1.1.1 ParallelPlaceIOClockAndInitTop
+
+Phase 1.1.1.1 Pre-Place Cells
+Phase 1.1.1.1 Pre-Place Cells | Checksum: 98566580
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 1.1.1.2 Constructing HAPIClkRuleMgr
+Phase 1.1.1.2 Constructing HAPIClkRuleMgr | Checksum: 98566580
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1742.230 ; gain = 0.000
+WARNING: [Place 30-879] Found overlapping PBlocks. The use of overlapping PBlocks is not recommended as it may lead to legalization errors or unplaced instances.
+WARNING: [Place 30-12] An IO Bus FIXED_IO_mio with more than one IO standard is found. Components associated with this bus are: 
+	FIXED_IO_mio[53] of IOStandard LVCMOS18
+	FIXED_IO_mio[52] of IOStandard LVCMOS18
+	FIXED_IO_mio[51] of IOStandard LVCMOS18
+	FIXED_IO_mio[50] of IOStandard LVCMOS18
+	FIXED_IO_mio[49] of IOStandard LVCMOS18
+	FIXED_IO_mio[48] of IOStandard LVCMOS18
+	FIXED_IO_mio[47] of IOStandard LVCMOS18
+	FIXED_IO_mio[46] of IOStandard LVCMOS18
+	FIXED_IO_mio[45] of IOStandard LVCMOS18
+	FIXED_IO_mio[44] of IOStandard LVCMOS18
+	FIXED_IO_mio[43] of IOStandard LVCMOS18
+	FIXED_IO_mio[42] of IOStandard LVCMOS18
+	FIXED_IO_mio[41] of IOStandard LVCMOS18
+	FIXED_IO_mio[40] of IOStandard LVCMOS18
+	FIXED_IO_mio[39] of IOStandard LVCMOS18
+	FIXED_IO_mio[38] of IOStandard LVCMOS18
+	FIXED_IO_mio[37] of IOStandard LVCMOS18
+	FIXED_IO_mio[36] of IOStandard LVCMOS18
+	FIXED_IO_mio[35] of IOStandard LVCMOS18
+	FIXED_IO_mio[34] of IOStandard LVCMOS18
+	FIXED_IO_mio[33] of IOStandard LVCMOS18
+	FIXED_IO_mio[32] of IOStandard LVCMOS18
+	FIXED_IO_mio[31] of IOStandard LVCMOS18
+	FIXED_IO_mio[30] of IOStandard LVCMOS18
+	FIXED_IO_mio[29] of IOStandard LVCMOS18
+	FIXED_IO_mio[28] of IOStandard LVCMOS18
+	FIXED_IO_mio[27] of IOStandard LVCMOS18
+	FIXED_IO_mio[26] of IOStandard LVCMOS18
+	FIXED_IO_mio[25] of IOStandard LVCMOS18
+	FIXED_IO_mio[24] of IOStandard LVCMOS18
+	FIXED_IO_mio[23] of IOStandard LVCMOS18
+	FIXED_IO_mio[22] of IOStandard LVCMOS18
+	FIXED_IO_mio[21] of IOStandard LVCMOS18
+	FIXED_IO_mio[20] of IOStandard LVCMOS18
+	FIXED_IO_mio[19] of IOStandard LVCMOS18
+	FIXED_IO_mio[18] of IOStandard LVCMOS18
+	FIXED_IO_mio[17] of IOStandard LVCMOS18
+	FIXED_IO_mio[16] of IOStandard LVCMOS18
+	FIXED_IO_mio[15] of IOStandard LVCMOS33
+	FIXED_IO_mio[14] of IOStandard LVCMOS33
+	FIXED_IO_mio[13] of IOStandard LVCMOS33
+	FIXED_IO_mio[12] of IOStandard LVCMOS33
+	FIXED_IO_mio[11] of IOStandard LVCMOS33
+	FIXED_IO_mio[10] of IOStandard LVCMOS33
+	FIXED_IO_mio[9] of IOStandard LVCMOS33
+	FIXED_IO_mio[8] of IOStandard LVCMOS33
+	FIXED_IO_mio[7] of IOStandard LVCMOS33
+	FIXED_IO_mio[6] of IOStandard LVCMOS33
+	FIXED_IO_mio[5] of IOStandard LVCMOS33
+	FIXED_IO_mio[4] of IOStandard LVCMOS33
+	FIXED_IO_mio[3] of IOStandard LVCMOS33
+	FIXED_IO_mio[2] of IOStandard LVCMOS33
+	FIXED_IO_mio[1] of IOStandard LVCMOS33
+	FIXED_IO_mio[0] of IOStandard LVCMOS33
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1.1.1.3 IO and Clk Clean Up
+
+Phase 1.1.1.3.1 Constructing HAPIClkRuleMgr
+Phase 1.1.1.3.1 Constructing HAPIClkRuleMgr | Checksum: 98566580
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1742.230 ; gain = 0.000
+Phase 1.1.1.3 IO and Clk Clean Up | Checksum: 98566580
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 1.1.1.4 Implementation Feasibility check On IDelay
+Phase 1.1.1.4 Implementation Feasibility check On IDelay | Checksum: 98566580
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 1.1.1.5 Commit IO Placement
+Phase 1.1.1.5 Commit IO Placement | Checksum: 15cdf3a3
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1742.230 ; gain = 0.000
+Phase 1.1.1 ParallelPlaceIOClockAndInitTop | Checksum: 15cdf3a3
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1742.230 ; gain = 0.000
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 773e9d1f
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 1.2 Build Placer Netlist Model
+
+Phase 1.2.1 Place Init Design
+
+Phase 1.2.1.1 Make Others
+Phase 1.2.1.1 Make Others | Checksum: 100d65583
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 1.2.1.2 Init Lut Pin Assignment
+Phase 1.2.1.2 Init Lut Pin Assignment | Checksum: 100d65583
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 1742.230 ; gain = 0.000
+Phase 1.2.1 Place Init Design | Checksum: 33b78fc8
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:43 . Memory (MB): peak = 1742.230 ; gain = 0.000
+Phase 1.2 Build Placer Netlist Model | Checksum: 33b78fc8
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:43 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 33b78fc8
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:43 . Memory (MB): peak = 1742.230 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 33b78fc8
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:43 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: c769d76c
+
+Time (s): cpu = 00:02:15 ; elapsed = 00:01:38 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: c769d76c
+
+Time (s): cpu = 00:02:17 ; elapsed = 00:01:39 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 19838dc89
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:59 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 13774b25e
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:02:00 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 3.4 updateClock Trees: DP
+Phase 3.4 updateClock Trees: DP | Checksum: 13774b25e
+
+Time (s): cpu = 00:02:45 ; elapsed = 00:02:00 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 1dd66f59e
+
+Time (s): cpu = 00:02:49 ; elapsed = 00:02:03 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 1c36cea8c
+
+Time (s): cpu = 00:02:51 ; elapsed = 00:02:04 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 19d274e1d
+
+Time (s): cpu = 00:03:08 ; elapsed = 00:02:21 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: f18982e4
+
+Time (s): cpu = 00:03:11 ; elapsed = 00:02:24 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: f18982e4
+
+Time (s): cpu = 00:03:11 ; elapsed = 00:02:25 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: 127a453d5
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:02:30 . Memory (MB): peak = 1742.230 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 127a453d5
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:02:31 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 updateClock Trees: PCOPT
+Phase 4.1.1 updateClock Trees: PCOPT | Checksum: 1245d0ae2
+
+Time (s): cpu = 00:03:42 ; elapsed = 00:02:44 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 4.1.2 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.669. For the most accurate timing information please run report_timing.
+Phase 4.1.2 Post Placement Optimization | Checksum: 156eb39a9
+
+Time (s): cpu = 00:03:52 ; elapsed = 00:02:55 . Memory (MB): peak = 1742.230 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 156eb39a9
+
+Time (s): cpu = 00:03:53 ; elapsed = 00:02:55 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 4.2 Sweep Clock Roots: Post-Placement
+Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: 156eb39a9
+
+Time (s): cpu = 00:03:53 ; elapsed = 00:02:56 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 4.3 Uram Pipeline Register Optimization
+Phase 4.3 Uram Pipeline Register Optimization | Checksum: 156eb39a9
+
+Time (s): cpu = 00:03:54 ; elapsed = 00:02:56 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 4.4 Post Placement Cleanup
+Phase 4.4 Post Placement Cleanup | Checksum: 156eb39a9
+
+Time (s): cpu = 00:03:54 ; elapsed = 00:02:57 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 4.5 Placer Reporting
+Phase 4.5 Placer Reporting | Checksum: 156eb39a9
+
+Time (s): cpu = 00:03:55 ; elapsed = 00:02:57 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 4.6 Final Placement Cleanup
+Phase 4.6 Final Placement Cleanup | Checksum: 1afe32188
+
+Time (s): cpu = 00:03:55 ; elapsed = 00:02:58 . Memory (MB): peak = 1742.230 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1afe32188
+
+Time (s): cpu = 00:03:55 ; elapsed = 00:02:58 . Memory (MB): peak = 1742.230 ; gain = 0.000
+Ending Placer Task | Checksum: 1687e8276
+
+Time (s): cpu = 00:03:55 ; elapsed = 00:02:58 . Memory (MB): peak = 1742.230 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+42 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:04:02 ; elapsed = 00:03:02 . Memory (MB): peak = 1742.230 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:36 ; elapsed = 00:01:33 . Memory (MB): peak = 1742.230 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:39 ; elapsed = 00:01:49 . Memory (MB): peak = 1742.230 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.167 . Memory (MB): peak = 1742.230 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.401 . Memory (MB): peak = 1742.230 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 1742.230 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (PLIO-7) Placement Constraints Check for IO constraints - An IO Bus FIXED_IO_mio[53:0] with more than one IO standard is found. Components associated with this bus are: LVCMOS18 (FIXED_IO_mio[53], FIXED_IO_mio[52], FIXED_IO_mio[51], FIXED_IO_mio[50], FIXED_IO_mio[49], FIXED_IO_mio[48], FIXED_IO_mio[47], FIXED_IO_mio[46], FIXED_IO_mio[45], FIXED_IO_mio[44], FIXED_IO_mio[43], FIXED_IO_mio[42], FIXED_IO_mio[41], FIXED_IO_mio[40], FIXED_IO_mio[39] (the first 15 of 38 listed)); LVCMOS33 (FIXED_IO_mio[15], FIXED_IO_mio[14], FIXED_IO_mio[13], FIXED_IO_mio[12], FIXED_IO_mio[11], FIXED_IO_mio[10], FIXED_IO_mio[9], FIXED_IO_mio[8], FIXED_IO_mio[7], FIXED_IO_mio[6], FIXED_IO_mio[5], FIXED_IO_mio[4], FIXED_IO_mio[3], FIXED_IO_mio[2], FIXED_IO_mio[1] (the first 15 of 16 listed)); 
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: ed7f7712 ConstDB: 0 ShapeSum: 7aff0b64 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: cb32eeb7
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:23 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: cb32eeb7
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:24 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: cb32eeb7
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:25 . Memory (MB): peak = 1742.230 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: cb32eeb7
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:25 . Memory (MB): peak = 1742.230 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: ca5b04c2
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:40 . Memory (MB): peak = 1742.230 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.513 | TNS=-14.089| WHS=-0.194 | THS=-181.500|
+
+Phase 2 Router Initialization | Checksum: 90fc7236
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:47 . Memory (MB): peak = 1860.285 ; gain = 118.055
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1946208a3
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:00:54 . Memory (MB): peak = 1860.285 ; gain = 118.055
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 12383
+ Number of Nodes with overlaps = 1608
+ Number of Nodes with overlaps = 233
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 17d7f7b9b
+
+Time (s): cpu = 00:02:34 ; elapsed = 00:01:33 . Memory (MB): peak = 1860.285 ; gain = 118.055
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.890 | TNS=-35.643| WHS=N/A    | THS=N/A    |
+
+
+Phase 4.1.2 GlobIterForTiming
+
+Phase 4.1.2.1 Update Timing
+Phase 4.1.2.1 Update Timing | Checksum: 18f78f5d1
+
+Time (s): cpu = 00:02:36 ; elapsed = 00:01:34 . Memory (MB): peak = 1860.285 ; gain = 118.055
+
+Phase 4.1.2.2 Fast Budgeting
+Phase 4.1.2.2 Fast Budgeting | Checksum: 1fd7bed33
+
+Time (s): cpu = 00:02:39 ; elapsed = 00:01:38 . Memory (MB): peak = 1860.285 ; gain = 118.055
+Phase 4.1.2 GlobIterForTiming | Checksum: 139247ee8
+
+Time (s): cpu = 00:02:40 ; elapsed = 00:01:39 . Memory (MB): peak = 1860.285 ; gain = 118.055
+Phase 4.1 Global Iteration 0 | Checksum: 139247ee8
+
+Time (s): cpu = 00:02:40 ; elapsed = 00:01:39 . Memory (MB): peak = 1860.285 ; gain = 118.055
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 367
+ Number of Nodes with overlaps = 158
+ Number of Nodes with overlaps = 71
+ Number of Nodes with overlaps = 15
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 12a98228f
+
+Time (s): cpu = 00:02:54 ; elapsed = 00:01:50 . Memory (MB): peak = 1860.285 ; gain = 118.055
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.786 | TNS=-25.740| WHS=N/A    | THS=N/A    |
+
+
+Phase 4.2.2 GlobIterForTiming
+
+Phase 4.2.2.1 Update Timing
+Phase 4.2.2.1 Update Timing | Checksum: 14f30925e
+
+Time (s): cpu = 00:02:56 ; elapsed = 00:01:51 . Memory (MB): peak = 1860.285 ; gain = 118.055
+
+Phase 4.2.2.2 Fast Budgeting
+Phase 4.2.2.2 Fast Budgeting | Checksum: 1686d08b6
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:01:55 . Memory (MB): peak = 1860.285 ; gain = 118.055
+Phase 4.2.2 GlobIterForTiming | Checksum: b4eadea4
+
+Time (s): cpu = 00:03:01 ; elapsed = 00:01:56 . Memory (MB): peak = 1860.285 ; gain = 118.055
+Phase 4.2 Global Iteration 1 | Checksum: b4eadea4
+
+Time (s): cpu = 00:03:01 ; elapsed = 00:01:56 . Memory (MB): peak = 1860.285 ; gain = 118.055
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 233
+ Number of Nodes with overlaps = 67
+ Number of Nodes with overlaps = 17
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 0
+
+Phase 4.3.1 Update Timing
+Phase 4.3.1 Update Timing | Checksum: 14f0d29c1
+
+Time (s): cpu = 00:03:10 ; elapsed = 00:02:03 . Memory (MB): peak = 1860.285 ; gain = 118.055
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.874 | TNS=-22.779| WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: ea5ceb72
+
+Time (s): cpu = 00:03:10 ; elapsed = 00:02:04 . Memory (MB): peak = 1860.285 ; gain = 118.055
+Phase 4 Rip-up And Reroute | Checksum: ea5ceb72
+
+Time (s): cpu = 00:03:10 ; elapsed = 00:02:04 . Memory (MB): peak = 1860.285 ; gain = 118.055
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1796baec6
+
+Time (s): cpu = 00:03:14 ; elapsed = 00:02:06 . Memory (MB): peak = 1860.285 ; gain = 118.055
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.786 | TNS=-12.601| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 24a244093
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:02:12 . Memory (MB): peak = 1860.285 ; gain = 118.055
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 24a244093
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:02:12 . Memory (MB): peak = 1860.285 ; gain = 118.055
+Phase 5 Delay and Skew Optimization | Checksum: 24a244093
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:02:12 . Memory (MB): peak = 1860.285 ; gain = 118.055
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 26459b3bd
+
+Time (s): cpu = 00:03:25 ; elapsed = 00:02:15 . Memory (MB): peak = 1860.285 ; gain = 118.055
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.775 | TNS=-9.501 | WHS=0.028  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 2163708f1
+
+Time (s): cpu = 00:03:26 ; elapsed = 00:02:15 . Memory (MB): peak = 1860.285 ; gain = 118.055
+Phase 6 Post Hold Fix | Checksum: 2163708f1
+
+Time (s): cpu = 00:03:26 ; elapsed = 00:02:15 . Memory (MB): peak = 1860.285 ; gain = 118.055
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 20.1253 %
+  Global Horizontal Routing Utilization  = 26.2928 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 82.8829%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 81.0811%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 92.6471%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X36Y84 -> INT_L_X36Y84
+   INT_L_X38Y84 -> INT_L_X38Y84
+   INT_L_X36Y83 -> INT_L_X36Y83
+   INT_R_X41Y83 -> INT_R_X41Y83
+   INT_L_X40Y82 -> INT_L_X40Y82
+West Dir 1x1 Area, Max Cong = 89.7059%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X56Y128 -> INT_L_X56Y128
+   INT_R_X41Y103 -> INT_R_X41Y103
+   INT_R_X41Y101 -> INT_R_X41Y101
+   INT_L_X56Y100 -> INT_L_X56Y100
+   INT_L_X36Y55 -> INT_L_X36Y55
+Phase 7 Route finalize | Checksum: 25a72ac66
+
+Time (s): cpu = 00:03:26 ; elapsed = 00:02:16 . Memory (MB): peak = 1860.285 ; gain = 118.055
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 25a72ac66
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:02:16 . Memory (MB): peak = 1860.285 ; gain = 118.055
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1e040f297
+
+Time (s): cpu = 00:03:31 ; elapsed = 00:02:21 . Memory (MB): peak = 1860.285 ; gain = 118.055
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.775 | TNS=-9.501 | WHS=0.028  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 1e040f297
+
+Time (s): cpu = 00:03:32 ; elapsed = 00:02:21 . Memory (MB): peak = 1860.285 ; gain = 118.055
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:03:32 ; elapsed = 00:02:21 . Memory (MB): peak = 1860.285 ; gain = 118.055
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+56 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:03:38 ; elapsed = 00:02:25 . Memory (MB): peak = 1860.285 ; gain = 118.055
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:40 ; elapsed = 00:01:53 . Memory (MB): peak = 1860.285 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:43 ; elapsed = 00:02:14 . Memory (MB): peak = 1860.285 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/songze/songze.runs/impl_1/design_1_wrapper_drc_routed.rpt.
+report_drc: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1860.285 ; gain = 0.000
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+report_timing_summary: Time (s): cpu = 00:00:23 ; elapsed = 00:00:14 . Memory (MB): peak = 1860.285 ; gain = 0.000
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+report_power: Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1860.285 ; gain = 0.000
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U100/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U100/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U101/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U101/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U102/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U102/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U103/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U103/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U104/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U104/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U105/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U105/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U106/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U106/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U107/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U107/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U108/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U108/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U109/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U109/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U110/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U110/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U111/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U111/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U112/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U112/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U113/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U113/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U114/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U114/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U115/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U115/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U116/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U116/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U117/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U117/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U118/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U118/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U119/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U119/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U120/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U120/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U121/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U121/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U122/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U122/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U123/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U123/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U124/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U124/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U125/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U125/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U126/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U126/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U127/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U127/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U128/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U128/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U129/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U129/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U130/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U130/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U131/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U131/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U132/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U132/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U133/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U133/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U134/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U134/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U135/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U135/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U136/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U136/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U137/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U137/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U138/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U138/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U139/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U139/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U140/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U140/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U141/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U141/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U142/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U142/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U58/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U58/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U65/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U65/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U66/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U66/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U67/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U67/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U68/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U68/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U69/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U69/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U70/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U70/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U71/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U71/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U73/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U73/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U74/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U74/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U75/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U75/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U76/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U76/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U77/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U77/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U78/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U78/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U79/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U79/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U81/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U81/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U84/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U84/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U85/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U85/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U89/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U89/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U90/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U90/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U91/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U91/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U92/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U92/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U93/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U93/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U94/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U94/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U95/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U95/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U96/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U96/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U97/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U97/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U98/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U98/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U99/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_13s_15s_26_1_U99/svm_classifier_mul_mul_13s_15s_26_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U143/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U143/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U144/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U144/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U145/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U145/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U146/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U146/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U147/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U147/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U148/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U148/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U149/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U149/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U150/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U150/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U151/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U151/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U152/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U152/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U153/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U153/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U154/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U154/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U155/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U155/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U156/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U156/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U157/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U157/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U158/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U158/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U159/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U159/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U160/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U160/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U161/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U161/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U162/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U162/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U163/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U163/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U56/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U56/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U57/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U57/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U59/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U59/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U60/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U60/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U61/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U61/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U62/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p multiplier stage design_1_i/svm_classifier_0/inst/svm_classifier_Loop_Sum_loop_proc1_U0/svm_classifier_mul_mul_15s_13s_26_1_U62/svm_classifier_mul_mul_15s_13s_26_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+INFO: [Common 17-14] Message 'DRC 23-20' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 216 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:52 ; elapsed = 00:00:38 . Memory (MB): peak = 2250.676 ; gain = 390.391
+write_sysdef: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 2250.676 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 14 22:58:55 2018...

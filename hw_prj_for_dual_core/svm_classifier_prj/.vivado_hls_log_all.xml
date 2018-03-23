@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'svm_classifier/out' to 'svm_classifier/out_r' to avoid the conflict with HDL keywords or other object names." projectName="svm_classifier_prj" solutionName="solution1" date="2018-03-16T00:06:55.605+0000" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'svm_classifier_Block_.preheader.0_proc1' to 'svm_classifier_Block_preheader_0_proc1'." projectName="svm_classifier_prj" solutionName="solution1" date="2018-03-16T00:06:55.573+0000" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'svm_classifier_Block__proc' to 'svm_classifier_Block_proc'." projectName="svm_classifier_prj" solutionName="solution1" date="2018-03-16T00:06:55.528+0000" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'svm_classifier_svm_classifier.entry3' to 'svm_classifier_svm_classifier_entry3'." projectName="svm_classifier_prj" solutionName="solution1" date="2018-03-16T00:06:55.487+0000" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 117 to 116 for loop 'Sum_loop' in function 'svm_classifier'." projectName="svm_classifier_prj" solutionName="solution1" date="2018-03-16T00:06:47.469+0000" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop upper bound from 117 to 116 for loop 'Sum_loop' in function 'svm_classifier'." projectName="svm_classifier_prj" solutionName="solution1" date="2018-03-16T00:06:47.205+0000" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-180] Applying partition directive (svm_classifier.cpp:13:1) and reshape directive (svm_classifier.cpp:14:1) on the same variable 'SVs.V'  may lead to unexpected synthesis behaviors." projectName="svm_classifier_prj" solutionName="solution1" date="2018-03-16T00:06:46.957+0000" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-505] Pipeline directive for loop 'Channel_Sum_loop' (svm_classifier.cpp:60) in function 'svm_classifier' has been removed because the loop is unrolled completely." projectName="svm_classifier_prj" solutionName="solution1" date="2018-03-16T00:06:46.790+0000" type="Warning"/>
+      </synLog>
+      <simLog>
+        <logs message="WARNING: [COSIM 212-376] This design mixes AXI slave interface and pipeline mode, which could potentially result in simulation dead-lock and/or get mismatching results." projectName="svm_classifier_prj" solutionName="solution1" date="2018-03-16T00:10:25.626+0000" type="Warning"/>
+        <logs message="WARNING: [COSIM 212-376] This design mixes AXI slave interface and pipeline mode, which could potentially result in simulation dead-lock and/or get mismatching results." projectName="svm_classifier_prj" solutionName="solution1" date="2018-03-16T00:10:24.459+0000" type="Warning"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
