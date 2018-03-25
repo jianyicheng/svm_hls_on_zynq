@@ -1,0 +1,57 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado_HLS/2016.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'jc9016' on host 'eews908b-004' (Windows NT_amd64 version 6.1) on Sun Mar 11 20:12:25 +0000 2018
+INFO: [HLS 200-10] In directory 'H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj'
+INFO: [HLS 200-10] Unencrypted File
+INFO: [HLS 200-10] Unencrypted File
+ALL TCL COMMANDS:
+  add_files                          - Add file(s) to the current project
+  close_project                      - Close the project that is currently open
+  close_solution                     - Close a solution
+  config_array_partition             - Config the array partition
+  config_bind                        - Config the options for micro-architecture binding
+  config_compile                     - Config the optimization
+  config_core                        - Config scheduling core options
+  config_dataflow                    - Config the dataflow pipeline
+  config_interface                   - Config command for io mode
+  config_rtl                         - Config the options for RTL generation
+  config_schedule                    - Config scheduler options
+  cosim_design                       - Simulate the RTL using C test bench
+  create_clock                       - Set up a virtual clock
+  csim_design                        - Simulate C
+  csynth_design                      - Synthesize the design
+  delete_project                     - Delete a project
+  delete_solution                    - Delete a solution from the current project
+  export_design                      - Package design
+  help                               - Print the manpage of a command
+  list_core                          - List core(s) in the resource library
+  list_part                          - List supported parts
+  open_project                       - Open an existing project or create a new project
+  open_solution                      - Open an existing solution or create a new solution
+  set_clock_uncertainty              - Set the clock uncertainty
+  set_directive_allocation           - Directive ALLOCATION
+  set_directive_array_map            - Directive ARRAY_MAP
+  set_directive_array_partition      - Directive ARRAY_PARTITION
+  set_directive_array_reshape        - Directive ARRAY_RESHAPE
+  set_directive_clock                - Directive CLOCK
+  set_directive_data_pack            - Directive DATA_PACK
+  set_directive_dataflow             - Directive DATAFLOW
+  set_directive_dependence           - Directive DEPENDENCE
+  set_directive_expression_balance   - Directive EXPRESSION_BALANCE
+  set_directive_function_instantiate - Directive FUNCTION_INSTANTIATE
+  set_directive_inline               - Directive INLINE
+  set_directive_interface            - Directive INTERFACE
+  set_directive_latency              - Directive LATENCY
+  set_directive_loop_flatten         - Directive LOOP_FLATTEN
+  set_directive_loop_merge           - Directive LOOP_MERGE
+  set_directive_loop_tripcount       - Directive LOOP_TRIPCOUNT
+  set_directive_occurrence           - Directive OCCURRENCE
+  set_directive_pipeline             - Directive PIPELINE
+  set_directive_protocol             - Directive PROTOCOL
+  set_directive_reset                - Directive RESET
+  set_directive_resource             - Directive RESOURCE
+  set_directive_stream               - Directive STREAM
+  set_directive_top                  - Directive TOP
+  set_directive_unroll               - Directive UNROLL
+  set_part                           - Set the target part
+  set_top                            - Set the top-level model
+End of the command list.

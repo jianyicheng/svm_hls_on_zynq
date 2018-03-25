@@ -1,0 +1,206 @@
+
+
+================================================================
+== Vivado HLS Report for 'svm_classifier_Block_proc'
+================================================================
+* Date:           Sun Mar 11 20:16:54 2018
+
+* Version:        2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)
+* Project:        svm_classifier_prj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      4.38|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 1
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+* FSM state operations: 
+
+ <State 1>: 4.38ns
+ST_1: stg_2 [1/1] 0.00ns
+entry:0  call void (...)* @_ssdm_op_SpecInterface(i256* %in_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str)
+
+ST_1: in_V_read [1/1] 4.38ns
+entry:1  %in_V_read = call i256 @_ssdm_op_Read.ap_fifo.i256P(i256* %in_V)
+
+ST_1: s_in_0_V [1/1] 0.00ns
+entry:2  %s_in_0_V = call i13 @_ssdm_op_PartSelect.i13.i256.i32.i32(i256 %in_V_read, i32 3, i32 15)
+
+ST_1: s_in_1_V [1/1] 0.00ns
+entry:3  %s_in_1_V = call i13 @_ssdm_op_PartSelect.i13.i256.i32.i32(i256 %in_V_read, i32 19, i32 31)
+
+ST_1: s_in_2_V [1/1] 0.00ns
+entry:4  %s_in_2_V = call i13 @_ssdm_op_PartSelect.i13.i256.i32.i32(i256 %in_V_read, i32 35, i32 47)
+
+ST_1: s_in_3_V [1/1] 0.00ns
+entry:5  %s_in_3_V = call i13 @_ssdm_op_PartSelect.i13.i256.i32.i32(i256 %in_V_read, i32 51, i32 63)
+
+ST_1: s_in_4_V [1/1] 0.00ns
+entry:6  %s_in_4_V = call i13 @_ssdm_op_PartSelect.i13.i256.i32.i32(i256 %in_V_read, i32 67, i32 79)
+
+ST_1: s_in_5_V [1/1] 0.00ns
+entry:7  %s_in_5_V = call i13 @_ssdm_op_PartSelect.i13.i256.i32.i32(i256 %in_V_read, i32 83, i32 95)
+
+ST_1: s_in_6_V [1/1] 0.00ns
+entry:8  %s_in_6_V = call i13 @_ssdm_op_PartSelect.i13.i256.i32.i32(i256 %in_V_read, i32 99, i32 111)
+
+ST_1: s_in_7_V [1/1] 0.00ns
+entry:9  %s_in_7_V = call i13 @_ssdm_op_PartSelect.i13.i256.i32.i32(i256 %in_V_read, i32 115, i32 127)
+
+ST_1: s_in_8_V [1/1] 0.00ns
+entry:10  %s_in_8_V = call i13 @_ssdm_op_PartSelect.i13.i256.i32.i32(i256 %in_V_read, i32 131, i32 143)
+
+ST_1: s_in_9_V [1/1] 0.00ns
+entry:11  %s_in_9_V = call i13 @_ssdm_op_PartSelect.i13.i256.i32.i32(i256 %in_V_read, i32 147, i32 159)
+
+ST_1: s_in_10_V [1/1] 0.00ns
+entry:12  %s_in_10_V = call i13 @_ssdm_op_PartSelect.i13.i256.i32.i32(i256 %in_V_read, i32 163, i32 175)
+
+ST_1: s_in_11_V [1/1] 0.00ns
+entry:13  %s_in_11_V = call i13 @_ssdm_op_PartSelect.i13.i256.i32.i32(i256 %in_V_read, i32 179, i32 191)
+
+ST_1: s_in_12_V [1/1] 0.00ns
+entry:14  %s_in_12_V = call i13 @_ssdm_op_PartSelect.i13.i256.i32.i32(i256 %in_V_read, i32 195, i32 207)
+
+ST_1: s_in_13_V [1/1] 0.00ns
+entry:15  %s_in_13_V = call i13 @_ssdm_op_PartSelect.i13.i256.i32.i32(i256 %in_V_read, i32 211, i32 223)
+
+ST_1: s_in_14_V [1/1] 0.00ns
+entry:16  %s_in_14_V = call i13 @_ssdm_op_PartSelect.i13.i256.i32.i32(i256 %in_V_read, i32 227, i32 239)
+
+ST_1: s_in_15_V [1/1] 0.00ns
+entry:17  %s_in_15_V = call i13 @_ssdm_op_PartSelect.i13.i256.i32.i32(i256 %in_V_read, i32 243, i32 255)
+
+ST_1: mrv_i [1/1] 0.00ns
+entry:18  %mrv_i = insertvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } undef, i13 %s_in_0_V, 0
+
+ST_1: mrv_1_i [1/1] 0.00ns
+entry:19  %mrv_1_i = insertvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %mrv_i, i13 %s_in_1_V, 1
+
+ST_1: mrv_2_i [1/1] 0.00ns
+entry:20  %mrv_2_i = insertvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %mrv_1_i, i13 %s_in_2_V, 2
+
+ST_1: mrv_3_i [1/1] 0.00ns
+entry:21  %mrv_3_i = insertvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %mrv_2_i, i13 %s_in_3_V, 3
+
+ST_1: mrv_4_i [1/1] 0.00ns
+entry:22  %mrv_4_i = insertvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %mrv_3_i, i13 %s_in_4_V, 4
+
+ST_1: mrv_5_i [1/1] 0.00ns
+entry:23  %mrv_5_i = insertvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %mrv_4_i, i13 %s_in_5_V, 5
+
+ST_1: mrv_6_i [1/1] 0.00ns
+entry:24  %mrv_6_i = insertvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %mrv_5_i, i13 %s_in_6_V, 6
+
+ST_1: mrv_7_i [1/1] 0.00ns
+entry:25  %mrv_7_i = insertvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %mrv_6_i, i13 %s_in_7_V, 7
+
+ST_1: mrv_8_i [1/1] 0.00ns
+entry:26  %mrv_8_i = insertvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %mrv_7_i, i13 %s_in_8_V, 8
+
+ST_1: mrv_9_i [1/1] 0.00ns
+entry:27  %mrv_9_i = insertvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %mrv_8_i, i13 %s_in_9_V, 9
+
+ST_1: mrv_10_i [1/1] 0.00ns
+entry:28  %mrv_10_i = insertvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %mrv_9_i, i13 %s_in_10_V, 10
+
+ST_1: mrv_11_i [1/1] 0.00ns
+entry:29  %mrv_11_i = insertvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %mrv_10_i, i13 %s_in_11_V, 11
+
+ST_1: mrv_12_i [1/1] 0.00ns
+entry:30  %mrv_12_i = insertvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %mrv_11_i, i13 %s_in_12_V, 12
+
+ST_1: mrv_13_i [1/1] 0.00ns
+entry:31  %mrv_13_i = insertvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %mrv_12_i, i13 %s_in_13_V, 13
+
+ST_1: mrv_14_i [1/1] 0.00ns
+entry:32  %mrv_14_i = insertvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %mrv_13_i, i13 %s_in_14_V, 14
+
+ST_1: mrv_15_i [1/1] 0.00ns
+entry:33  %mrv_15_i = insertvalue { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %mrv_14_i, i13 %s_in_15_V, 15
+
+ST_1: stg_36 [1/1] 0.00ns
+entry:34  ret { i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13, i13 } %mrv_15_i
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ No timing violations. 
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

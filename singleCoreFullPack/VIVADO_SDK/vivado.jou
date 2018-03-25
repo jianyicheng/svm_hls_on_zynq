@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Mar 11 23:27:35 2018
+# Process ID: 7664
+# Current directory: C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8488 C:\Users\jiany\Desktop\adsd_tst\latest_fullpack_11032018\latest_fullpack_11032018\project_5_dataflow\project_5_dataflow.xpr
+# Log file: C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow/vivado.log
+# Journal file: C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow/project_5_dataflow.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow/project_5_dataflow.sdk -hwspec C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow/project_5_dataflow.sdk/design_1_wrapper.hdf
+file copy -force C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow/project_5_dataflow.runs/impl_1/design_1_wrapper.sysdef C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow/project_5_dataflow.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow/project_5_dataflow.sdk -hwspec C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow/project_5_dataflow.sdk/design_1_wrapper.hdf

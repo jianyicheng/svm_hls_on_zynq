@@ -1,0 +1,88 @@
+00:24:10 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:240:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:240:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:244:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:244:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+'Finished building: ../src/main.cc'
+' '
+'Building target: test_dataflow.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_dataflow_bsp/ps7_cortexa9_0/lib -o "test_dataflow.elf"  ./src/main.o ./src/sw_tanh_classifier.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ./src/main.o does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ./src/main.o
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ./src/sw_tanh_classifier.o does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ./src/sw_tanh_classifier.o
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_intr.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_intr.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_selftest.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_selftest.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_sinit.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_sinit.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(print.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(print.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(vectors.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(vectors.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xil_assert.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xil_assert.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xil_io.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xil_io.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xtime_l.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xtime_l.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xsvm_classifier.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xsvm_classifier.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xsvm_classifier_sinit.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xsvm_classifier_sinit.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_g.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_g.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(outbyte.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(outbyte.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xsvm_classifier_g.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xsvm_classifier_g.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xuartps_hw.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xuartps_hw.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(_exit.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(_exit.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(_sbrk.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(_sbrk.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(close.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(close.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(errno.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(errno.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(fstat.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(fstat.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(getpid.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(getpid.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(isatty.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(isatty.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(kill.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(kill.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(lseek.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(lseek.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(read.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(read.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(write.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(write.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(inbyte.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(inbyte.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(_open.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(_open.o)
+collect2.exe: error: ld returned 1 exit status
+make: *** [test_dataflow.elf] ´íÎó 1
+
+00:24:24 Build Finished (took 13s.920ms)
+

@@ -1,0 +1,100 @@
+#include "getTanh.h"
+
+void getTanh(data19_7t theta_in, data_t *out)
+{
+	
+#pragma HLS PIPELINE
+
+	data_t temp;
+	data10_5t pro;
+
+	bool neg = theta_in < 0;
+	if (neg)
+		theta_in = -theta_in;
+
+	// Optimize the range of the cordic
+	if (theta_in >= (data19_7t)BOUND)
+		{
+			
+			temp = 1.0;
+			
+		} else {
+			
+			// Trigo index to extend range
+			int theta_int = theta_in;
+			theta_in = theta_in - theta_int;
+			
+			// Call Cordic function
+			data_t sinh_frac, cosh_frac;
+			cordic_sinh_cosh(theta_in, &sinh_frac, &cosh_frac);
+			
+			// Trigo rules
+
+			data_t sincos, sinsin, cossin, coscos;
+
+			sincos = sinh_lut[theta_int] * cosh_frac;
+			sinsin = sinh_lut[theta_int] * sinh_frac;
+			cossin = cosh_lut[theta_int] * sinh_frac;
+			coscos = cosh_lut[theta_int] * cosh_frac;
+
+			data10_5t sinh_out, cosh_out;
+			sinh_out = sincos + cossin;
+			cosh_out = coscos + sinsin;
+
+
+			/*
+			data19_7t sinh_out, cosh_out;
+			sinh_out = sinh_lut[theta_int] * cosh_frac + cosh_lut[theta_int] * sinh_frac;
+			cosh_out = cosh_lut[theta_int] * cosh_frac + sinh_lut[theta_int] * sinh_frac;
+			*/
+
+			/*
+			float sinh_f, cosh_f;
+			sinh_f = (float) sinh_out;
+			cosh_f = (float) cosh_out;
+			*/
+
+//#pragma HLS RESOURCE variable=pro core=HDiv
+			// cannot convert from ap_fixed to half-precision float directly.
+			pro = sinh_out / cosh_out;
+			temp = pro;
+
+//			temp = sinh_out / cosh_out;
+			
+		}
+
+	// Correct the sign of the final output
+	*out = neg ? (data_t)-temp : temp;
+}
+
+void cordic_sinh_cosh(data19_7t theta_in, data_t *sinh, data_t *cosh)
+{
+	
+#pragma HLS INLINE
+
+	data_t x = K_RECIPROCAL, y = 0;
+
+	Iteration_loop:	for(char i = 0; i < ITER_NUM; i++) 
+		{
+			
+//#pragma HLS PIPELINE
+#pragma HLS UNROLL
+
+			int it = iter[i];
+			
+			int d = theta_in.is_neg() ? -1 : 1;
+				
+			data_t x_next = x + ((d * y) >> it);
+			y = y + ((d * x) >> it);
+			x = x_next;
+			
+			theta_in = theta_in - (d * pow_lut[it - 1u]);
+			
+		}
+	
+	*sinh = y;
+	*cosh = x;
+
+}
+
+

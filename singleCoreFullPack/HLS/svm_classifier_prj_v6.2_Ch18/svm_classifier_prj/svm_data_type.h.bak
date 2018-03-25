@@ -1,0 +1,11 @@
+#ifndef _SVM_DATA_TYPE_H_
+#define _SVM_DATA_TYPE_H_
+
+#include <ap_fixed.h>
+
+typedef ap_fixed<18, 10> data22_10t;
+typedef ap_fixed<16, 7> data19_7t;
+typedef ap_fixed<16, 4> data_t;
+typedef ap_fixed<10, 5> data10_5t;
+
+#endif

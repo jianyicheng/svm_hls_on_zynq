@@ -1,0 +1,764 @@
+@I [HLS-0] Workspace H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1 opened at Sun Mar 11 20:35:01 +0000 2018
+@I [HLS-100] Command "config_clock -quiet -name default -period 10 -default=false "
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [HLS-100] Command 'config_clock' returned 0; elapsed 0.001Total elapsed time: 0.838 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0.001Total elapsed time: 0.843 sec.
+@I [HLS-100] Command "import_lib C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx.lib "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/xilinx_interface.lib "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/plb46.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.846 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/fsl.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.847 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/axi4.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.848 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/maxi.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.849 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/saxilite.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.850 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006Total elapsed time: 0.851 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/dsp48.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 0.852 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/dds_compiler.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.853 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfft.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.854 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfir.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.855 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.013Total elapsed time: 0.857 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx_old.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 0.860 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx_vivado.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 0.861 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx.hlp "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/target_info.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 0.868 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/xilinx_interface.hlp "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/maxi.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 0.870 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/saxilite.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 0.871 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 0.871 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/dsp48.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 0.873 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009Total elapsed time: 0.874 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/dsp48e1.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.876 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.877 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.877 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed medium "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.877 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.036Total elapsed time: 0.879 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 0.882 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 0.883 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 0.885 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004Total elapsed time: 0.890 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009Total elapsed time: 0.899 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.014Total elapsed time: 0.900 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.910 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 0.918 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/dds_compiler.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 0.924 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 0.925 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.088Total elapsed time: 1.13 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.14 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.134Total elapsed time: 1.14 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.16 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.136Total elapsed time: 1.16 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.137Total elapsed time: 1.16 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 1.17 sec.
+@I [HLS-100] Command "import_lib C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq_fpv6 "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx_fpv7.lib "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx_hp.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.19 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 1.20 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx_fpv.hlp "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx.hlp "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/target_info.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004Total elapsed time: 1.30 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/xilinx_interface.hlp "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/maxi.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.30 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/saxilite.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.31 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.31 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/dsp48.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.32 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006Total elapsed time: 1.32 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 1.33 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq_hp.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.34 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.019Total elapsed time: 1.37 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.39 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 1.40 sec.
+@I [HLS-100] Command "set_part xc7z020clg484-1 "
+@I [HLS-100] Command "add_library xilinx/zynq/zynq:xc7z020:clg484:-1 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.46 sec.
+@I [HLS-100] Command "license_isbetapart xc7z020 "
+@I [HLS-100] Command 'license_isbetapart' returned 1; elapsed 0.019Total elapsed time: 1.65 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.72 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.73 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed slow "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.73 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.037Total elapsed time: 1.82 sec.
+@I [HLS-100] Command "add_library xilinx/zynq/zynq_fpv6 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.86 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.009Total elapsed time: 1.92 sec.
+@I [HLS-10] Setting target device to 'xc7z020clg484-1'
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0.052Total elapsed time: 1.93 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.93 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.94 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed slow "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.94 sec.
+@I [HLS-100] Command 'open_solution' returned 0; elapsed 0.338Total elapsed time: 1.98 sec.
+@I [HLS-100] Command "export_design -format ip_catalog "
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.014Total elapsed time: 1.120 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.127 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.127 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.128 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.129 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.130 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 1.133 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.135 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.136 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 1.138 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 1.141 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 1.149 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.011Total elapsed time: 1.149 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009Total elapsed time: 1.158 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 1.165 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/dds_compiler.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 1.169 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.170 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.089Total elapsed time: 1.259 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.260 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.127Total elapsed time: 1.261 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.262 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.13Total elapsed time: 1.263 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.13Total elapsed time: 1.263 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 1.265 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 1.265 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 1.276 sec.
+@I [IMPL-8] Exporting RTL as an IP in IP-XACT.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006Total elapsed time: 1.380 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009Total elapsed time: 1.453 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.454 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 1.455 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.456 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.457 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.457 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 1.460 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.463 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.464 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 1.466 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004Total elapsed time: 1.470 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 1.477 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.011Total elapsed time: 1.477 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 1.485 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 1.493 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/dds_compiler.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 1.497 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.497 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.082Total elapsed time: 1.580 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.581 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.119Total elapsed time: 1.581 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.583 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.122Total elapsed time: 1.583 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.122Total elapsed time: 1.583 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 1.585 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 1.585 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009Total elapsed time: 1.601 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 1.614 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_svm_classifier_entry3.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 1.634 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_Block_proc.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005Total elapsed time: 1.639 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_getTanh.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009Total elapsed time: 1.648 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_Loop_Sum_loop_proc1.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006Total elapsed time: 1.655 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_Block_preheader_0_proc1.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 1.658 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 1.662 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.014Total elapsed time: 16.314 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 16.331 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_svm_classifier_entry3.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 16.341 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_Block_proc.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 16.344 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_getTanh.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 16.347 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_Loop_Sum_loop_proc1.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005Total elapsed time: 16.353 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_Block_preheader_0_proc1.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 16.356 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.compgen.tcl "
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005Total elapsed time: 16.371 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 16.390 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 16.403 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.02Total elapsed time: 16.424 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004Total elapsed time: 16.429 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.128Total elapsed time: 16.485 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 16.707 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 16.720 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_svm_classifier_entry3.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 16.729 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_Block_proc.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 16.733 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_getTanh.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 16.736 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_Loop_Sum_loop_proc1.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006Total elapsed time: 16.742 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_Block_preheader_0_proc1.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 16.745 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004Total elapsed time: 16.749 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.018Total elapsed time: 43.503 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.constraint.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.019Total elapsed time: 43.541 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.02Total elapsed time: 57.957 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 57.983 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 57.999 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.024Total elapsed time: 58.24 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 58.33 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.013Total elapsed time: 58.167 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004Total elapsed time: 58.224 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004Total elapsed time: 58.258 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004Total elapsed time: 58.280 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004Total elapsed time: 58.297 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005Total elapsed time: 58.302 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004Total elapsed time: 58.308 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 58.352 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004Total elapsed time: 58.361 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009Total elapsed time: 58.370 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 58.374 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 58.400 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 58.416 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 58.423 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 58.427 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 58.431 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 59.235 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009Total elapsed time: 59.247 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.constraint.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 59.301 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005Total elapsed time: 59.484 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006Total elapsed time: 59.671 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.constraint.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006Total elapsed time: 59.692 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.constraint.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 59.709 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 62.934 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005Total elapsed time: 62.936 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 62.938 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 62.942 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 62.943 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 62.952 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 62.956 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 62.957 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004Total elapsed time: 62.961 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006Total elapsed time: 62.968 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009Total elapsed time: 62.977 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 62.977 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 62.985 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 62.993 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/dds_compiler.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 62.996 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 62.997 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.077Total elapsed time: 63.74 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 63.75 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.121Total elapsed time: 63.75 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 63.76 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.125Total elapsed time: 63.77 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.125Total elapsed time: 63.77 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 63.79 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 63.79 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 80.25 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 80.44 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 80.44 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 80.45 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 80.46 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 80.46 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 80.49 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 80.52 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 80.52 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 80.54 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 80.58 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006Total elapsed time: 80.64 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 80.64 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 80.73 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 80.80 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/dds_compiler.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 80.84 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 80.84 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.077Total elapsed time: 80.162 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 80.164 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.114Total elapsed time: 80.164 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 80.165 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.116Total elapsed time: 80.166 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.116Total elapsed time: 80.166 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 80.168 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 80.168 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 80.179 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 80.277 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009Total elapsed time: 80.342 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 81.149 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005Total elapsed time: 81.151 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 81.153 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 81.157 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 81.158 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 81.166 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 81.172 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 81.174 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006Total elapsed time: 81.180 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004Total elapsed time: 81.185 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 81.194 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.014Total elapsed time: 81.194 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.011Total elapsed time: 81.205 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 81.213 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/dds_compiler.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 81.217 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 81.217 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.078Total elapsed time: 81.295 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 81.296 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.127Total elapsed time: 81.296 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 81.297 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.131Total elapsed time: 81.298 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.131Total elapsed time: 81.298 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 81.300 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 81.300 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009Total elapsed time: 81.315 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 81.328 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_svm_classifier_entry3.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006Total elapsed time: 81.348 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_Block_proc.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 81.358 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_getTanh.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004Total elapsed time: 81.363 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_Loop_Sum_loop_proc1.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009Total elapsed time: 81.372 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_Block_preheader_0_proc1.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004Total elapsed time: 81.377 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005Total elapsed time: 81.382 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.042Total elapsed time: 100.58 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.constraint.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009Total elapsed time: 100.87 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 100.956 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 100.959 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 100.962 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005Total elapsed time: 100.968 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 100.970 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.011Total elapsed time: 100.983 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 100.987 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 100.989 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004Total elapsed time: 100.994 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006Total elapsed time: 101.0 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.011Total elapsed time: 101.12 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.019Total elapsed time: 101.13 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 101.23 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009Total elapsed time: 101.32 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/dds_compiler.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004Total elapsed time: 101.37 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 101.37 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.078Total elapsed time: 101.115 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 101.117 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.132Total elapsed time: 101.117 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 101.118 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.135Total elapsed time: 101.119 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.135Total elapsed time: 101.119 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 101.120 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 101.121 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.012Total elapsed time: 101.251 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005Total elapsed time: 110.440 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 110.450 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 110.450 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 110.451 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 110.452 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 110.452 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004Total elapsed time: 110.457 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 110.459 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 110.460 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 110.462 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 110.466 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 110.473 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.011Total elapsed time: 110.473 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009Total elapsed time: 110.482 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 110.490 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/dds_compiler.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 110.493 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 110.494 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.078Total elapsed time: 110.572 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 110.573 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.115Total elapsed time: 110.573 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 110.575 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.117Total elapsed time: 110.575 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.118Total elapsed time: 110.575 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 110.577 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 110.577 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009Total elapsed time: 110.589 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006Total elapsed time: 110.703 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.017Total elapsed time: 110.779 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 111.354 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004Total elapsed time: 111.356 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 111.358 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 111.361 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 111.361 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005Total elapsed time: 111.367 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 111.370 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 111.370 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 111.372 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 111.376 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 111.383 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 111.383 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 111.391 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 111.399 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/dds_compiler.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 111.402 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 111.403 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.078Total elapsed time: 111.481 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 111.482 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.114Total elapsed time: 111.483 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 111.484 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.116Total elapsed time: 111.484 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.117Total elapsed time: 111.485 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 111.487 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 111.487 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009Total elapsed time: 111.502 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 111.515 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_svm_classifier_entry3.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 111.528 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_Block_proc.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 111.532 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_getTanh.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 111.535 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_Loop_Sum_loop_proc1.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006Total elapsed time: 111.541 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier_Block_preheader_0_proc1.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 111.544 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006Total elapsed time: 111.550 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.018Total elapsed time: 130.774 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/svm_classifier.constraint.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 130.804 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 131.979 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005Total elapsed time: 131.981 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 131.984 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 131.988 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 131.990 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.012Total elapsed time: 132.3 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 132.11 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 132.14 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007Total elapsed time: 132.22 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008Total elapsed time: 132.31 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009Total elapsed time: 132.41 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.018Total elapsed time: 132.41 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.011Total elapsed time: 132.52 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.009Total elapsed time: 132.62 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/dds_compiler.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003Total elapsed time: 132.66 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 132.67 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.076Total elapsed time: 132.143 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 132.144 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.137Total elapsed time: 132.145 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 132.146 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.14Total elapsed time: 132.146 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.142Total elapsed time: 132.147 sec.
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source C:/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001Total elapsed time: 132.148 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002Total elapsed time: 132.149 sec.
+@I [HLS-100] Command "source H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.012Total elapsed time: 132.254 sec.
+@I [HLS-100] Command 'export_design' returned 0; elapsed 139.142Total elapsed time: 140.240 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 139.514Total elapsed time: 140.240 sec.
+@I [HLS-100] Command "cleanup_all "
+@I [HLS-100] Command 'cleanup_all' returned 0; elapsed 0Total elapsed time: 140.241 sec.

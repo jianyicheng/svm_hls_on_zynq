@@ -1,0 +1,109 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="svm_classifier" label="">
+<pragma name="DATAFLOW"/>
+</directive>
+<directive functionLabel="" functionName="svm_classifier" label="">
+<pragma name="ARRAY_RESHAPE">
+<option name="variable" positionalBoolean="4" value="in"/>
+<option name="cyclic" positionalBoolean="type" value=""/>
+<option name="factor" value="16"/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="svm_classifier" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="SVs"/>
+<option name="cyclic" positionalBoolean="type" value=""/>
+<option name="factor" value="18"/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="svm_classifier" label="">
+<pragma name="ARRAY_RESHAPE">
+<option name="variable" positionalBoolean="4" value="SVs"/>
+<option name="cyclic" positionalBoolean="type" value=""/>
+<option name="factor" value="16"/>
+<option name="dim" value="2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="svm_classifier" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="alpha"/>
+<option name="cyclic" positionalBoolean="type" value=""/>
+<option name="factor" value="18"/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="svm_classifier" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="out"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="svm_classifier" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="svm_classifier" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="in"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="svm_classifier" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="ch_sums"/>
+<option name="cyclic" positionalBoolean="type" value=""/>
+<option name="factor" value="18"/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="svm_classifier" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="svm_classifier" label="">
+<pragma name="UNROLL">
+<option name="factor" value="18"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="svm_classifier" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="temp"/>
+<option name="core" value="Mul_LUT"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="svm_classifier" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="svm_classifier" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="getKernel" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="dotProduct" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="dotProduct" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="pro_temp_13"/>
+<option name="core" value="Mul_LUT"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="dotProduct" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="pro_temp_14"/>
+<option name="core" value="Mul_LUT"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="dotProduct" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="pro_temp_15"/>
+<option name="core" value="Mul_LUT"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

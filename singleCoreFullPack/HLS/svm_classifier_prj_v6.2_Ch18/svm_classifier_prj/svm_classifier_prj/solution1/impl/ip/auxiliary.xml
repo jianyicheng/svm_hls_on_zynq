@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="svm_classifier" xd:componentRef="svm_classifier" xd:initiationInterval="91" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="in[0]" xd:originalName="in0" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataPack="true" xd:bitMapping="15:0" xd:arraySize="1" xd:dataWidth="16"/>
+  <xd:arg xd:name="in[1]" xd:originalName="in1" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataPack="true" xd:bitMapping="31:16" xd:arraySize="1" xd:dataWidth="16"/>
+  <xd:arg xd:name="in[2]" xd:originalName="in2" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataPack="true" xd:bitMapping="47:32" xd:arraySize="1" xd:dataWidth="16"/>
+  <xd:arg xd:name="in[3]" xd:originalName="in3" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataPack="true" xd:bitMapping="63:48" xd:arraySize="1" xd:dataWidth="16"/>
+  <xd:arg xd:name="in[4]" xd:originalName="in4" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataPack="true" xd:bitMapping="79:64" xd:arraySize="1" xd:dataWidth="16"/>
+  <xd:arg xd:name="in[5]" xd:originalName="in5" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataPack="true" xd:bitMapping="95:80" xd:arraySize="1" xd:dataWidth="16"/>
+  <xd:arg xd:name="in[6]" xd:originalName="in6" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataPack="true" xd:bitMapping="111:96" xd:arraySize="1" xd:dataWidth="16"/>
+  <xd:arg xd:name="in[7]" xd:originalName="in7" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataPack="true" xd:bitMapping="127:112" xd:arraySize="1" xd:dataWidth="16"/>
+  <xd:arg xd:name="in[8]" xd:originalName="in8" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataPack="true" xd:bitMapping="143:128" xd:arraySize="1" xd:dataWidth="16"/>
+  <xd:arg xd:name="in[9]" xd:originalName="in9" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataPack="true" xd:bitMapping="159:144" xd:arraySize="1" xd:dataWidth="16"/>
+  <xd:arg xd:name="in[10]" xd:originalName="in10" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataPack="true" xd:bitMapping="175:160" xd:arraySize="1" xd:dataWidth="16"/>
+  <xd:arg xd:name="in[11]" xd:originalName="in11" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataPack="true" xd:bitMapping="191:176" xd:arraySize="1" xd:dataWidth="16"/>
+  <xd:arg xd:name="in[12]" xd:originalName="in12" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataPack="true" xd:bitMapping="207:192" xd:arraySize="1" xd:dataWidth="16"/>
+  <xd:arg xd:name="in[13]" xd:originalName="in13" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataPack="true" xd:bitMapping="223:208" xd:arraySize="1" xd:dataWidth="16"/>
+  <xd:arg xd:name="in[14]" xd:originalName="in14" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataPack="true" xd:bitMapping="239:224" xd:arraySize="1" xd:dataWidth="16"/>
+  <xd:arg xd:name="in[15]" xd:originalName="in15" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataPack="true" xd:bitMapping="255:240" xd:arraySize="1" xd:dataWidth="16"/>
+  <xd:arg xd:name="*(out)" xd:originalName="out" xd:direction="out" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x34" xd:statusOffset="0x38" xd:handshakeRef="ap_vld" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="90" xd:worst-case="90" xd:average-case="90"/>
+  <xd:resourceEstimates xd:LUT="49511" xd:FF="25568" xd:BRAM="126" xd:DSP="216"/>
+</xd:acceleratorMap>

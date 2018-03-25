@@ -1,0 +1,22 @@
+#ifndef _GETTANH_H_
+#define _GETTANH_H_
+
+#include "svm_data_type.h"
+
+#define K_RECIPROCAL	1.207497067763f
+#define ITER_NUM	6u
+#define BOUND		5.0
+
+static const data19_7t sinh_lut[6] = {0.0, 1.175048828, 3.626708984, 10.01782227, 27.28979492, 74.203125};
+static const data19_7t cosh_lut[6] = {1.0, 1.54296875, 3.761962891, 10.06762695, 27.30810547, 74.2097168};
+static const int iter[ITER_NUM] = {1, 2, 3, 4, 4, 5};
+
+static const data_t pow_lut[] = {
+		0.549306, 0.255413, 0.125657, 0.0625816, 0.0312602, 0.0156263, 0.00781266,
+		0.00390627, 0.00195313, 0.000976563, 0.000488281, 0.000244141, 0.00012207, 6.10352e-05
+	};
+
+void cordic_sinh_cosh(data19_7t theta_in, data_t *sinh, data_t *cosh);
+void getTanh(data19_7t theta, data_t *output);
+
+#endif

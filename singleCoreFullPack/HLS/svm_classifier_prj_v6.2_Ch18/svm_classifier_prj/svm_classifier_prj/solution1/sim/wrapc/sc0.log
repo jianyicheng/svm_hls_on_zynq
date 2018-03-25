@@ -1,0 +1,6 @@
+   Build using "C:/Xilinx/Vivado_HLS/2016.2/msys/bin/g++.exe"
+   Compiling apatb_svm_classifier.cpp
+   Compiling classifier_test.cpp_pre.cpp.tb.cpp
+   Compiling getTanh.cpp_pre.cpp.tb.cpp
+   Compiling svm_classifier.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

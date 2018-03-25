@@ -1,0 +1,226 @@
+
+
+================================================================
+== Vivado HLS Report for 'svm_classifier_Block_preheader_0_proc1'
+================================================================
+* Date:           Sun Mar 11 20:17:47 2018
+
+* Version:        2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)
+* Project:        svm_classifier_prj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      7.16|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    1|    1|    1|    1|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 2
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+* FSM state operations: 
+
+ <State 1>: 7.16ns
+ST_1: p_read_16 [1/1] 0.00ns
+newFuncRoot:0  %p_read_16 = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %p_read17)
+
+ST_1: p_read_17 [1/1] 0.00ns
+newFuncRoot:1  %p_read_17 = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %p_read16)
+
+ST_1: p_read_18 [1/1] 0.00ns
+newFuncRoot:2  %p_read_18 = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %p_read15)
+
+ST_1: p_read_19 [1/1] 0.00ns
+newFuncRoot:3  %p_read_19 = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %p_read14)
+
+ST_1: p_read_20 [1/1] 0.00ns
+newFuncRoot:4  %p_read_20 = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %p_read13)
+
+ST_1: p_read_21 [1/1] 0.00ns
+newFuncRoot:5  %p_read_21 = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %p_read12)
+
+ST_1: p_read_22 [1/1] 0.00ns
+newFuncRoot:6  %p_read_22 = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %p_read11)
+
+ST_1: p_read_23 [1/1] 0.00ns
+newFuncRoot:7  %p_read_23 = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %p_read10)
+
+ST_1: p_read_24 [1/1] 0.00ns
+newFuncRoot:8  %p_read_24 = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %p_read9)
+
+ST_1: p_read_25 [1/1] 0.00ns
+newFuncRoot:9  %p_read_25 = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %p_read8)
+
+ST_1: p_read725 [1/1] 0.00ns
+newFuncRoot:10  %p_read725 = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %p_read7)
+
+ST_1: p_read624 [1/1] 0.00ns
+newFuncRoot:11  %p_read624 = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %p_read6)
+
+ST_1: p_read523 [1/1] 0.00ns
+newFuncRoot:12  %p_read523 = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %p_read5)
+
+ST_1: p_read422 [1/1] 0.00ns
+newFuncRoot:13  %p_read422 = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %p_read4)
+
+ST_1: p_read321 [1/1] 0.00ns
+newFuncRoot:14  %p_read321 = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %p_read3)
+
+ST_1: p_read220 [1/1] 0.00ns
+newFuncRoot:15  %p_read220 = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %p_read2)
+
+ST_1: p_read119 [1/1] 0.00ns
+newFuncRoot:16  %p_read119 = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %p_read1)
+
+ST_1: p_read18 [1/1] 0.00ns
+newFuncRoot:17  %p_read18 = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %p_read)
+
+ST_1: tmp19 [1/1] 1.79ns
+newFuncRoot:18  %tmp19 = add i18 %p_read18, %p_read119
+
+ST_1: tmp20 [1/1] 2.08ns
+newFuncRoot:19  %tmp20 = add i18 %p_read220, %p_read321
+
+ST_1: tmp18 [1/1] 1.79ns
+newFuncRoot:20  %tmp18 = add i18 %tmp20, %tmp19
+
+ST_1: tmp22 [1/1] 1.79ns
+newFuncRoot:21  %tmp22 = add i18 %p_read422, %p_read523
+
+ST_1: tmp24 [1/1] 1.79ns
+newFuncRoot:22  %tmp24 = add i18 %p_read725, %p_read_25
+
+ST_1: tmp23 [1/1] 1.79ns
+newFuncRoot:23  %tmp23 = add i18 %tmp24, %p_read624
+
+ST_1: tmp21 [1/1] 1.79ns
+newFuncRoot:24  %tmp21 = add i18 %tmp23, %tmp22
+
+ST_1: tmp27 [1/1] 2.08ns
+newFuncRoot:26  %tmp27 = add i18 %p_read_24, %p_read_23
+
+ST_1: tmp28 [1/1] 2.08ns
+newFuncRoot:27  %tmp28 = add i18 %p_read_22, %p_read_21
+
+ST_1: tmp26 [1/1] 1.79ns
+newFuncRoot:28  %tmp26 = add i18 %tmp28, %tmp27
+
+ST_1: tmp30 [1/1] 1.79ns
+newFuncRoot:29  %tmp30 = add i18 %p_read_20, %p_read_19
+
+ST_1: tmp32 [1/1] 1.79ns
+newFuncRoot:30  %tmp32 = add i18 %p_read_17, %p_read_16
+
+ST_1: tmp31 [1/1] 1.79ns
+newFuncRoot:31  %tmp31 = add i18 %tmp32, %p_read_18
+
+ST_1: tmp29 [1/1] 1.79ns
+newFuncRoot:32  %tmp29 = add i18 %tmp31, %tmp30
+
+ST_1: tmp25 [1/1] 1.79ns
+newFuncRoot:33  %tmp25 = add i18 %tmp29, %tmp26
+
+
+ <State 2>: 5.66ns
+ST_2: tmp [1/1] 1.79ns
+newFuncRoot:25  %tmp = add i18 %tmp21, %tmp18
+
+ST_2: p_Val2_80_s [1/1] 1.79ns
+newFuncRoot:34  %p_Val2_80_s = add i18 %tmp25, %tmp
+
+ST_2: tmp_15 [1/1] 0.00ns
+newFuncRoot:35  %tmp_15 = sext i18 %p_Val2_80_s to i19
+
+ST_2: r_V [1/1] 2.08ns
+newFuncRoot:36  %r_V = add i19 %tmp_15, 59224
+
+ST_2: tmp_422 [1/1] 0.00ns
+newFuncRoot:37  %tmp_422 = call i1 @_ssdm_op_BitSelect.i1.i19.i32(i19 %r_V, i32 18)
+
+ST_2: stg_41 [1/1] 0.00ns
+newFuncRoot:38  call void @_ssdm_op_Write.ap_auto.i1P(i1* %out_r, i1 %tmp_422)
+
+ST_2: stg_42 [1/1] 0.00ns
+newFuncRoot:39  ret void
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ No timing violations. 
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

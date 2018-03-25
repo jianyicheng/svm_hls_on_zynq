@@ -1,0 +1,1415 @@
+21:09:30 **** Build of project test_dataflow_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_8/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/svm_classifier_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/svm_classifier_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_8/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/svm_classifier_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/svm_classifier_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling svm_classifier"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling xadcps"
+'Finished building libraries'
+21:10:11 **** Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_dataflow_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building file: ../src/sw_tanh_classifier.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sw_tanh_classifier.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../test_dataflow_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sw_tanh_classifier.d" -MT"src/sw_tanh_classifier.o" -o "src/sw_tanh_classifier.o" "../src/sw_tanh_classifier.cpp"
+In file included from ../src/sw_tanh_classifier.cpp:8:0:
+../src/svm_data_type.h:10:22: fatal error: ap_fixed.h: No such file or directory
+ #include <ap_fixed.h>
+                      ^
+compilation terminated.
+make: *** [src/sw_tanh_classifier.o] Error 1
+21:10:46 **** Clean-only build of configuration Debug for project test_dataflow ****
+make clean 
+rm -rf  ./src/main.d  ./src/main.o ./src/sw_tanh_classifier.o  ./src/sw_tanh_classifier.d  test_dataflow.elf.size  test_dataflow.elf
+ 
+21:10:46 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building file: ../src/sw_tanh_classifier.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/sw_tanh_classifier.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/sw_tanh_classifier.d" -MT"src/sw_tanh_classifier.o" -o "src/sw_tanh_classifier.o" "../src/sw_tanh_classifier.cpp"
+../src/sw_tanh_classifier.cpp: In function 'void sw_tanh_classifier(data_t*, bool*)':
+../src/sw_tanh_classifier.cpp:17:6: warning: label 'Loop_1050' defined but not used [-Wunused-label]
+      Loop_1050: for (int i = 0; i < SV_SET_NUM; i++)
+      ^
+../src/sw_tanh_classifier.cpp:20:7: warning: label 'Loop_16' defined but not used [-Wunused-label]
+       Loop_16: for (int j = 0; j < DIMENSION; j++)
+       ^
+Finished building: ../src/sw_tanh_classifier.cpp
+ 
+Building target: test_dataflow.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_dataflow_bsp/ps7_cortexa9_0/lib -o "test_dataflow.elf"  ./src/main.o ./src/sw_tanh_classifier.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: test_dataflow.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size test_dataflow.elf  |tee "test_dataflow.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 561320	  74232	  32072	 667624	  a2fe8	test_dataflow.elf
+Finished building: test_dataflow.elf.size
+ 
+21:10:54 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:57:0:
+c:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\lib\gcc\arm-none-eabi\4.9.2\include\arm_neon.h:31:2: error: #error You must enable NEON instructions (e.g. -mfloat-abi=softfp -mfpu=neon) to use arm_neon.h
+ #error You must enable NEON instructions (e.g. -mfloat-abi=softfp -mfpu=neon) to use arm_neon.h
+  ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:149:50: error: 'XSvm_classifier_In_1_v' was not declared in this scope
+       XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                  ^
+../src/main.cc:149:74: error: expected primary-expression before ')' token
+       XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                          ^
+../src/main.cc:149:75: error: expected ')' before 'classifier_buffer'
+       XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                           ^
+../src/main.cc:151:50: error: 'XSvm_classifier_In_2_v' was not declared in this scope
+       XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                  ^
+../src/main.cc:151:74: error: expected primary-expression before ')' token
+       XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                          ^
+../src/main.cc:151:75: error: expected ')' before 'classifier_buffer'
+       XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                           ^
+../src/main.cc:152:57: error: 'XSvm_classifier_Set_input_sw' was not declared in this scope
+       XSvm_classifier_Set_input_sw(&classifier, input_sw);
+                                                         ^
+../src/main.cc:166:77: error: expected primary-expression before ')' token
+          XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                             ^
+../src/main.cc:166:78: error: expected ')' before 'classifier_buffer'
+          XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                              ^
+../src/main.cc:173:77: error: expected primary-expression before ')' token
+          XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                             ^
+../src/main.cc:173:78: error: expected ')' before 'classifier_buffer'
+          XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                              ^
+../src/main.cc:191:54: error: 'XSvm_classifier_In_1_v' was not declared in this scope
+           XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                      ^
+../src/main.cc:191:78: error: expected primary-expression before ')' token
+           XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                              ^
+../src/main.cc:191:79: error: expected ')' before 'classifier_buffer'
+           XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                               ^
+../src/main.cc:193:54: error: 'XSvm_classifier_In_2_v' was not declared in this scope
+           XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                      ^
+../src/main.cc:193:78: error: expected primary-expression before ')' token
+           XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                              ^
+../src/main.cc:193:79: error: expected ')' before 'classifier_buffer'
+           XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                               ^
+../src/main.cc:194:61: error: 'XSvm_classifier_Set_input_sw' was not declared in this scope
+           XSvm_classifier_Set_input_sw(&classifier, input_sw);
+                                                             ^
+../src/main.cc:209:75: error: expected primary-expression before ')' token
+        XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                           ^
+../src/main.cc:209:76: error: expected ')' before 'classifier_buffer'
+        XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                            ^
+../src/main.cc:217:75: error: expected primary-expression before ')' token
+        XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                           ^
+../src/main.cc:217:76: error: expected ')' before 'classifier_buffer'
+        XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                            ^
+../src/main.cc:277:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:277:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:281:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:281:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+make: *** [src/main.o] Error 1
+21:11:22 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:57:0:
+c:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\lib\gcc\arm-none-eabi\4.9.2\include\arm_neon.h:31:2: error: #error You must enable NEON instructions (e.g. -mfloat-abi=softfp -mfpu=neon) to use arm_neon.h
+ #error You must enable NEON instructions (e.g. -mfloat-abi=softfp -mfpu=neon) to use arm_neon.h
+  ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:149:50: error: 'XSvm_classifier_In_1_v' was not declared in this scope
+       XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                  ^
+../src/main.cc:149:74: error: expected primary-expression before ')' token
+       XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                          ^
+../src/main.cc:149:75: error: expected ')' before 'classifier_buffer'
+       XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                           ^
+../src/main.cc:151:50: error: 'XSvm_classifier_In_2_v' was not declared in this scope
+       XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                  ^
+../src/main.cc:151:74: error: expected primary-expression before ')' token
+       XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                          ^
+../src/main.cc:151:75: error: expected ')' before 'classifier_buffer'
+       XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                           ^
+../src/main.cc:152:57: error: 'XSvm_classifier_Set_input_sw' was not declared in this scope
+       XSvm_classifier_Set_input_sw(&classifier, input_sw);
+                                                         ^
+../src/main.cc:166:77: error: expected primary-expression before ')' token
+          XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                             ^
+../src/main.cc:166:78: error: expected ')' before 'classifier_buffer'
+          XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                              ^
+../src/main.cc:173:77: error: expected primary-expression before ')' token
+          XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                             ^
+../src/main.cc:173:78: error: expected ')' before 'classifier_buffer'
+          XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                              ^
+../src/main.cc:191:54: error: 'XSvm_classifier_In_1_v' was not declared in this scope
+           XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                      ^
+../src/main.cc:191:78: error: expected primary-expression before ')' token
+           XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                              ^
+../src/main.cc:191:79: error: expected ')' before 'classifier_buffer'
+           XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                               ^
+../src/main.cc:193:54: error: 'XSvm_classifier_In_2_v' was not declared in this scope
+           XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                      ^
+../src/main.cc:193:78: error: expected primary-expression before ')' token
+           XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                              ^
+../src/main.cc:193:79: error: expected ')' before 'classifier_buffer'
+           XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                               ^
+../src/main.cc:194:61: error: 'XSvm_classifier_Set_input_sw' was not declared in this scope
+           XSvm_classifier_Set_input_sw(&classifier, input_sw);
+                                                             ^
+../src/main.cc:209:75: error: expected primary-expression before ')' token
+        XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                           ^
+../src/main.cc:209:76: error: expected ')' before 'classifier_buffer'
+        XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                            ^
+../src/main.cc:217:75: error: expected primary-expression before ')' token
+        XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                           ^
+../src/main.cc:217:76: error: expected ')' before 'classifier_buffer'
+        XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                            ^
+../src/main.cc:277:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:277:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:281:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:281:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+make: *** [src/main.o] Error 1
+21:11:29 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:57:0:
+c:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\lib\gcc\arm-none-eabi\4.9.2\include\arm_neon.h:31:2: error: #error You must enable NEON instructions (e.g. -mfloat-abi=softfp -mfpu=neon) to use arm_neon.h
+ #error You must enable NEON instructions (e.g. -mfloat-abi=softfp -mfpu=neon) to use arm_neon.h
+  ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:191:54: error: 'XSvm_classifier_In_1_v' was not declared in this scope
+           XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                      ^
+../src/main.cc:191:78: error: expected primary-expression before ')' token
+           XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                              ^
+../src/main.cc:191:79: error: expected ')' before 'classifier_buffer'
+           XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                               ^
+../src/main.cc:193:54: error: 'XSvm_classifier_In_2_v' was not declared in this scope
+           XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                      ^
+../src/main.cc:193:78: error: expected primary-expression before ')' token
+           XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                              ^
+../src/main.cc:193:79: error: expected ')' before 'classifier_buffer'
+           XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                               ^
+../src/main.cc:194:61: error: 'XSvm_classifier_Set_input_sw' was not declared in this scope
+           XSvm_classifier_Set_input_sw(&classifier, input_sw);
+                                                             ^
+../src/main.cc:209:75: error: expected primary-expression before ')' token
+        XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                           ^
+../src/main.cc:209:76: error: expected ')' before 'classifier_buffer'
+        XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                            ^
+../src/main.cc:217:75: error: expected primary-expression before ')' token
+        XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                           ^
+../src/main.cc:217:76: error: expected ')' before 'classifier_buffer'
+        XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                            ^
+../src/main.cc:277:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:277:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:281:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:281:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+make: *** [src/main.o] Error 1
+21:11:39 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:57:0:
+c:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\lib\gcc\arm-none-eabi\4.9.2\include\arm_neon.h:31:2: error: #error You must enable NEON instructions (e.g. -mfloat-abi=softfp -mfpu=neon) to use arm_neon.h
+ #error You must enable NEON instructions (e.g. -mfloat-abi=softfp -mfpu=neon) to use arm_neon.h
+  ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:191:52: error: 'XSvm_classifier_In_1_v' was not declared in this scope
+           XSvm_classifier_Set_in_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                    ^
+../src/main.cc:191:76: error: expected primary-expression before ')' token
+           XSvm_classifier_Set_in_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                            ^
+../src/main.cc:191:77: error: expected ')' before 'classifier_buffer'
+           XSvm_classifier_Set_in_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                             ^
+../src/main.cc:193:54: error: 'XSvm_classifier_In_2_v' was not declared in this scope
+           XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                      ^
+../src/main.cc:193:78: error: expected primary-expression before ')' token
+           XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                              ^
+../src/main.cc:193:79: error: expected ')' before 'classifier_buffer'
+           XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                               ^
+../src/main.cc:194:61: error: 'XSvm_classifier_Set_input_sw' was not declared in this scope
+           XSvm_classifier_Set_input_sw(&classifier, input_sw);
+                                                             ^
+../src/main.cc:209:75: error: expected primary-expression before ')' token
+        XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                           ^
+../src/main.cc:209:76: error: expected ')' before 'classifier_buffer'
+        XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                            ^
+../src/main.cc:217:75: error: expected primary-expression before ')' token
+        XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                           ^
+../src/main.cc:217:76: error: expected ')' before 'classifier_buffer'
+        XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                            ^
+../src/main.cc:277:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:277:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:281:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:281:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+make: *** [src/main.o] Error 1
+21:11:51 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:57:0:
+c:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\lib\gcc\arm-none-eabi\4.9.2\include\arm_neon.h:31:2: error: #error You must enable NEON instructions (e.g. -mfloat-abi=softfp -mfpu=neon) to use arm_neon.h
+ #error You must enable NEON instructions (e.g. -mfloat-abi=softfp -mfpu=neon) to use arm_neon.h
+  ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:193:54: error: 'XSvm_classifier_In_2_v' was not declared in this scope
+           XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                      ^
+../src/main.cc:193:78: error: expected primary-expression before ')' token
+           XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                              ^
+../src/main.cc:193:79: error: expected ')' before 'classifier_buffer'
+           XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                               ^
+../src/main.cc:194:61: error: 'XSvm_classifier_Set_input_sw' was not declared in this scope
+           XSvm_classifier_Set_input_sw(&classifier, input_sw);
+                                                             ^
+../src/main.cc:209:51: error: 'XSvm_classifier_In_1_v' was not declared in this scope
+        XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                   ^
+../src/main.cc:209:75: error: expected primary-expression before ')' token
+        XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                           ^
+../src/main.cc:209:76: error: expected ')' before 'classifier_buffer'
+        XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                            ^
+../src/main.cc:217:75: error: expected primary-expression before ')' token
+        XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                           ^
+../src/main.cc:217:76: error: expected ')' before 'classifier_buffer'
+        XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                            ^
+../src/main.cc:277:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:277:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:281:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:281:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+make: *** [src/main.o] Error 1
+21:12:18 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:57:0:
+c:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\lib\gcc\arm-none-eabi\4.9.2\include\arm_neon.h:31:2: error: #error You must enable NEON instructions (e.g. -mfloat-abi=softfp -mfpu=neon) to use arm_neon.h
+ #error You must enable NEON instructions (e.g. -mfloat-abi=softfp -mfpu=neon) to use arm_neon.h
+  ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:205:58: error: 'XSvm_classifier_Set_input_sw' was not declared in this scope
+        XSvm_classifier_Set_input_sw(&classifier, input_sw);
+                                                          ^
+../src/main.cc:207:51: error: 'XSvm_classifier_In_1_v' was not declared in this scope
+        XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                   ^
+../src/main.cc:207:75: error: expected primary-expression before ')' token
+        XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                           ^
+../src/main.cc:207:76: error: expected ')' before 'classifier_buffer'
+        XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                            ^
+../src/main.cc:213:58: error: 'XSvm_classifier_Set_input_sw' was not declared in this scope
+        XSvm_classifier_Set_input_sw(&classifier, input_sw);
+                                                          ^
+../src/main.cc:215:51: error: 'XSvm_classifier_In_2_v' was not declared in this scope
+        XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                   ^
+../src/main.cc:215:75: error: expected primary-expression before ')' token
+        XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                           ^
+../src/main.cc:215:76: error: expected ')' before 'classifier_buffer'
+        XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                            ^
+../src/main.cc:275:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:275:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:279:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:279:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+make: *** [src/main.o] Error 1
+21:13:17 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:57:0:
+c:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\lib\gcc\arm-none-eabi\4.9.2\include\arm_neon.h:31:2: error: #error You must enable NEON instructions (e.g. -mfloat-abi=softfp -mfpu=neon) to use arm_neon.h
+ #error You must enable NEON instructions (e.g. -mfloat-abi=softfp -mfpu=neon) to use arm_neon.h
+  ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:260:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:260:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:264:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:264:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+make: *** [src/main.o] Error 1
+21:13:30 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:260:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:260:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:264:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:264:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: test_dataflow.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_dataflow_bsp/ps7_cortexa9_0/lib -o "test_dataflow.elf"  ./src/main.o ./src/sw_tanh_classifier.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: test_dataflow.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size test_dataflow.elf  |tee "test_dataflow.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+1443440	  83832	 104112	1631384	 18e498	test_dataflow.elf
+Finished building: test_dataflow.elf.size
+ 
+21:13:43 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:260:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:260:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:264:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:264:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: test_dataflow.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_dataflow_bsp/ps7_cortexa9_0/lib -o "test_dataflow.elf"  ./src/main.o ./src/sw_tanh_classifier.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: test_dataflow.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size test_dataflow.elf  |tee "test_dataflow.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+1443440	  83832	 104112	1631384	 18e498	test_dataflow.elf
+Finished building: test_dataflow.elf.size
+ 
+21:14:02 **** Incremental Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+21:17:13 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:149:50: error: 'XSvm_classifier_In_1_v' was not declared in this scope
+       XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                  ^
+../src/main.cc:149:74: error: expected primary-expression before ')' token
+       XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                          ^
+../src/main.cc:149:75: error: expected ')' before 'classifier_buffer'
+       XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                           ^
+../src/main.cc:151:50: error: 'XSvm_classifier_In_2_v' was not declared in this scope
+       XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                  ^
+../src/main.cc:151:74: error: expected primary-expression before ')' token
+       XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                          ^
+../src/main.cc:151:75: error: expected ')' before 'classifier_buffer'
+       XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                           ^
+../src/main.cc:152:57: error: 'XSvm_classifier_Set_input_sw' was not declared in this scope
+       XSvm_classifier_Set_input_sw(&classifier, input_sw);
+                                                         ^
+../src/main.cc:166:77: error: expected primary-expression before ')' token
+          XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                             ^
+../src/main.cc:166:78: error: expected ')' before 'classifier_buffer'
+          XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                              ^
+../src/main.cc:173:77: error: expected primary-expression before ')' token
+          XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                             ^
+../src/main.cc:173:78: error: expected ')' before 'classifier_buffer'
+          XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                              ^
+../src/main.cc:260:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:260:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:264:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:264:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+make: *** [src/main.o] Error 1
+21:17:32 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:163:60: error: 'XSvm_classifier_Set_input_sw' was not declared in this scope
+          XSvm_classifier_Set_input_sw(&classifier, input_sw);
+                                                            ^
+../src/main.cc:165:53: error: 'XSvm_classifier_In_1_v' was not declared in this scope
+          XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                     ^
+../src/main.cc:165:77: error: expected primary-expression before ')' token
+          XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                             ^
+../src/main.cc:165:78: error: expected ')' before 'classifier_buffer'
+          XSvm_classifier_Set_in_1_V(&classifier, *((XSvm_classifier_In_1_v *)classifier_buffer));
+                                                                              ^
+../src/main.cc:170:60: error: 'XSvm_classifier_Set_input_sw' was not declared in this scope
+          XSvm_classifier_Set_input_sw(&classifier, input_sw);
+                                                            ^
+../src/main.cc:172:53: error: 'XSvm_classifier_In_2_v' was not declared in this scope
+          XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                     ^
+../src/main.cc:172:77: error: expected primary-expression before ')' token
+          XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                             ^
+../src/main.cc:172:78: error: expected ')' before 'classifier_buffer'
+          XSvm_classifier_Set_in_2_V(&classifier, *((XSvm_classifier_In_2_v *)classifier_buffer));
+                                                                              ^
+../src/main.cc:259:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:259:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:263:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:263:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+make: *** [src/main.o] Error 1
+21:18:44 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:246:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:246:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:250:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:250:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: test_dataflow.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_dataflow_bsp/ps7_cortexa9_0/lib -o "test_dataflow.elf"  ./src/main.o ./src/sw_tanh_classifier.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: test_dataflow.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size test_dataflow.elf  |tee "test_dataflow.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+1443440	  83832	 104112	1631384	 18e498	test_dataflow.elf
+Finished building: test_dataflow.elf.size
+ 
+21:18:58 **** Incremental Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+21:20:16 **** Incremental Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+21:21:17 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:247:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:247:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:251:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:251:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: test_dataflow.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_dataflow_bsp/ps7_cortexa9_0/lib -o "test_dataflow.elf"  ./src/main.o ./src/sw_tanh_classifier.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: test_dataflow.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size test_dataflow.elf  |tee "test_dataflow.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+1443440	  83832	 104112	1631384	 18e498	test_dataflow.elf
+Finished building: test_dataflow.elf.size
+ 
+21:21:32 **** Incremental Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+21:23:28 **** Incremental Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+21:25:55 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:246:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:246:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:250:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:250:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: test_dataflow.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_dataflow_bsp/ps7_cortexa9_0/lib -o "test_dataflow.elf"  ./src/main.o ./src/sw_tanh_classifier.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: test_dataflow.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size test_dataflow.elf  |tee "test_dataflow.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+1443440	  83824	 104112	1631376	 18e490	test_dataflow.elf
+Finished building: test_dataflow.elf.size
+ 
+21:26:08 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:241:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:241:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:245:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:245:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: test_dataflow.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_dataflow_bsp/ps7_cortexa9_0/lib -o "test_dataflow.elf"  ./src/main.o ./src/sw_tanh_classifier.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: test_dataflow.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size test_dataflow.elf  |tee "test_dataflow.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+1443440	  83824	 104112	1631376	 18e490	test_dataflow.elf
+Finished building: test_dataflow.elf.size
+ 
+21:26:23 **** Incremental Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+21:27:34 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:240:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:240:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:244:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:244:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: test_dataflow.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_dataflow_bsp/ps7_cortexa9_0/lib -o "test_dataflow.elf"  ./src/main.o ./src/sw_tanh_classifier.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: test_dataflow.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size test_dataflow.elf  |tee "test_dataflow.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+1443376	  83824	 104112	1631312	 18e450	test_dataflow.elf
+Finished building: test_dataflow.elf.size
+ 
+21:27:48 **** Incremental Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+21:29:13 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:240:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:240:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:244:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:244:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+Finished building: ../src/main.cc
+ 
+Building target: test_dataflow.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_dataflow_bsp/ps7_cortexa9_0/lib -o "test_dataflow.elf"  ./src/main.o ./src/sw_tanh_classifier.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: test_dataflow.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size test_dataflow.elf  |tee "test_dataflow.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+1443440	  83824	 104112	1631376	 18e490	test_dataflow.elf
+Finished building: test_dataflow.elf.size
+ 
+00:15:31 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:57:0:
+c:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\lib\gcc\arm-none-eabi\4.9.2\include\arm_neon.h:31:2: error: #error You must enable NEON instructions (e.g. -mfloat-abi=softfp -mfpu=neon) to use arm_neon.h
+ #error You must enable NEON instructions (e.g. -mfloat-abi=softfp -mfpu=neon) to use arm_neon.h
+  ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:240:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:240:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:244:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:244:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+make: *** [src/main.o] ´íÎó 1
+00:15:40 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from ../src/main.cc:57:0:
+c:\xilinx\sdk\2016.2\gnu\aarch32\nt\gcc-arm-none-eabi\lib\gcc\arm-none-eabi\4.9.2\include\arm_neon.h:31:2: error: #error You must enable NEON instructions (e.g. -mfloat-abi=softfp -mfpu=neon) to use arm_neon.h
+ #error You must enable NEON instructions (e.g. -mfloat-abi=softfp -mfpu=neon) to use arm_neon.h
+  ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:240:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:240:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:244:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:244:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+make: *** [src/main.o] ´íÎó 1
+00:19:15 **** Clean-only build of configuration Debug for project test_dataflow ****
+make clean 
+rm -rf  ./src/main.d  ./src/main.o ./src/sw_tanh_classifier.o  ./src/sw_tanh_classifier.d  test_dataflow.elf.size test_dataflow.elf.size  test_dataflow.elf
+' '
+00:19:16 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:240:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:240:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:244:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:244:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/sw_tanh_classifier.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/sw_tanh_classifier.o" -mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp -MMD -MP -MF"src/sw_tanh_classifier.d" -MT"src/sw_tanh_classifier.o" -o "src/sw_tanh_classifier.o" "../src/sw_tanh_classifier.cpp"
+../src/sw_tanh_classifier.cpp: In function 'void sw_tanh_classifier(data_t*, bool*)':
+../src/sw_tanh_classifier.cpp:17:6: warning: label 'Loop_1050' defined but not used [-Wunused-label]
+      Loop_1050: for (int i = 0; i < SV_SET_NUM; i++)
+      ^
+../src/sw_tanh_classifier.cpp:20:7: warning: label 'Loop_16' defined but not used [-Wunused-label]
+       Loop_16: for (int j = 0; j < DIMENSION; j++)
+       ^
+'Finished building: ../src/sw_tanh_classifier.cpp'
+' '
+'Building target: test_dataflow.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_dataflow_bsp/ps7_cortexa9_0/lib -o "test_dataflow.elf"  ./src/main.o ./src/sw_tanh_classifier.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ./src/main.o does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ./src/main.o
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ./src/sw_tanh_classifier.o does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ./src/sw_tanh_classifier.o
+collect2.exe: error: ld returned 1 exit status
+make: *** [test_dataflow.elf] ´íÎó 1
+00:19:34 **** Clean-only build of configuration Debug for project test_dataflow ****
+make clean 
+rm -rf  ./src/main.d  ./src/main.o ./src/sw_tanh_classifier.o  ./src/sw_tanh_classifier.d  test_dataflow.elf.size test_dataflow.elf.size  test_dataflow.elf
+' '
+00:19:34 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:240:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:240:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:244:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:244:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/sw_tanh_classifier.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/sw_tanh_classifier.o" -mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp -MMD -MP -MF"src/sw_tanh_classifier.d" -MT"src/sw_tanh_classifier.o" -o "src/sw_tanh_classifier.o" "../src/sw_tanh_classifier.cpp"
+../src/sw_tanh_classifier.cpp: In function 'void sw_tanh_classifier(data_t*, bool*)':
+../src/sw_tanh_classifier.cpp:17:6: warning: label 'Loop_1050' defined but not used [-Wunused-label]
+      Loop_1050: for (int i = 0; i < SV_SET_NUM; i++)
+      ^
+../src/sw_tanh_classifier.cpp:20:7: warning: label 'Loop_16' defined but not used [-Wunused-label]
+       Loop_16: for (int j = 0; j < DIMENSION; j++)
+       ^
+'Finished building: ../src/sw_tanh_classifier.cpp'
+' '
+'Building target: test_dataflow.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_dataflow_bsp/ps7_cortexa9_0/lib -o "test_dataflow.elf"  ./src/main.o ./src/sw_tanh_classifier.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ./src/main.o does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ./src/main.o
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ./src/sw_tanh_classifier.o does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ./src/sw_tanh_classifier.o
+collect2.exe: error: ld returned 1 exit status
+make: *** [test_dataflow.elf] ´íÎó 1
+00:19:55 **** Clean-only build of configuration Debug for project test_dataflow ****
+make clean 
+rm -rf  ./src/main.d  ./src/main.o ./src/sw_tanh_classifier.o  ./src/sw_tanh_classifier.d  test_dataflow.elf.size test_dataflow.elf.size  test_dataflow.elf
+' '
+00:19:56 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:240:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:240:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:244:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:244:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/sw_tanh_classifier.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/sw_tanh_classifier.o" -mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp -MMD -MP -MF"src/sw_tanh_classifier.d" -MT"src/sw_tanh_classifier.o" -o "src/sw_tanh_classifier.o" "../src/sw_tanh_classifier.cpp"
+../src/sw_tanh_classifier.cpp: In function 'void sw_tanh_classifier(data_t*, bool*)':
+../src/sw_tanh_classifier.cpp:17:6: warning: label 'Loop_1050' defined but not used [-Wunused-label]
+      Loop_1050: for (int i = 0; i < SV_SET_NUM; i++)
+      ^
+../src/sw_tanh_classifier.cpp:20:7: warning: label 'Loop_16' defined but not used [-Wunused-label]
+       Loop_16: for (int j = 0; j < DIMENSION; j++)
+       ^
+'Finished building: ../src/sw_tanh_classifier.cpp'
+' '
+'Building target: test_dataflow.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_dataflow_bsp/ps7_cortexa9_0/lib -o "test_dataflow.elf"  ./src/main.o ./src/sw_tanh_classifier.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ./src/main.o does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ./src/main.o
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ./src/sw_tanh_classifier.o does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ./src/sw_tanh_classifier.o
+collect2.exe: error: ld returned 1 exit status
+make: *** [test_dataflow.elf] ´íÎó 1
+00:20:41 **** Auto Build of project test_dataflow_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_8/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/svm_classifier_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/svm_classifier_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: ÕýÔÚ´´½¨ ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_8/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/svm_classifier_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/svm_classifier_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling svm_classifier"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles  -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling xadcps"
+'Finished building libraries'
+00:22:17 **** Auto Build of project test_dataflow_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_8/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/svm_classifier_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/svm_classifier_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_8/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v5_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/svm_classifier_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/svm_classifier_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling svm_classifier"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp"
+"Compiling xadcps"
+'Finished building libraries'
+00:23:56 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:240:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:240:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:244:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:244:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+'Finished building: ../src/main.cc'
+' '
+'Building target: test_dataflow.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_dataflow_bsp/ps7_cortexa9_0/lib -o "test_dataflow.elf"  ./src/main.o ./src/sw_tanh_classifier.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ./src/main.o does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ./src/main.o
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ./src/sw_tanh_classifier.o does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ./src/sw_tanh_classifier.o
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_intr.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_intr.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_selftest.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_selftest.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_sinit.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_sinit.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(print.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(print.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(vectors.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(vectors.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xil_assert.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xil_assert.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xil_io.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xil_io.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xtime_l.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xtime_l.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xsvm_classifier.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xsvm_classifier.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xsvm_classifier_sinit.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xsvm_classifier_sinit.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_g.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_g.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(outbyte.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(outbyte.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xsvm_classifier_g.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xsvm_classifier_g.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xuartps_hw.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xuartps_hw.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(_exit.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(_exit.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(_sbrk.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(_sbrk.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(close.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(close.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(errno.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(errno.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(fstat.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(fstat.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(getpid.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(getpid.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(isatty.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(isatty.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(kill.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(kill.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(lseek.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(lseek.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(read.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(read.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(write.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(write.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(inbyte.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(inbyte.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(_open.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(_open.o)
+collect2.exe: error: ld returned 1 exit status
+make: *** [test_dataflow.elf] ´íÎó 1
+00:24:10 **** Auto Build of configuration Debug for project test_dataflow ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -I../../test_dataflow_bsp/ps7_cortexa9_0/include -I"C:\Xilinx\Vivado_HLS\2016.2\include" -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=neon -ftree-vectorize -mvectorize-with-neon-quad -mfloat-abi=softfp -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:240:83: warning: unknown conversion type character '*' in format [-Wformat=]
+       printf("*** Results match: Error rate = %f %***\n\r", ((float)hw_error/20.0));
+                                                                                   ^
+../src/main.cc:240:83: warning: unknown conversion type character '*' in format [-Wformat=]
+../src/main.cc:244:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+       printf("!!! MISMATCH !!!\n\r Error rate = %f %\n\r", ((float)hw_error/20.0));
+                                                                                  ^
+../src/main.cc:244:82: warning: unknown conversion type character 0xa in format [-Wformat=]
+'Finished building: ../src/main.cc'
+' '
+'Building target: test_dataflow.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../test_dataflow_bsp/ps7_cortexa9_0/lib -o "test_dataflow.elf"  ./src/main.o ./src/sw_tanh_classifier.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ./src/main.o does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ./src/main.o
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ./src/sw_tanh_classifier.o does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ./src/sw_tanh_classifier.o
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_intr.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_intr.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_selftest.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_selftest.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_sinit.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_sinit.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(print.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(print.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(vectors.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(vectors.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xil_assert.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xil_assert.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xil_exception.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xil_io.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xil_io.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xtime_l.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xtime_l.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xsvm_classifier.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xsvm_classifier.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xsvm_classifier_sinit.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xsvm_classifier_sinit.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_g.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xscugic_g.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(outbyte.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(outbyte.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xsvm_classifier_g.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xsvm_classifier_g.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xuartps_hw.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(xuartps_hw.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(_exit.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(_exit.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(_sbrk.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(_sbrk.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(close.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(close.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(errno.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(errno.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(fstat.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(fstat.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(getpid.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(getpid.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(isatty.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(isatty.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(kill.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(kill.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(lseek.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(lseek.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(read.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(read.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(write.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(write.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(inbyte.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(inbyte.o)
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: error: test_dataflow.elf uses VFP register arguments, ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(_open.o) does not
+c:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/bin/ld.exe: failed to merge target specific data of file ../../test_dataflow_bsp/ps7_cortexa9_0/lib\libxil.a(_open.o)
+collect2.exe: error: ld returned 1 exit status
+make: *** [test_dataflow.elf] ´íÎó 1

@@ -1,0 +1,7 @@
+   Compiling ../../../../svm_classifier.cpp in debug mode
+   Generating csim.exe
+Comparing against reference data
+*******************************************
+PASS: The output matches the golden output!
+*******************************************
+INFO: [SIM 1] CSim done with 0 errors.

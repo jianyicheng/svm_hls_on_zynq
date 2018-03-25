@@ -1,0 +1,45 @@
+21:08:45 INFO  : Launching XSDB server: xsdb.bat -interactive H:\MATLAB\MATLAB_2\MATLAB\svm_vivado\project_5_dataflow\project_5_dataflow.sdk\temp_xsdb_launch_script.tcl
+21:08:47 INFO  : XSDB server has started successfully.
+21:08:48 INFO  : Processing command line option -hwspec H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/project_5_dataflow/project_5_dataflow.sdk/design_1_wrapper.hdf.
+21:13:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:13:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586476" && level==0} -index 1' command is executed.
+21:13:56 INFO  : FPGA configured successfully with bitstream "H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/project_5_dataflow/project_5_dataflow.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:14:11 INFO  : ps7_init is completed.
+21:14:11 INFO  : ps7_post_config is completed.
+21:14:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:19:00 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:20:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:20:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586476" && level==0} -index 1' command is executed.
+21:20:06 INFO  : FPGA configured successfully with bitstream "H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/project_5_dataflow/project_5_dataflow.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:20:19 INFO  : ps7_init is completed.
+21:20:19 INFO  : ps7_post_config is completed.
+21:20:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:21:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:21:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586476" && level==0} -index 1' command is executed.
+21:21:23 INFO  : FPGA configured successfully with bitstream "H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/project_5_dataflow/project_5_dataflow.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:21:33 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:21:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:23:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:23:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586476" && level==0} -index 1' command is executed.
+21:23:15 ERROR : could not find configuration request.
+21:23:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:23:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586476" && level==0} -index 1' command is executed.
+21:23:22 INFO  : FPGA configured successfully with bitstream "H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/project_5_dataflow/project_5_dataflow.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:23:31 INFO  : ps7_init is completed.
+21:23:31 INFO  : ps7_post_config is completed.
+21:23:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:26:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:26:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586476" && level==0} -index 1' command is executed.
+21:26:15 INFO  : FPGA configured successfully with bitstream "H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/project_5_dataflow/project_5_dataflow.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:26:24 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:26:27 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:27:49 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:27:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+23:28:19 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\jiany\Desktop\adsd_tst\latest_fullpack_11032018\latest_fullpack_11032018\project_5_dataflow\project_5_dataflow.sdk\temp_xsdb_launch_script.tcl
+23:28:23 INFO  : XSDB server has started successfully.
+23:28:23 INFO  : Processing command line option -hwspec C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow/project_5_dataflow.sdk/design_1_wrapper.hdf.
+23:32:03 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\jiany\Desktop\adsd_tst\latest_fullpack_11032018\latest_fullpack_11032018\project_5_dataflow\project_5_dataflow.sdk\temp_xsdb_launch_script.tcl
+23:32:06 INFO  : XSDB server has started successfully.
+23:32:07 INFO  : Processing command line option -hwspec C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow/project_5_dataflow.sdk/design_1_wrapper.hdf.
+23:32:07 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_1.
+00:20:41 INFO  : Refreshed build settings on project test_dataflow

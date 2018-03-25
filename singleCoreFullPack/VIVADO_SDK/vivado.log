@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Mar 11 23:27:35 2018
+# Process ID: 7664
+# Current directory: C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8488 C:\Users\jiany\Desktop\adsd_tst\latest_fullpack_11032018\latest_fullpack_11032018\project_5_dataflow\project_5_dataflow.xpr
+# Log file: C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow/vivado.log
+# Journal file: C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow/project_5_dataflow.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow'
+INFO: [Project 1-313] Project file moved from 'H:/MATLAB/MATLAB_2/MATLAB/svm_vivado/project_5_dataflow' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/impl', nor could it be found using path 'H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/impl'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/impl'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_svm_classifier_0_0
+
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:13 . Memory (MB): peak = 931.391 ; gain = 226.430
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow/project_5_dataflow.sdk -hwspec C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow/project_5_dataflow.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow/project_5_dataflow.sdk -hwspec C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow/project_5_dataflow.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow/project_5_dataflow.runs/impl_1/design_1_wrapper.sysdef C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow/project_5_dataflow.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow/project_5_dataflow.sdk -hwspec C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow/project_5_dataflow.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow/project_5_dataflow.sdk -hwspec C:/Users/jiany/Desktop/adsd_tst/latest_fullpack_11032018/latest_fullpack_11032018/project_5_dataflow/project_5_dataflow.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 12 00:24:36 2018...

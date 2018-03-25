@@ -1,0 +1,296 @@
+
+
+================================================================
+== Vivado HLS Report for 'svm_classifier'
+================================================================
+* Date:           Sun Mar 11 20:18:45 2018
+
+* Version:        2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)
+* Project:        svm_classifier_prj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.61|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |   90|   90|   87|   87| dataflow |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------------------------+----------------------------------------+-----+-----+-----+-----+---------+
+        |                                                   |                                        |  Latency  |  Interval | Pipeline|
+        |                      Instance                     |                 Module                 | min | max | min | max |   Type  |
+        +---------------------------------------------------+----------------------------------------+-----+-----+-----+-----+---------+
+        |stg_6_svm_classifier_svm_classifier_entry3_fu_249  |svm_classifier_svm_classifier_entry3    |    0|    0|    0|    0|   none  |
+        |tmp_svm_classifier_Block_proc_fu_244               |svm_classifier_Block_proc               |    0|    0|    0|    0|   none  |
+        |grp_svm_classifier_Loop_Sum_loop_proc1_fu_124      |svm_classifier_Loop_Sum_loop_proc1      |   86|   86|   86|   86|   none  |
+        |grp_svm_classifier_Block_preheader_0_proc1_fu_220  |svm_classifier_Block_preheader_0_proc1  |    1|    1|    1|    1|   none  |
+        +---------------------------------------------------+----------------------------------------+-----+-----+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|      2|
+|FIFO             |        0|      -|     175|   1208|
+|Instance         |      126|    216|   25358|  48233|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|     68|
+|Register         |        -|      -|      35|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |      126|    216|   25568|  49511|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |       45|     98|      24|     93|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------------------+----------------------------------------+---------+-------+-------+-------+
+    |                  Instance                 |                 Module                 | BRAM_18K| DSP48E|   FF  |  LUT  |
+    +-------------------------------------------+----------------------------------------+---------+-------+-------+-------+
+    |svm_classifier_AXILiteS_s_axi_U            |svm_classifier_AXILiteS_s_axi           |        0|      0|    305|    554|
+    |svm_classifier_Block_preheader_0_proc1_U0  |svm_classifier_Block_preheader_0_proc1  |        0|      0|     57|    201|
+    |svm_classifier_Block_proc_U0               |svm_classifier_Block_proc               |        0|      0|    210|    210|
+    |svm_classifier_Loop_Sum_loop_proc1_U0      |svm_classifier_Loop_Sum_loop_proc1      |      126|    216|  24784|  47266|
+    |svm_classifier_svm_classifier_entry3_U0    |svm_classifier_svm_classifier_entry3    |        0|      0|      2|      2|
+    +-------------------------------------------+----------------------------------------+---------+-------+-------+-------+
+    |Total                                      |                                        |      126|    216|  25358|  48233|
+    +-------------------------------------------+----------------------------------------+---------+-------+-------+-------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +------------------------------+---------+---+-----+------+-----+---------+
+    |             Name             | BRAM_18K| FF| LUT | Depth| Bits| Size:D*B|
+    +------------------------------+---------+---+-----+------+-----+---------+
+    |ch_sums_0_0_V_loc_channel_U   |        0|  5|   30|     2|   18|       36|
+    |ch_sums_1_0_V_loc_channel_U   |        0|  5|   30|     2|   18|       36|
+    |ch_sums_2_0_V_loc_channel_U   |        0|  5|   30|     2|   18|       36|
+    |ch_sums_3_0_V_loc_channel_U   |        0|  5|   30|     2|   18|       36|
+    |ch_sums_4_0_V_loc_channel_U   |        0|  5|   30|     2|   18|       36|
+    |ch_sums_5_0_V_loc_channel_U   |        0|  5|   30|     2|   18|       36|
+    |ch_sums_V_10_0_loc_channel_U  |        0|  5|   30|     2|   18|       36|
+    |ch_sums_V_11_0_loc_channel_U  |        0|  5|   30|     2|   18|       36|
+    |ch_sums_V_12_0_loc_channel_U  |        0|  5|   30|     2|   18|       36|
+    |ch_sums_V_13_0_loc_channel_U  |        0|  5|   30|     2|   18|       36|
+    |ch_sums_V_14_0_loc_channel_U  |        0|  5|   30|     2|   18|       36|
+    |ch_sums_V_15_0_loc_channel_U  |        0|  5|   30|     2|   18|       36|
+    |ch_sums_V_16_0_loc_channel_U  |        0|  5|   30|     2|   18|       36|
+    |ch_sums_V_17_0_loc_channel_U  |        0|  5|   30|     2|   18|       36|
+    |ch_sums_V_6_0_loc_channel_U   |        0|  5|   30|     2|   18|       36|
+    |ch_sums_V_7_0_loc_channel_U   |        0|  5|   30|     2|   18|       36|
+    |ch_sums_V_8_0_loc_channel_U   |        0|  5|   30|     2|   18|       36|
+    |ch_sums_V_9_0_loc_channel_U   |        0|  5|   30|     2|   18|       36|
+    |in_V_channel_U                |        0|  5|  268|     1|  256|      256|
+    |s_in_0_V_loc_channel_U        |        0|  5|   25|     2|   13|       26|
+    |s_in_10_V_loc_channel_U       |        0|  5|   25|     2|   13|       26|
+    |s_in_11_V_loc_channel_U       |        0|  5|   25|     2|   13|       26|
+    |s_in_12_V_loc_channel_U       |        0|  5|   25|     2|   13|       26|
+    |s_in_13_V_loc_channel_U       |        0|  5|   25|     2|   13|       26|
+    |s_in_14_V_loc_channel_U       |        0|  5|   25|     2|   13|       26|
+    |s_in_15_V_loc_channel_U       |        0|  5|   25|     2|   13|       26|
+    |s_in_1_V_loc_channel_U        |        0|  5|   25|     2|   13|       26|
+    |s_in_2_V_loc_channel_U        |        0|  5|   25|     2|   13|       26|
+    |s_in_3_V_loc_channel_U        |        0|  5|   25|     2|   13|       26|
+    |s_in_4_V_loc_channel_U        |        0|  5|   25|     2|   13|       26|
+    |s_in_5_V_loc_channel_U        |        0|  5|   25|     2|   13|       26|
+    |s_in_6_V_loc_channel_U        |        0|  5|   25|     2|   13|       26|
+    |s_in_7_V_loc_channel_U        |        0|  5|   25|     2|   13|       26|
+    |s_in_8_V_loc_channel_U        |        0|  5|   25|     2|   13|       26|
+    |s_in_9_V_loc_channel_U        |        0|  5|   25|     2|   13|       26|
+    +------------------------------+---------+---+-----+------+-----+---------+
+    |Total                         |        0|175| 1208|    69|  788|     1320|
+    +------------------------------+---------+---+-----+------+-----+---------+
+
+    * Expression: 
+    +----------------------------------------------------+----------+-------+---+----+------------+------------+
+    |                    Variable Name                   | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------------------------+----------+-------+---+----+------------+------------+
+    |svm_classifier_Block_preheader_0_proc1_U0_ap_start  |    and   |      0|  0|   1|           1|           1|
+    |svm_classifier_Loop_Sum_loop_proc1_U0_ap_start      |    and   |      0|  0|   1|           1|           1|
+    +----------------------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                               |          |      0|  0|   2|           2|           2|
+    +----------------------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |                                      Name                                     | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |ap_chn_write_svm_classifier_Block_proc_U0_s_in_0_V_loc_channel                 |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Block_proc_U0_s_in_10_V_loc_channel                |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Block_proc_U0_s_in_11_V_loc_channel                |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Block_proc_U0_s_in_12_V_loc_channel                |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Block_proc_U0_s_in_13_V_loc_channel                |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Block_proc_U0_s_in_14_V_loc_channel                |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Block_proc_U0_s_in_15_V_loc_channel                |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Block_proc_U0_s_in_1_V_loc_channel                 |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Block_proc_U0_s_in_2_V_loc_channel                 |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Block_proc_U0_s_in_3_V_loc_channel                 |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Block_proc_U0_s_in_4_V_loc_channel                 |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Block_proc_U0_s_in_5_V_loc_channel                 |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Block_proc_U0_s_in_6_V_loc_channel                 |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Block_proc_U0_s_in_7_V_loc_channel                 |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Block_proc_U0_s_in_8_V_loc_channel                 |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Block_proc_U0_s_in_9_V_loc_channel                 |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Loop_Sum_loop_proc1_U0_ch_sums_0_0_V_loc_channel   |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Loop_Sum_loop_proc1_U0_ch_sums_1_0_V_loc_channel   |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Loop_Sum_loop_proc1_U0_ch_sums_2_0_V_loc_channel   |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Loop_Sum_loop_proc1_U0_ch_sums_3_0_V_loc_channel   |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Loop_Sum_loop_proc1_U0_ch_sums_4_0_V_loc_channel   |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Loop_Sum_loop_proc1_U0_ch_sums_5_0_V_loc_channel   |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Loop_Sum_loop_proc1_U0_ch_sums_V_10_0_loc_channel  |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Loop_Sum_loop_proc1_U0_ch_sums_V_11_0_loc_channel  |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Loop_Sum_loop_proc1_U0_ch_sums_V_12_0_loc_channel  |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Loop_Sum_loop_proc1_U0_ch_sums_V_13_0_loc_channel  |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Loop_Sum_loop_proc1_U0_ch_sums_V_14_0_loc_channel  |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Loop_Sum_loop_proc1_U0_ch_sums_V_15_0_loc_channel  |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Loop_Sum_loop_proc1_U0_ch_sums_V_16_0_loc_channel  |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Loop_Sum_loop_proc1_U0_ch_sums_V_17_0_loc_channel  |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Loop_Sum_loop_proc1_U0_ch_sums_V_6_0_loc_channel   |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Loop_Sum_loop_proc1_U0_ch_sums_V_7_0_loc_channel   |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Loop_Sum_loop_proc1_U0_ch_sums_V_8_0_loc_channel   |   1|          2|    1|          2|
+    |ap_chn_write_svm_classifier_Loop_Sum_loop_proc1_U0_ch_sums_V_9_0_loc_channel   |   1|          2|    1|          2|
+    |ap_sig_ch_sums_0_0_V_loc_channel_full_n                                        |   1|          2|    1|          2|
+    |ap_sig_ch_sums_1_0_V_loc_channel_full_n                                        |   1|          2|    1|          2|
+    |ap_sig_ch_sums_2_0_V_loc_channel_full_n                                        |   1|          2|    1|          2|
+    |ap_sig_ch_sums_3_0_V_loc_channel_full_n                                        |   1|          2|    1|          2|
+    |ap_sig_ch_sums_4_0_V_loc_channel_full_n                                        |   1|          2|    1|          2|
+    |ap_sig_ch_sums_5_0_V_loc_channel_full_n                                        |   1|          2|    1|          2|
+    |ap_sig_ch_sums_V_10_0_loc_channel_full_n                                       |   1|          2|    1|          2|
+    |ap_sig_ch_sums_V_11_0_loc_channel_full_n                                       |   1|          2|    1|          2|
+    |ap_sig_ch_sums_V_12_0_loc_channel_full_n                                       |   1|          2|    1|          2|
+    |ap_sig_ch_sums_V_13_0_loc_channel_full_n                                       |   1|          2|    1|          2|
+    |ap_sig_ch_sums_V_14_0_loc_channel_full_n                                       |   1|          2|    1|          2|
+    |ap_sig_ch_sums_V_15_0_loc_channel_full_n                                       |   1|          2|    1|          2|
+    |ap_sig_ch_sums_V_16_0_loc_channel_full_n                                       |   1|          2|    1|          2|
+    |ap_sig_ch_sums_V_17_0_loc_channel_full_n                                       |   1|          2|    1|          2|
+    |ap_sig_ch_sums_V_6_0_loc_channel_full_n                                        |   1|          2|    1|          2|
+    |ap_sig_ch_sums_V_7_0_loc_channel_full_n                                        |   1|          2|    1|          2|
+    |ap_sig_ch_sums_V_8_0_loc_channel_full_n                                        |   1|          2|    1|          2|
+    |ap_sig_ch_sums_V_9_0_loc_channel_full_n                                        |   1|          2|    1|          2|
+    |ap_sig_s_in_0_V_loc_channel_full_n                                             |   1|          2|    1|          2|
+    |ap_sig_s_in_10_V_loc_channel_full_n                                            |   1|          2|    1|          2|
+    |ap_sig_s_in_11_V_loc_channel_full_n                                            |   1|          2|    1|          2|
+    |ap_sig_s_in_12_V_loc_channel_full_n                                            |   1|          2|    1|          2|
+    |ap_sig_s_in_13_V_loc_channel_full_n                                            |   1|          2|    1|          2|
+    |ap_sig_s_in_14_V_loc_channel_full_n                                            |   1|          2|    1|          2|
+    |ap_sig_s_in_15_V_loc_channel_full_n                                            |   1|          2|    1|          2|
+    |ap_sig_s_in_1_V_loc_channel_full_n                                             |   1|          2|    1|          2|
+    |ap_sig_s_in_2_V_loc_channel_full_n                                             |   1|          2|    1|          2|
+    |ap_sig_s_in_3_V_loc_channel_full_n                                             |   1|          2|    1|          2|
+    |ap_sig_s_in_4_V_loc_channel_full_n                                             |   1|          2|    1|          2|
+    |ap_sig_s_in_5_V_loc_channel_full_n                                             |   1|          2|    1|          2|
+    |ap_sig_s_in_6_V_loc_channel_full_n                                             |   1|          2|    1|          2|
+    |ap_sig_s_in_7_V_loc_channel_full_n                                             |   1|          2|    1|          2|
+    |ap_sig_s_in_8_V_loc_channel_full_n                                             |   1|          2|    1|          2|
+    |ap_sig_s_in_9_V_loc_channel_full_n                                             |   1|          2|    1|          2|
+    +-------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                                                          |  68|        136|   68|        136|
+    +-------------------------------------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------------+---+----+-----+-----------+
+    |                   Name                   | FF| LUT| Bits| Const Bits|
+    +------------------------------------------+---+----+-----+-----------+
+    |ap_reg_ch_sums_0_0_V_loc_channel_full_n   |  1|   0|    1|          0|
+    |ap_reg_ch_sums_1_0_V_loc_channel_full_n   |  1|   0|    1|          0|
+    |ap_reg_ch_sums_2_0_V_loc_channel_full_n   |  1|   0|    1|          0|
+    |ap_reg_ch_sums_3_0_V_loc_channel_full_n   |  1|   0|    1|          0|
+    |ap_reg_ch_sums_4_0_V_loc_channel_full_n   |  1|   0|    1|          0|
+    |ap_reg_ch_sums_5_0_V_loc_channel_full_n   |  1|   0|    1|          0|
+    |ap_reg_ch_sums_V_10_0_loc_channel_full_n  |  1|   0|    1|          0|
+    |ap_reg_ch_sums_V_11_0_loc_channel_full_n  |  1|   0|    1|          0|
+    |ap_reg_ch_sums_V_12_0_loc_channel_full_n  |  1|   0|    1|          0|
+    |ap_reg_ch_sums_V_13_0_loc_channel_full_n  |  1|   0|    1|          0|
+    |ap_reg_ch_sums_V_14_0_loc_channel_full_n  |  1|   0|    1|          0|
+    |ap_reg_ch_sums_V_15_0_loc_channel_full_n  |  1|   0|    1|          0|
+    |ap_reg_ch_sums_V_16_0_loc_channel_full_n  |  1|   0|    1|          0|
+    |ap_reg_ch_sums_V_17_0_loc_channel_full_n  |  1|   0|    1|          0|
+    |ap_reg_ch_sums_V_6_0_loc_channel_full_n   |  1|   0|    1|          0|
+    |ap_reg_ch_sums_V_7_0_loc_channel_full_n   |  1|   0|    1|          0|
+    |ap_reg_ch_sums_V_8_0_loc_channel_full_n   |  1|   0|    1|          0|
+    |ap_reg_ch_sums_V_9_0_loc_channel_full_n   |  1|   0|    1|          0|
+    |ap_reg_s_in_0_V_loc_channel_full_n        |  1|   0|    1|          0|
+    |ap_reg_s_in_10_V_loc_channel_full_n       |  1|   0|    1|          0|
+    |ap_reg_s_in_11_V_loc_channel_full_n       |  1|   0|    1|          0|
+    |ap_reg_s_in_12_V_loc_channel_full_n       |  1|   0|    1|          0|
+    |ap_reg_s_in_13_V_loc_channel_full_n       |  1|   0|    1|          0|
+    |ap_reg_s_in_14_V_loc_channel_full_n       |  1|   0|    1|          0|
+    |ap_reg_s_in_15_V_loc_channel_full_n       |  1|   0|    1|          0|
+    |ap_reg_s_in_1_V_loc_channel_full_n        |  1|   0|    1|          0|
+    |ap_reg_s_in_2_V_loc_channel_full_n        |  1|   0|    1|          0|
+    |ap_reg_s_in_3_V_loc_channel_full_n        |  1|   0|    1|          0|
+    |ap_reg_s_in_4_V_loc_channel_full_n        |  1|   0|    1|          0|
+    |ap_reg_s_in_5_V_loc_channel_full_n        |  1|   0|    1|          0|
+    |ap_reg_s_in_6_V_loc_channel_full_n        |  1|   0|    1|          0|
+    |ap_reg_s_in_7_V_loc_channel_full_n        |  1|   0|    1|          0|
+    |ap_reg_s_in_8_V_loc_channel_full_n        |  1|   0|    1|          0|
+    |ap_reg_s_in_9_V_loc_channel_full_n        |  1|   0|    1|          0|
+    |svm_classifier_Block_proc_U0_ap_start     |  1|   0|    1|          0|
+    +------------------------------------------+---+----+-----+-----------+
+    |Total                                     | 35|   0|   35|          0|
+    +------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+----------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |  Source Object |    C Type    |
++------------------------+-----+-----+------------+----------------+--------------+
+|s_axi_AXILiteS_AWVALID  |  in |    1|    s_axi   |    AXILiteS    |    pointer   |
+|s_axi_AXILiteS_AWREADY  | out |    1|    s_axi   |    AXILiteS    |    pointer   |
+|s_axi_AXILiteS_AWADDR   |  in |    6|    s_axi   |    AXILiteS    |    pointer   |
+|s_axi_AXILiteS_WVALID   |  in |    1|    s_axi   |    AXILiteS    |    pointer   |
+|s_axi_AXILiteS_WREADY   | out |    1|    s_axi   |    AXILiteS    |    pointer   |
+|s_axi_AXILiteS_WDATA    |  in |   32|    s_axi   |    AXILiteS    |    pointer   |
+|s_axi_AXILiteS_WSTRB    |  in |    4|    s_axi   |    AXILiteS    |    pointer   |
+|s_axi_AXILiteS_ARVALID  |  in |    1|    s_axi   |    AXILiteS    |    pointer   |
+|s_axi_AXILiteS_ARREADY  | out |    1|    s_axi   |    AXILiteS    |    pointer   |
+|s_axi_AXILiteS_ARADDR   |  in |    6|    s_axi   |    AXILiteS    |    pointer   |
+|s_axi_AXILiteS_RVALID   | out |    1|    s_axi   |    AXILiteS    |    pointer   |
+|s_axi_AXILiteS_RREADY   |  in |    1|    s_axi   |    AXILiteS    |    pointer   |
+|s_axi_AXILiteS_RDATA    | out |   32|    s_axi   |    AXILiteS    |    pointer   |
+|s_axi_AXILiteS_RRESP    | out |    2|    s_axi   |    AXILiteS    |    pointer   |
+|s_axi_AXILiteS_BVALID   | out |    1|    s_axi   |    AXILiteS    |    pointer   |
+|s_axi_AXILiteS_BREADY   |  in |    1|    s_axi   |    AXILiteS    |    pointer   |
+|s_axi_AXILiteS_BRESP    | out |    2|    s_axi   |    AXILiteS    |    pointer   |
+|ap_clk                  |  in |    1| ap_ctrl_hs | svm_classifier | return value |
+|ap_rst_n                |  in |    1| ap_ctrl_hs | svm_classifier | return value |
+|interrupt               | out |    1| ap_ctrl_hs | svm_classifier | return value |
++------------------------+-----+-----+------------+----------------+--------------+
+

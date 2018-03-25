@@ -1,0 +1,267 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'svm_classifier'" level="0">
+<item name = "Date">Thu Mar 22 11:46:24 2018
+</item>
+<item name = "Version">2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)</item>
+<item name = "Project">svm_classifier_cascade_prj</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.61, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">61, 120, 62, 121, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293">svm_classifier_svm_classifier_process, 58, 58, 58, 58, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 73</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">0, 216, 24938, 47145</column>
+<column name="Memory">252, -, 936, 222</column>
+<column name="Multiplexer">-, -, -, 4621</column>
+<column name="Register">-, -, 254, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">90, 98, 24, 97</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="svm_classifier_AXILiteS_s_axi_U">svm_classifier_AXILiteS_s_axi, 0, 0, 337, 618</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293">svm_classifier_svm_classifier_process, 0, 216, 24601, 46527</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="SVs_h_V_0_U">svm_classifier_SVs_h_V_0, 7, 0, 0, 30, 240, 1, 7200</column>
+<column name="SVs_h_V_1_U">svm_classifier_SVs_h_V_1, 7, 0, 0, 30, 240, 1, 7200</column>
+<column name="SVs_h_V_10_U">svm_classifier_SVs_h_V_10, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_h_V_11_U">svm_classifier_SVs_h_V_11, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_h_V_12_U">svm_classifier_SVs_h_V_12, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_h_V_13_U">svm_classifier_SVs_h_V_13, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_h_V_14_U">svm_classifier_SVs_h_V_14, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_h_V_15_U">svm_classifier_SVs_h_V_15, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_h_V_16_U">svm_classifier_SVs_h_V_16, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_h_V_17_U">svm_classifier_SVs_h_V_17, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_h_V_2_U">svm_classifier_SVs_h_V_2, 7, 0, 0, 30, 240, 1, 7200</column>
+<column name="SVs_h_V_3_U">svm_classifier_SVs_h_V_3, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_h_V_4_U">svm_classifier_SVs_h_V_4, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_h_V_5_U">svm_classifier_SVs_h_V_5, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_h_V_6_U">svm_classifier_SVs_h_V_6, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_h_V_7_U">svm_classifier_SVs_h_V_7, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_h_V_8_U">svm_classifier_SVs_h_V_8, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_h_V_9_U">svm_classifier_SVs_h_V_9, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_l_V_0_U">svm_classifier_SVs_l_V_0, 7, 0, 0, 30, 240, 1, 7200</column>
+<column name="SVs_l_V_1_U">svm_classifier_SVs_l_V_1, 7, 0, 0, 30, 240, 1, 7200</column>
+<column name="SVs_l_V_10_U">svm_classifier_SVs_l_V_10, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_l_V_11_U">svm_classifier_SVs_l_V_11, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_l_V_12_U">svm_classifier_SVs_l_V_12, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_l_V_13_U">svm_classifier_SVs_l_V_13, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_l_V_14_U">svm_classifier_SVs_l_V_14, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_l_V_15_U">svm_classifier_SVs_l_V_15, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_l_V_16_U">svm_classifier_SVs_l_V_16, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_l_V_17_U">svm_classifier_SVs_l_V_17, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_l_V_2_U">svm_classifier_SVs_l_V_2, 7, 0, 0, 30, 240, 1, 7200</column>
+<column name="SVs_l_V_3_U">svm_classifier_SVs_l_V_3, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_l_V_4_U">svm_classifier_SVs_l_V_4, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_l_V_5_U">svm_classifier_SVs_l_V_5, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_l_V_6_U">svm_classifier_SVs_l_V_6, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_l_V_7_U">svm_classifier_SVs_l_V_7, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_l_V_8_U">svm_classifier_SVs_l_V_8, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="SVs_l_V_9_U">svm_classifier_SVs_l_V_9, 7, 0, 0, 29, 240, 1, 6960</column>
+<column name="alpha_h_V_0_U">svm_classifier_alpha_h_V_0, 0, 26, 7, 30, 13, 1, 390</column>
+<column name="alpha_h_V_1_U">svm_classifier_alpha_h_V_1, 0, 26, 7, 30, 13, 1, 390</column>
+<column name="alpha_h_V_10_U">svm_classifier_alpha_h_V_10, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_h_V_11_U">svm_classifier_alpha_h_V_11, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_h_V_12_U">svm_classifier_alpha_h_V_12, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_h_V_13_U">svm_classifier_alpha_h_V_13, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_h_V_14_U">svm_classifier_alpha_h_V_14, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_h_V_15_U">svm_classifier_alpha_h_V_15, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_h_V_16_U">svm_classifier_alpha_h_V_16, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_h_V_17_U">svm_classifier_alpha_h_V_17, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_h_V_2_U">svm_classifier_alpha_h_V_2, 0, 26, 7, 30, 13, 1, 390</column>
+<column name="alpha_h_V_3_U">svm_classifier_alpha_h_V_3, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_h_V_4_U">svm_classifier_alpha_h_V_4, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_h_V_5_U">svm_classifier_alpha_h_V_5, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_h_V_6_U">svm_classifier_alpha_h_V_6, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_h_V_7_U">svm_classifier_alpha_h_V_7, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_h_V_8_U">svm_classifier_alpha_h_V_8, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_h_V_9_U">svm_classifier_alpha_h_V_9, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_l_V_0_U">svm_classifier_alpha_l_V_0, 0, 26, 7, 30, 13, 1, 390</column>
+<column name="alpha_l_V_1_U">svm_classifier_alpha_l_V_1, 0, 26, 7, 30, 13, 1, 390</column>
+<column name="alpha_l_V_10_U">svm_classifier_alpha_l_V_10, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_l_V_11_U">svm_classifier_alpha_l_V_11, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_l_V_12_U">svm_classifier_alpha_l_V_12, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_l_V_13_U">svm_classifier_alpha_l_V_13, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_l_V_14_U">svm_classifier_alpha_l_V_14, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_l_V_15_U">svm_classifier_alpha_l_V_15, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_l_V_16_U">svm_classifier_alpha_l_V_16, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_l_V_17_U">svm_classifier_alpha_l_V_17, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_l_V_2_U">svm_classifier_alpha_l_V_2, 0, 26, 7, 30, 13, 1, 390</column>
+<column name="alpha_l_V_3_U">svm_classifier_alpha_l_V_3, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_l_V_4_U">svm_classifier_alpha_l_V_4, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_l_V_5_U">svm_classifier_alpha_l_V_5, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_l_V_6_U">svm_classifier_alpha_l_V_6, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_l_V_7_U">svm_classifier_alpha_l_V_7, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_l_V_8_U">svm_classifier_alpha_l_V_8, 0, 26, 6, 29, 13, 1, 377</column>
+<column name="alpha_l_V_9_U">svm_classifier_alpha_l_V_9, 0, 26, 6, 29, 13, 1, 377</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="p_Val2_2_fu_640_p2">+, 0, 0, 19, 19, 19</column>
+<column name="r_V_1_fu_649_p2">+, 0, 0, 20, 20, 16</column>
+<column name="r_V_fu_604_p2">+, 0, 0, 19, 19, 16</column>
+<column name="or_cond_fu_622_p2">and, 0, 0, 1, 1, 1</column>
+<column name="tmp_16_fu_610_p2">icmp, 0, 0, 7, 19, 10</column>
+<column name="tmp_17_fu_616_p2">icmp, 0, 0, 7, 19, 16</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">1, 6, 1, 6</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_SV_in_0_V_q0">240, 3, 240, 720</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_SV_in_10_V_q0">240, 3, 240, 720</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_SV_in_11_V_q0">240, 3, 240, 720</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_SV_in_12_V_q0">240, 3, 240, 720</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_SV_in_13_V_q0">240, 3, 240, 720</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_SV_in_14_V_q0">240, 3, 240, 720</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_SV_in_15_V_q0">240, 3, 240, 720</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_SV_in_16_V_q0">240, 3, 240, 720</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_SV_in_17_V_q0">240, 3, 240, 720</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_SV_in_1_V_q0">240, 3, 240, 720</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_SV_in_2_V_q0">240, 3, 240, 720</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_SV_in_3_V_q0">240, 3, 240, 720</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_SV_in_4_V_q0">240, 3, 240, 720</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_SV_in_5_V_q0">240, 3, 240, 720</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_SV_in_6_V_q0">240, 3, 240, 720</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_SV_in_7_V_q0">240, 3, 240, 720</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_SV_in_8_V_q0">240, 3, 240, 720</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_SV_in_9_V_q0">240, 3, 240, 720</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_alpha_in_0_V_q0">13, 3, 13, 39</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_alpha_in_10_V_q0">13, 3, 13, 39</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_alpha_in_11_V_q0">13, 3, 13, 39</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_alpha_in_12_V_q0">13, 3, 13, 39</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_alpha_in_13_V_q0">13, 3, 13, 39</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_alpha_in_14_V_q0">13, 3, 13, 39</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_alpha_in_15_V_q0">13, 3, 13, 39</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_alpha_in_16_V_q0">13, 3, 13, 39</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_alpha_in_17_V_q0">13, 3, 13, 39</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_alpha_in_1_V_q0">13, 3, 13, 39</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_alpha_in_2_V_q0">13, 3, 13, 39</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_alpha_in_3_V_q0">13, 3, 13, 39</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_alpha_in_4_V_q0">13, 3, 13, 39</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_alpha_in_5_V_q0">13, 3, 13, 39</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_alpha_in_6_V_q0">13, 3, 13, 39</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_alpha_in_7_V_q0">13, 3, 13, 39</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_alpha_in_8_V_q0">13, 3, 13, 39</column>
+<column name="grp_svm_classifier_svm_classifier_process_fu_293_alpha_in_9_V_q0">13, 3, 13, 39</column>
+<column name="hp_count">32, 3, 32, 96</column>
+<column name="lp_count">32, 3, 32, 96</column>
+<column name="out2_phi_fu_287_p4">1, 2, 1, 2</column>
+<column name="out2_reg_284">1, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">5, 0, 5, 0</column>
+<column name="ap_reg_grp_svm_classifier_svm_classifier_process_fu_293_ap_start">1, 0, 1, 0</column>
+<column name="lp_res_V_reg_743">18, 0, 18, 0</column>
+<column name="or_cond_reg_753">1, 0, 1, 0</column>
+<column name="out2_reg_284">1, 0, 1, 0</column>
+<column name="out_reg_762">1, 0, 1, 0</column>
+<column name="s_in_0_V_reg_663">13, 0, 13, 0</column>
+<column name="s_in_10_V_reg_713">13, 0, 13, 0</column>
+<column name="s_in_11_V_reg_718">13, 0, 13, 0</column>
+<column name="s_in_12_V_reg_723">13, 0, 13, 0</column>
+<column name="s_in_13_V_reg_728">13, 0, 13, 0</column>
+<column name="s_in_14_V_reg_733">13, 0, 13, 0</column>
+<column name="s_in_15_V_reg_738">13, 0, 13, 0</column>
+<column name="s_in_1_V_reg_668">13, 0, 13, 0</column>
+<column name="s_in_2_V_reg_673">13, 0, 13, 0</column>
+<column name="s_in_3_V_reg_678">13, 0, 13, 0</column>
+<column name="s_in_4_V_reg_683">13, 0, 13, 0</column>
+<column name="s_in_5_V_reg_688">13, 0, 13, 0</column>
+<column name="s_in_6_V_reg_693">13, 0, 13, 0</column>
+<column name="s_in_7_V_reg_698">13, 0, 13, 0</column>
+<column name="s_in_8_V_reg_703">13, 0, 13, 0</column>
+<column name="s_in_9_V_reg_708">13, 0, 13, 0</column>
+<column name="tmp_15_reg_748">19, 0, 19, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_AXILiteS_AWVALID">in, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_AWREADY">out, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_AWADDR">in, 7, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_WVALID">in, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_WREADY">out, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_WDATA">in, 32, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_WSTRB">in, 4, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_ARVALID">in, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_ARREADY">out, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_ARADDR">in, 7, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_RVALID">out, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_RREADY">in, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_RDATA">out, 32, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_RRESP">out, 2, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_BVALID">out, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_BREADY">in, 1, s_axi, AXILiteS, pointer</column>
+<column name="s_axi_AXILiteS_BRESP">out, 2, s_axi, AXILiteS, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, svm_classifier, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, svm_classifier, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, svm_classifier, return value</column>
+<column name="hp_count">out, 32, ap_vld, hp_count, pointer</column>
+<column name="hp_count_ap_vld">out, 1, ap_vld, hp_count, pointer</column>
+</table>
+</item>
+</section>
+</profile>

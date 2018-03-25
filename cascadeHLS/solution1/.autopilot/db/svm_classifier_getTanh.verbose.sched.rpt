@@ -1,0 +1,708 @@
+
+
+================================================================
+== Vivado HLS Report for 'svm_classifier_getTanh'
+================================================================
+* Date:           Thu Mar 22 11:46:09 2018
+
+* Version:        2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)
+* Project:        svm_classifier_cascade_prj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.61|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |   21|   21|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 22
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 22
+* Pipeline: 1
+  Pipeline-0: II = 1, D = 22, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / true
+21 --> 
+	22  / true
+22 --> 
+* FSM state operations: 
+
+ <State 1>: 8.61ns
+ST_1: theta_in_V_read [1/1] 1.87ns
+ap_fixed_base.exit:1  %theta_in_V_read = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %theta_in_V)
+
+ST_1: neg [1/1] 0.00ns
+ap_fixed_base.exit:2  %neg = call i1 @_ssdm_op_BitSelect.i1.i16.i32(i16 %theta_in_V_read, i32 15)
+
+ST_1: p_Val2_s [1/1] 1.96ns
+ap_fixed_base.exit:3  %p_Val2_s = sub i16 0, %theta_in_V_read
+
+ST_1: p_Val2_s_54 [1/1] 1.37ns
+ap_fixed_base.exit:4  %p_Val2_s_54 = select i1 %neg, i16 %p_Val2_s, i16 %theta_in_V_read
+
+ST_1: tmp_s [1/1] 2.28ns
+ap_fixed_base.exit:5  %tmp_s = icmp slt i16 %p_Val2_s_54, 2560
+
+ST_1: ret_V [1/1] 0.00ns
+_ifconv:1  %ret_V = call i7 @_ssdm_op_PartSelect.i7.i16.i32.i32(i16 %p_Val2_s_54, i32 9, i32 15)
+
+ST_1: tmp_406 [1/1] 0.00ns (grouped into LUT with out node p_1)
+_ifconv:2  %tmp_406 = call i1 @_ssdm_op_BitSelect.i1.i16.i32(i16 %p_Val2_s_54, i32 15)
+
+ST_1: tmp_407 [1/1] 0.00ns
+_ifconv:3  %tmp_407 = trunc i16 %p_Val2_s_54 to i9
+
+ST_1: tmp_20 [1/1] 2.03ns
+_ifconv:4  %tmp_20 = icmp eq i9 %tmp_407, 0
+
+ST_1: ret_V_1 [1/1] 1.72ns
+_ifconv:5  %ret_V_1 = add i7 1, %ret_V
+
+ST_1: p_s [1/1] 0.00ns (grouped into LUT with out node p_1)
+_ifconv:6  %p_s = select i1 %tmp_20, i7 %ret_V, i7 %ret_V_1
+
+ST_1: p_1 [1/1] 1.37ns (out node of the LUT)
+_ifconv:7  %p_1 = select i1 %tmp_406, i7 %p_s, i7 %ret_V
+
+
+ <State 2>: 8.20ns
+ST_2: stg_35 [1/1] 1.57ns
+ap_fixed_base.exit:6  br i1 %tmp_s, label %_ifconv, label %ap_fixed_base.exit1
+
+ST_2: tmp_22 [1/1] 0.00ns
+_ifconv:8  %tmp_22 = call i16 @_ssdm_op_BitConcatenate.i16.i7.i9(i7 %p_1, i9 0)
+
+ST_2: theta_in_V_assign [1/1] 1.96ns
+_ifconv:9  %theta_in_V_assign = sub i16 %p_Val2_s_54, %tmp_22
+
+ST_2: tmp_408 [1/1] 0.00ns
+_ifconv:10  %tmp_408 = call i1 @_ssdm_op_BitSelect.i1.i16.i32(i16 %theta_in_V_assign, i32 15)
+
+ST_2: tmp_140 [1/1] 0.00ns (grouped into LUT with out node p_Val2_46)
+_ifconv:12  %tmp_140 = call i19 @_ssdm_op_BitConcatenate.i19.i16.i3(i16 %theta_in_V_assign, i3 0)
+
+ST_2: tmp_140_cast [1/1] 0.00ns (grouped into LUT with out node p_Val2_46)
+_ifconv:13  %tmp_140_cast = sext i19 %tmp_140 to i21
+
+ST_2: tmp_450_cast_cast [1/1] 0.00ns (grouped into LUT with out node p_Val2_46)
+_ifconv:14  %tmp_450_cast_cast = select i1 %tmp_408, i21 522039, i21 2249
+
+ST_2: p_Val2_46 [1/1] 2.08ns (out node of the LUT)
+_ifconv:15  %p_Val2_46 = sub i21 %tmp_140_cast, %tmp_450_cast_cast
+
+ST_2: tmp_409 [1/1] 0.00ns
+_ifconv:16  %tmp_409 = call i1 @_ssdm_op_BitSelect.i1.i21.i32(i21 %p_Val2_46, i32 18)
+
+ST_2: tmp_269 [1/1] 0.00ns (grouped into LUT with out node p_Val2_116_1)
+_ifconv:25  %tmp_269 = call i16 @_ssdm_op_PartSelect.i16.i21.i32.i32(i21 %p_Val2_46, i32 3, i32 18)
+
+ST_2: tmp_140_1 [1/1] 0.00ns (grouped into LUT with out node p_Val2_116_1)
+_ifconv:26  %tmp_140_1 = call i19 @_ssdm_op_BitConcatenate.i19.i16.i3(i16 %tmp_269, i3 0)
+
+ST_2: tmp_140_1_cast [1/1] 0.00ns (grouped into LUT with out node p_Val2_116_1)
+_ifconv:27  %tmp_140_1_cast = sext i19 %tmp_140_1 to i21
+
+ST_2: tmp_1418_1_cast_cast [1/1] 0.00ns (grouped into LUT with out node p_Val2_116_1)
+_ifconv:28  %tmp_1418_1_cast_cast = select i1 %tmp_409, i21 523242, i21 1046
+
+ST_2: p_Val2_116_1 [1/1] 2.08ns (out node of the LUT)
+_ifconv:29  %p_Val2_116_1 = sub i21 %tmp_140_1_cast, %tmp_1418_1_cast_cast
+
+ST_2: tmp_410 [1/1] 0.00ns
+_ifconv:30  %tmp_410 = call i1 @_ssdm_op_BitSelect.i1.i21.i32(i21 %p_Val2_116_1, i32 18)
+
+ST_2: tmp_277 [1/1] 0.00ns (grouped into LUT with out node p_Val2_116_2)
+_ifconv:47  %tmp_277 = call i16 @_ssdm_op_PartSelect.i16.i21.i32.i32(i21 %p_Val2_116_1, i32 3, i32 18)
+
+ST_2: tmp_140_2 [1/1] 0.00ns (grouped into LUT with out node p_Val2_116_2)
+_ifconv:48  %tmp_140_2 = call i19 @_ssdm_op_BitConcatenate.i19.i16.i3(i16 %tmp_277, i3 0)
+
+ST_2: tmp_140_2_cast [1/1] 0.00ns (grouped into LUT with out node p_Val2_116_2)
+_ifconv:49  %tmp_140_2_cast = sext i19 %tmp_140_2 to i21
+
+ST_2: tmp_1418_2_cast_cast [1/1] 0.00ns (grouped into LUT with out node p_Val2_116_2)
+_ifconv:50  %tmp_1418_2_cast_cast = select i1 %tmp_410, i21 523774, i21 514
+
+ST_2: p_Val2_116_2 [1/1] 2.08ns (out node of the LUT)
+_ifconv:51  %p_Val2_116_2 = sub i21 %tmp_140_2_cast, %tmp_1418_2_cast_cast
+
+ST_2: tmp_416 [1/1] 0.00ns
+_ifconv:52  %tmp_416 = call i1 @_ssdm_op_BitSelect.i1.i21.i32(i21 %p_Val2_116_2, i32 18)
+
+
+ <State 3>: 7.84ns
+ST_3: tmp_385 [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_1)
+_ifconv:11  %tmp_385 = select i1 %tmp_408, i13 -2473, i13 2472
+
+ST_3: OP2_V_18_1 [1/1] 0.00ns (grouped into LUT with out node p_Val2_111_1)
+_ifconv:17  %OP2_V_18_1 = select i1 %tmp_408, i11 -619, i11 618
+
+ST_3: mf_1 [1/1] 0.00ns (grouped into LUT with out node p_Val2_111_1)
+_ifconv:18  %mf_1 = select i1 %tmp_408, i11 618, i11 -618
+
+ST_3: tmp_127_1 [1/1] 0.00ns (grouped into LUT with out node p_Val2_111_1)
+_ifconv:19  %tmp_127_1 = select i1 %tmp_409, i11 %mf_1, i11 %OP2_V_18_1
+
+ST_3: tmp_127_1_cast [1/1] 0.00ns (grouped into LUT with out node p_Val2_111_1)
+_ifconv:20  %tmp_127_1_cast = sext i11 %tmp_127_1 to i13
+
+ST_3: p_Val2_111_1 [1/1] 1.96ns (out node of the LUT)
+_ifconv:21  %p_Val2_111_1 = add i13 -3247, %tmp_127_1_cast
+
+ST_3: tmp_1356_1_cast_cast [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_1)
+_ifconv:22  %tmp_1356_1_cast_cast = select i1 %tmp_409, i13 -1237, i13 1236
+
+ST_3: p_Val2_114_1 [1/1] 1.96ns (out node of the LUT)
+_ifconv:23  %p_Val2_114_1 = add i13 %tmp_385, %tmp_1356_1_cast_cast
+
+ST_3: p_Val2_114_1_cast_cast [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_2)
+_ifconv:24  %p_Val2_114_1_cast_cast = sext i13 %p_Val2_114_1 to i14
+
+ST_3: mf_2 [1/1] 1.96ns
+_ifconv:31  %mf_2 = sub i13 0, %p_Val2_114_1
+
+ST_3: tmp_411 [1/1] 0.00ns (grouped into LUT with out node p_Val2_111_2)
+_ifconv:32  %tmp_411 = call i10 @_ssdm_op_PartSelect.i10.i13.i32.i32(i13 %mf_2, i32 3, i32 12)
+
+ST_3: tmp_412 [1/1] 0.00ns (grouped into LUT with out node p_Val2_111_2)
+_ifconv:33  %tmp_412 = call i10 @_ssdm_op_PartSelect.i10.i13.i32.i32(i13 %p_Val2_114_1, i32 3, i32 12)
+
+ST_3: tmp_413 [1/1] 0.00ns (grouped into LUT with out node p_Val2_111_2)
+_ifconv:34  %tmp_413 = select i1 %tmp_410, i10 %tmp_411, i10 %tmp_412
+
+ST_3: tmp_1304_2_cast [1/1] 0.00ns (grouped into LUT with out node p_Val2_111_2)
+_ifconv:35  %tmp_1304_2_cast = sext i10 %tmp_413 to i13
+
+ST_3: p_Val2_111_2 [1/1] 1.96ns (out node of the LUT)
+_ifconv:36  %p_Val2_111_2 = add i13 %p_Val2_111_1, %tmp_1304_2_cast
+
+ST_3: OP2_V_19_2_cast [1/1] 0.00ns
+_ifconv:38  %OP2_V_19_2_cast = zext i13 %p_Val2_111_1 to i14
+
+ST_3: mf15_2 [1/1] 1.96ns
+_ifconv:39  %mf15_2 = sub i14 0, %OP2_V_19_2_cast
+
+ST_3: tmp_273 [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_2)
+_ifconv:40  %tmp_273 = call i10 @_ssdm_op_PartSelect.i10.i13.i32.i32(i13 %p_Val2_111_1, i32 3, i32 12)
+
+ST_3: tmp_274 [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_2)
+_ifconv:41  %tmp_274 = zext i10 %tmp_273 to i11
+
+ST_3: tmp_414 [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_2)
+_ifconv:42  %tmp_414 = call i11 @_ssdm_op_PartSelect.i11.i14.i32.i32(i14 %mf15_2, i32 3, i32 13)
+
+ST_3: tmp_415 [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_2)
+_ifconv:43  %tmp_415 = select i1 %tmp_410, i11 %tmp_414, i11 %tmp_274
+
+ST_3: tmp_1356_2_cast [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_2)
+_ifconv:44  %tmp_1356_2_cast = sext i11 %tmp_415 to i14
+
+ST_3: p_Val2_114_2 [1/1] 1.96ns (out node of the LUT)
+_ifconv:45  %p_Val2_114_2 = add i14 %p_Val2_114_1_cast_cast, %tmp_1356_2_cast
+
+ST_3: mf_3 [1/1] 1.96ns
+_ifconv:53  %mf_3 = sub i14 0, %p_Val2_114_2
+
+ST_3: OP2_V_19_3_cast_cast [1/1] 0.00ns
+_ifconv:59  %OP2_V_19_3_cast_cast = zext i13 %p_Val2_111_2 to i14
+
+ST_3: mf15_3 [1/1] 1.96ns
+_ifconv:60  %mf15_3 = sub i14 0, %OP2_V_19_3_cast_cast
+
+ST_3: tmp_286 [1/1] 0.00ns (grouped into LUT with out node p_Val2_116_3)
+_ifconv:68  %tmp_286 = call i16 @_ssdm_op_PartSelect.i16.i21.i32.i32(i21 %p_Val2_116_2, i32 3, i32 18)
+
+ST_3: tmp_140_3 [1/1] 0.00ns (grouped into LUT with out node p_Val2_116_3)
+_ifconv:69  %tmp_140_3 = call i19 @_ssdm_op_BitConcatenate.i19.i16.i3(i16 %tmp_286, i3 0)
+
+ST_3: tmp_140_3_cast [1/1] 0.00ns (grouped into LUT with out node p_Val2_116_3)
+_ifconv:70  %tmp_140_3_cast = sext i19 %tmp_140_3 to i21
+
+ST_3: tmp_1418_3_cast_cast [1/1] 0.00ns (grouped into LUT with out node p_Val2_116_3)
+_ifconv:71  %tmp_1418_3_cast_cast = select i1 %tmp_416, i21 524032, i21 256
+
+ST_3: p_Val2_116_3 [1/1] 2.08ns (out node of the LUT)
+_ifconv:72  %p_Val2_116_3 = sub i21 %tmp_140_3_cast, %tmp_1418_3_cast_cast
+
+ST_3: tmp_422 [1/1] 0.00ns
+_ifconv:73  %tmp_422 = call i1 @_ssdm_op_BitSelect.i1.i21.i32(i21 %p_Val2_116_3, i32 18)
+
+ST_3: tmp_295 [1/1] 0.00ns (grouped into LUT with out node p_Val2_116_4)
+_ifconv:86  %tmp_295 = call i16 @_ssdm_op_PartSelect.i16.i21.i32.i32(i21 %p_Val2_116_3, i32 3, i32 18)
+
+ST_3: tmp_140_4 [1/1] 0.00ns (grouped into LUT with out node p_Val2_116_4)
+_ifconv:87  %tmp_140_4 = call i19 @_ssdm_op_BitConcatenate.i19.i16.i3(i16 %tmp_295, i3 0)
+
+ST_3: tmp_140_4_cast [1/1] 0.00ns (grouped into LUT with out node p_Val2_116_4)
+_ifconv:88  %tmp_140_4_cast = sext i19 %tmp_140_4 to i21
+
+ST_3: tmp_1418_4_cast_cast [1/1] 0.00ns (grouped into LUT with out node p_Val2_116_4)
+_ifconv:89  %tmp_1418_4_cast_cast = select i1 %tmp_422, i21 524032, i21 256
+
+ST_3: p_Val2_116_4 [1/1] 2.08ns (out node of the LUT)
+_ifconv:90  %p_Val2_116_4 = sub i21 %tmp_140_4_cast, %tmp_1418_4_cast_cast
+
+ST_3: tmp_427 [1/1] 0.00ns
+_ifconv:91  %tmp_427 = call i1 @_ssdm_op_BitSelect.i1.i21.i32(i21 %p_Val2_116_4, i32 18)
+
+
+ <State 4>: 7.84ns
+ST_4: p_Val2_111_2_cast2 [1/1] 0.00ns (grouped into LUT with out node p_Val2_111_3)
+_ifconv:37  %p_Val2_111_2_cast2 = zext i13 %p_Val2_111_2 to i15
+
+ST_4: p_Val2_114_2_cast1 [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_3)
+_ifconv:46  %p_Val2_114_2_cast1 = sext i14 %p_Val2_114_2 to i15
+
+ST_4: tmp_417 [1/1] 0.00ns (grouped into LUT with out node p_Val2_111_3)
+_ifconv:54  %tmp_417 = call i10 @_ssdm_op_PartSelect.i10.i14.i32.i32(i14 %p_Val2_114_2, i32 4, i32 13)
+
+ST_4: tmp_418 [1/1] 0.00ns (grouped into LUT with out node p_Val2_111_3)
+_ifconv:55  %tmp_418 = call i10 @_ssdm_op_PartSelect.i10.i14.i32.i32(i14 %mf_3, i32 4, i32 13)
+
+ST_4: p_v [1/1] 0.00ns (grouped into LUT with out node p_Val2_111_3)
+_ifconv:56  %p_v = select i1 %tmp_416, i10 %tmp_418, i10 %tmp_417
+
+ST_4: tmp_1304_3_cast [1/1] 0.00ns (grouped into LUT with out node p_Val2_111_3)
+_ifconv:57  %tmp_1304_3_cast = sext i10 %p_v to i15
+
+ST_4: p_Val2_111_3 [1/1] 1.96ns (out node of the LUT)
+_ifconv:58  %p_Val2_111_3 = add i15 %p_Val2_111_2_cast2, %tmp_1304_3_cast
+
+ST_4: tmp_419 [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_3)
+_ifconv:61  %tmp_419 = call i9 @_ssdm_op_PartSelect.i9.i13.i32.i32(i13 %p_Val2_111_2, i32 4, i32 12)
+
+ST_4: tmp_283 [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_3)
+_ifconv:62  %tmp_283 = zext i9 %tmp_419 to i13
+
+ST_4: tmp_420 [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_3)
+_ifconv:63  %tmp_420 = call i10 @_ssdm_op_PartSelect.i10.i14.i32.i32(i14 %mf15_3, i32 4, i32 13)
+
+ST_4: tmp_284 [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_3)
+_ifconv:64  %tmp_284 = sext i10 %tmp_420 to i13
+
+ST_4: tmp_421 [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_3)
+_ifconv:65  %tmp_421 = select i1 %tmp_416, i13 %tmp_284, i13 %tmp_283
+
+ST_4: tmp_1356_3_cast [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_3)
+_ifconv:66  %tmp_1356_3_cast = sext i13 %tmp_421 to i15
+
+ST_4: p_Val2_114_3 [1/1] 1.96ns (out node of the LUT)
+_ifconv:67  %p_Val2_114_3 = add i15 %p_Val2_114_2_cast1, %tmp_1356_3_cast
+
+ST_4: mf_4 [1/1] 1.96ns
+_ifconv:74  %mf_4 = sub i15 0, %p_Val2_114_3
+
+ST_4: tmp_423 [1/1] 0.00ns (grouped into LUT with out node p_Val2_111_4)
+_ifconv:75  %tmp_423 = call i11 @_ssdm_op_PartSelect.i11.i15.i32.i32(i15 %p_Val2_114_3, i32 4, i32 14)
+
+ST_4: tmp_424 [1/1] 0.00ns (grouped into LUT with out node p_Val2_111_4)
+_ifconv:76  %tmp_424 = call i11 @_ssdm_op_PartSelect.i11.i15.i32.i32(i15 %mf_4, i32 4, i32 14)
+
+ST_4: p_v9 [1/1] 0.00ns (grouped into LUT with out node p_Val2_111_4)
+_ifconv:77  %p_v9 = select i1 %tmp_422, i11 %tmp_424, i11 %tmp_423
+
+ST_4: tmp_1304_4_cast [1/1] 0.00ns (grouped into LUT with out node p_Val2_111_4)
+_ifconv:78  %tmp_1304_4_cast = sext i11 %p_v9 to i15
+
+ST_4: p_Val2_111_4 [1/1] 1.96ns (out node of the LUT)
+_ifconv:79  %p_Val2_111_4 = add i15 %p_Val2_111_3, %tmp_1304_4_cast
+
+ST_4: mf15_4 [1/1] 1.96ns
+_ifconv:80  %mf15_4 = sub i15 0, %p_Val2_111_3
+
+ST_4: tmp_425 [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_4)
+_ifconv:81  %tmp_425 = call i11 @_ssdm_op_PartSelect.i11.i15.i32.i32(i15 %p_Val2_111_3, i32 4, i32 14)
+
+ST_4: tmp_426 [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_4)
+_ifconv:82  %tmp_426 = call i11 @_ssdm_op_PartSelect.i11.i15.i32.i32(i15 %mf15_4, i32 4, i32 14)
+
+ST_4: p_v1 [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_4)
+_ifconv:83  %p_v1 = select i1 %tmp_422, i11 %tmp_426, i11 %tmp_425
+
+ST_4: tmp_1356_4_cast [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_4)
+_ifconv:84  %tmp_1356_4_cast = sext i11 %p_v1 to i15
+
+ST_4: p_Val2_114_4 [1/1] 1.96ns (out node of the LUT)
+_ifconv:85  %p_Val2_114_4 = add i15 %p_Val2_114_3, %tmp_1356_4_cast
+
+ST_4: mf_5 [1/1] 1.96ns
+_ifconv:92  %mf_5 = sub i15 0, %p_Val2_114_4
+
+ST_4: mf15_5 [1/1] 1.96ns
+_ifconv:98  %mf15_5 = sub i15 0, %p_Val2_111_4
+
+ST_4: tmp_23 [1/1] 0.00ns
+_ifconv:104  %tmp_23 = sext i7 %p_1 to i64
+
+ST_4: sinh_lut_V_addr [1/1] 0.00ns
+_ifconv:106  %sinh_lut_V_addr = getelementptr [6 x i9]* @sinh_lut_V, i64 0, i64 %tmp_23
+
+ST_4: sinh_lut_V_load [2/2] 2.39ns
+_ifconv:107  %sinh_lut_V_load = load i9* %sinh_lut_V_addr, align 2
+
+ST_4: cosh_lut_V_addr [1/1] 0.00ns
+_ifconv:116  %cosh_lut_V_addr = getelementptr [6 x i9]* @cosh_lut_V, i64 0, i64 %tmp_23
+
+ST_4: cosh_lut_V_load [2/2] 2.39ns
+_ifconv:117  %cosh_lut_V_load = load i9* %cosh_lut_V_addr, align 2
+
+
+ <State 5>: 8.47ns
+ST_5: tmp_428 [1/1] 0.00ns (grouped into LUT with out node p_Val2_111_5)
+_ifconv:93  %tmp_428 = call i10 @_ssdm_op_PartSelect.i10.i15.i32.i32(i15 %p_Val2_114_4, i32 5, i32 14)
+
+ST_5: tmp_429 [1/1] 0.00ns (grouped into LUT with out node p_Val2_111_5)
+_ifconv:94  %tmp_429 = call i10 @_ssdm_op_PartSelect.i10.i15.i32.i32(i15 %mf_5, i32 5, i32 14)
+
+ST_5: p_v2 [1/1] 0.00ns (grouped into LUT with out node p_Val2_111_5)
+_ifconv:95  %p_v2 = select i1 %tmp_427, i10 %tmp_429, i10 %tmp_428
+
+ST_5: tmp_1304_5_cast [1/1] 0.00ns (grouped into LUT with out node p_Val2_111_5)
+_ifconv:96  %tmp_1304_5_cast = sext i10 %p_v2 to i15
+
+ST_5: p_Val2_111_5 [1/1] 1.96ns (out node of the LUT)
+_ifconv:97  %p_Val2_111_5 = add i15 %p_Val2_111_4, %tmp_1304_5_cast
+
+ST_5: tmp_430 [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_5)
+_ifconv:99  %tmp_430 = call i10 @_ssdm_op_PartSelect.i10.i15.i32.i32(i15 %p_Val2_111_4, i32 5, i32 14)
+
+ST_5: tmp_431 [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_5)
+_ifconv:100  %tmp_431 = call i10 @_ssdm_op_PartSelect.i10.i15.i32.i32(i15 %mf15_5, i32 5, i32 14)
+
+ST_5: p_v3 [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_5)
+_ifconv:101  %p_v3 = select i1 %tmp_427, i10 %tmp_431, i10 %tmp_430
+
+ST_5: tmp_1356_5_cast [1/1] 0.00ns (grouped into LUT with out node p_Val2_114_5)
+_ifconv:102  %tmp_1356_5_cast = sext i10 %p_v3 to i15
+
+ST_5: p_Val2_114_5 [1/1] 1.96ns (out node of the LUT)
+_ifconv:103  %p_Val2_114_5 = add i15 %p_Val2_114_4, %tmp_1356_5_cast
+
+ST_5: tmp_25 [1/1] 0.00ns
+_ifconv:105  %tmp_25 = call i10 @_ssdm_op_PartSelect.i10.i15.i32.i32(i15 %p_Val2_111_5, i32 4, i32 13)
+
+ST_5: sinh_lut_V_load [1/2] 2.39ns
+_ifconv:107  %sinh_lut_V_load = load i9* %sinh_lut_V_addr, align 2
+
+ST_5: OP1_V_cast [1/1] 0.00ns
+_ifconv:108  %OP1_V_cast = zext i9 %sinh_lut_V_load to i19
+
+ST_5: OP2_V_cast [1/1] 0.00ns
+_ifconv:109  %OP2_V_cast = sext i10 %tmp_25 to i19
+
+ST_5: p_Val2_3 [1/1] 6.08ns
+_ifconv:110  %p_Val2_3 = mul i19 %OP2_V_cast, %OP1_V_cast
+
+ST_5: sincos_V [1/1] 0.00ns
+_ifconv:111  %sincos_V = call i16 @_ssdm_op_PartSelect.i16.i19.i32.i32(i19 %p_Val2_3, i32 2, i32 17)
+
+ST_5: tmp_28 [1/1] 0.00ns
+_ifconv:112  %tmp_28 = call i10 @_ssdm_op_PartSelect.i10.i15.i32.i32(i15 %p_Val2_114_5, i32 4, i32 13)
+
+ST_5: OP2_V_1_cast [1/1] 0.00ns
+_ifconv:113  %OP2_V_1_cast = sext i10 %tmp_28 to i19
+
+ST_5: p_Val2_4 [1/1] 6.08ns
+_ifconv:114  %p_Val2_4 = mul i19 %OP2_V_1_cast, %OP1_V_cast
+
+ST_5: sinsin_V [1/1] 0.00ns
+_ifconv:115  %sinsin_V = call i16 @_ssdm_op_PartSelect.i16.i19.i32.i32(i19 %p_Val2_4, i32 2, i32 17)
+
+ST_5: cosh_lut_V_load [1/2] 2.39ns
+_ifconv:117  %cosh_lut_V_load = load i9* %cosh_lut_V_addr, align 2
+
+ST_5: OP1_V_1_cast [1/1] 0.00ns
+_ifconv:118  %OP1_V_1_cast = zext i9 %cosh_lut_V_load to i19
+
+ST_5: p_Val2_5 [1/1] 6.08ns
+_ifconv:119  %p_Val2_5 = mul i19 %OP2_V_1_cast, %OP1_V_1_cast
+
+ST_5: cossin_V [1/1] 0.00ns
+_ifconv:120  %cossin_V = call i16 @_ssdm_op_PartSelect.i16.i19.i32.i32(i19 %p_Val2_5, i32 2, i32 17)
+
+ST_5: p_Val2_6 [1/1] 6.08ns
+_ifconv:121  %p_Val2_6 = mul i19 %OP2_V_cast, %OP1_V_1_cast
+
+ST_5: coscos_V [1/1] 0.00ns
+_ifconv:122  %coscos_V = call i16 @_ssdm_op_PartSelect.i16.i19.i32.i32(i19 %p_Val2_6, i32 2, i32 17)
+
+ST_5: stg_153 [1/1] 0.00ns
+_ifconv:123  call void (...)* @_ssdm_op_SpecFUCore(i19 %p_Val2_6, [31 x i8]* @p_str12, [1 x i8]* @p_str, [8 x i8]* @p_str13, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: stg_154 [1/1] 0.00ns
+_ifconv:124  call void (...)* @_ssdm_op_SpecFUCore(i19 %p_Val2_5, [31 x i8]* @p_str10, [1 x i8]* @p_str, [8 x i8]* @p_str13, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: stg_155 [1/1] 0.00ns
+_ifconv:125  call void (...)* @_ssdm_op_SpecFUCore(i19 %p_Val2_4, [31 x i8]* @p_str8, [1 x i8]* @p_str, [8 x i8]* @p_str13, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_5: stg_156 [1/1] 0.00ns
+_ifconv:126  call void (...)* @_ssdm_op_SpecFUCore(i19 %p_Val2_3, [31 x i8]* @p_str6, [1 x i8]* @p_str, [8 x i8]* @p_str13, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+
+ <State 6>: 5.62ns
+ST_6: tmp_304 [1/1] 1.96ns
+_ifconv:127  %tmp_304 = add i16 %sincos_V, %cossin_V
+
+ST_6: tmp_305 [1/1] 1.96ns
+_ifconv:128  %tmp_305 = add i16 %sinsin_V, %coscos_V
+
+ST_6: cosh_out_V [1/1] 0.00ns
+_ifconv:129  %cosh_out_V = call i8 @_ssdm_op_PartSelect.i8.i16.i32.i32(i16 %tmp_305, i32 7, i32 14)
+
+ST_6: tmp_306 [1/1] 0.00ns
+_ifconv:130  %tmp_306 = call i8 @_ssdm_op_PartSelect.i8.i16.i32.i32(i16 %tmp_304, i32 7, i32 14)
+
+ST_6: tmp_39 [1/1] 0.00ns
+_ifconv:131  %tmp_39 = call i13 @_ssdm_op_BitConcatenate.i13.i8.i5(i8 %tmp_306, i5 0)
+
+ST_6: tmp_122_tr_cast [1/1] 0.00ns
+_ifconv:132  %tmp_122_tr_cast = sext i8 %cosh_out_V to i13
+
+ST_6: tmp_386 [17/17] 3.66ns
+_ifconv:133  %tmp_386 = sdiv i13 %tmp_39, %tmp_122_tr_cast
+
+
+ <State 7>: 3.66ns
+ST_7: tmp_386 [16/17] 3.66ns
+_ifconv:133  %tmp_386 = sdiv i13 %tmp_39, %tmp_122_tr_cast
+
+
+ <State 8>: 3.66ns
+ST_8: tmp_386 [15/17] 3.66ns
+_ifconv:133  %tmp_386 = sdiv i13 %tmp_39, %tmp_122_tr_cast
+
+
+ <State 9>: 3.66ns
+ST_9: tmp_386 [14/17] 3.66ns
+_ifconv:133  %tmp_386 = sdiv i13 %tmp_39, %tmp_122_tr_cast
+
+
+ <State 10>: 3.66ns
+ST_10: tmp_386 [13/17] 3.66ns
+_ifconv:133  %tmp_386 = sdiv i13 %tmp_39, %tmp_122_tr_cast
+
+
+ <State 11>: 3.66ns
+ST_11: tmp_386 [12/17] 3.66ns
+_ifconv:133  %tmp_386 = sdiv i13 %tmp_39, %tmp_122_tr_cast
+
+
+ <State 12>: 3.66ns
+ST_12: tmp_386 [11/17] 3.66ns
+_ifconv:133  %tmp_386 = sdiv i13 %tmp_39, %tmp_122_tr_cast
+
+
+ <State 13>: 3.66ns
+ST_13: tmp_386 [10/17] 3.66ns
+_ifconv:133  %tmp_386 = sdiv i13 %tmp_39, %tmp_122_tr_cast
+
+
+ <State 14>: 3.66ns
+ST_14: tmp_386 [9/17] 3.66ns
+_ifconv:133  %tmp_386 = sdiv i13 %tmp_39, %tmp_122_tr_cast
+
+
+ <State 15>: 3.66ns
+ST_15: tmp_386 [8/17] 3.66ns
+_ifconv:133  %tmp_386 = sdiv i13 %tmp_39, %tmp_122_tr_cast
+
+
+ <State 16>: 3.66ns
+ST_16: tmp_386 [7/17] 3.66ns
+_ifconv:133  %tmp_386 = sdiv i13 %tmp_39, %tmp_122_tr_cast
+
+
+ <State 17>: 3.66ns
+ST_17: tmp_386 [6/17] 3.66ns
+_ifconv:133  %tmp_386 = sdiv i13 %tmp_39, %tmp_122_tr_cast
+
+
+ <State 18>: 3.66ns
+ST_18: tmp_386 [5/17] 3.66ns
+_ifconv:133  %tmp_386 = sdiv i13 %tmp_39, %tmp_122_tr_cast
+
+
+ <State 19>: 3.66ns
+ST_19: tmp_386 [4/17] 3.66ns
+_ifconv:133  %tmp_386 = sdiv i13 %tmp_39, %tmp_122_tr_cast
+
+
+ <State 20>: 3.66ns
+ST_20: tmp_386 [3/17] 3.66ns
+_ifconv:133  %tmp_386 = sdiv i13 %tmp_39, %tmp_122_tr_cast
+
+
+ <State 21>: 3.66ns
+ST_21: tmp_386 [2/17] 3.66ns
+_ifconv:133  %tmp_386 = sdiv i13 %tmp_39, %tmp_122_tr_cast
+
+
+ <State 22>: 8.32ns
+ST_22: stg_179 [1/1] 0.00ns
+ap_fixed_base.exit:0  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str) nounwind
+
+ST_22: tmp [1/1] 0.00ns
+_ifconv:0  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str4)
+
+ST_22: tmp_386 [1/17] 3.66ns
+_ifconv:133  %tmp_386 = sdiv i13 %tmp_39, %tmp_122_tr_cast
+
+ST_22: pro_V [1/1] 0.00ns
+_ifconv:134  %pro_V = trunc i13 %tmp_386 to i8
+
+ST_22: empty [1/1] 0.00ns
+_ifconv:135  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str4, i32 %tmp)
+
+ST_22: stg_184 [1/1] 1.57ns
+_ifconv:136  br label %ap_fixed_base.exit1
+
+ST_22: p_Val2_11 [1/1] 0.00ns
+ap_fixed_base.exit1:0  %p_Val2_11 = phi i8 [ %pro_V, %_ifconv ], [ 32, %ap_fixed_base.exit ]
+
+ST_22: p_Val2_47 [1/1] 1.72ns
+ap_fixed_base.exit1:1  %p_Val2_47 = sub i8 0, %p_Val2_11
+
+ST_22: p_Val2_12 [1/1] 1.37ns
+ap_fixed_base.exit1:2  %p_Val2_12 = select i1 %neg, i8 %p_Val2_47, i8 %p_Val2_11
+
+ST_22: stg_188 [1/1] 0.00ns
+ap_fixed_base.exit1:3  ret i8 %p_Val2_12
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ No timing violations. 
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

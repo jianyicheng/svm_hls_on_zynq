@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# xsim v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Mar 11 20:24:54 2018
+# Process ID: 10340
+# Current directory: H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/svm_classifier/xsim_script.tcl}
+# Log file: H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/sim/verilog/xsim.log
+# Journal file: H:/MATLAB/MATLAB_2/MATLAB/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj_v6.2_Ch18/svm_classifier_prj/svm_classifier_prj/solution1/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/svm_classifier/xsim_script.tcl
+source svm_classifier.tcl

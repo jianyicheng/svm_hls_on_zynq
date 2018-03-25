@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="SV.h" path="H:\MATLAB\MATLAB_2\MATLAB\svm_classifier_prj_v6.2_Ch18\svm_classifier_prj_v6.2_Ch18\svm_classifier_prj\SV.h"/>
+    <originFiles name="alpha.h" path="H:\MATLAB\MATLAB_2\MATLAB\svm_classifier_prj_v6.2_Ch18\svm_classifier_prj_v6.2_Ch18\svm_classifier_prj\alpha.h"/>
+    <originFiles name="getTanh.cpp" path="H:\MATLAB\MATLAB_2\MATLAB\svm_classifier_prj_v6.2_Ch18\svm_classifier_prj_v6.2_Ch18\svm_classifier_prj\getTanh.cpp"/>
+    <originFiles name="getTanh.h" path="H:\MATLAB\MATLAB_2\MATLAB\svm_classifier_prj_v6.2_Ch18\svm_classifier_prj_v6.2_Ch18\svm_classifier_prj\getTanh.h"/>
+    <originFiles name="svm_classifier.cpp" path="H:\MATLAB\MATLAB_2\MATLAB\svm_classifier_prj_v6.2_Ch18\svm_classifier_prj_v6.2_Ch18\svm_classifier_prj\svm_classifier.cpp"/>
+    <originFiles name="svm_classifier.h" path="H:\MATLAB\MATLAB_2\MATLAB\svm_classifier_prj_v6.2_Ch18\svm_classifier_prj_v6.2_Ch18\svm_classifier_prj\svm_classifier.h"/>
+    <originFiles name="svm_data_type.h" path="H:\MATLAB\MATLAB_2\MATLAB\svm_classifier_prj_v6.2_Ch18\svm_classifier_prj_v6.2_Ch18\svm_classifier_prj\svm_data_type.h"/>
+  </source>
+  <testbench>
+    <originFiles name="classifier.golden.out" path="H:\MATLAB\MATLAB_2\MATLAB\svm_classifier_prj_v6.2_Ch18\svm_classifier_prj_v6.2_Ch18\svm_classifier_prj\classifier.golden.out"/>
+    <originFiles name="classifier_test.cpp" path="H:\MATLAB\MATLAB_2\MATLAB\svm_classifier_prj_v6.2_Ch18\svm_classifier_prj_v6.2_Ch18\svm_classifier_prj\classifier_test.cpp"/>
+    <originFiles name="testData.h" path="H:\MATLAB\MATLAB_2\MATLAB\svm_classifier_prj_v6.2_Ch18\svm_classifier_prj_v6.2_Ch18\svm_classifier_prj\testData.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,98 @@
+#include "svm_data_type.h"
+#include "svm_classifier.h"
+#include "SV.h"
+#include "alpha.h"
+#include "getTanh.h"
+
+
+void svm_classifier(data_t in[DIMENSION], bool *out)
+{
+
+#pragma HLS ARRAY_RESHAPE variable=in cyclic factor=16 dim=1
+#pragma HLS ARRAY_PARTITION variable=SVs cyclic factor=12 dim=1
+#pragma HLS ARRAY_RESHAPE variable=SVs cyclic factor=16 dim=2
+#pragma HLS ARRAY_PARTITION variable=alpha cyclic factor=12 dim=1
+#pragma HLS INTERFACE s_axilite port=out
+#pragma HLS INTERFACE s_axilite port=return
+#pragma HLS INTERFACE s_axilite port=in
+
+	data22_10t sum = 0, ch_sums[12] = {0,0,0,0,0,0,0,0,0,0,0,0};
+
+#pragma HLS ARRAY_PARTITION variable=ch_sums cyclic factor=12 dim=1
+	Sum_loop:	for (int i = 0; i < ALPHA_NUM; i++)
+		{
+			
+#pragma HLS PIPELINE
+#pragma HLS UNROLL factor=12
+
+			data_t parameter_k;
+			
+			getKernel(SVs[i], in, &parameter_k);
+
+			data22_10t temp = parameter_k * alpha[i];
+#pragma HLS RESOURCE variable=temp core=Mul_LUT
+			ch_sums[i % CH_NUM] += temp;
+
+//			ch_sums[i % CH_NUM] += parameter_k * alpha[i];
+			
+		}
+		
+	Channel_Sum_loop: for(int i = 0; i < CH_NUM; i++)
+		{
+			
+#pragma HLS PIPELINE
+#pragma HLS UNROLL
+
+			sum += ch_sums[i];
+			
+		}
+	
+	*out = sum + bias >= 0 ? 0 : 1;
+}
+
+void getKernel(data_t x[DIMENSION], data_t y[DIMENSION], data_t *out)
+{
+	
+#pragma HLS INLINE
+
+	data19_7t dotPro;
+	
+	dotProduct(x, y, &dotPro);
+//	dotPro = dotPro << 1u;
+	getTanh(dotPro, out);
+	
+}
+
+// This might be improved; static might be added
+void dotProduct(data_t x[DIMENSION], data_t y[DIMENSION], data19_7t *out)
+{
+
+#pragma HLS INLINE
+
+	data19_7t pro = 0, pro_temp[DIMENSION];
+#pragma HLS ARRAY_PARTITION variable=pro_temp cyclic factor=16 dim=1
+
+	// Change DSP into MUL_LUT (which is successful to decrease the amount of DSP resources)
+
+	dotProduct_loop: for (int i = 0; i < DIMENSION; i++) 
+		{
+			
+#pragma HLS UNROLL
+
+		pro_temp[i] = x[i] * y[i];
+#pragma HLS RESOURCE variable=pro_temp core=Mul_LUT
+			
+		}
+	
+	dotSum_loop: for (int i = 0; i < DIMENSION; i++) 
+		{
+			
+#pragma HLS UNROLL
+
+			pro += pro_temp[i];
+			
+		}
+		
+	*out = pro << 1u;
+	
+}

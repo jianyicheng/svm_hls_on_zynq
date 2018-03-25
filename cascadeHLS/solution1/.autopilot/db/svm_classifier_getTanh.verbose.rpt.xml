@@ -1,0 +1,241 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'svm_classifier_getTanh'" level="0">
+<item name = "Date">Thu Mar 22 11:46:15 2018
+</item>
+<item name = "Version">2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)</item>
+<item name = "Project">svm_classifier_cascade_prj</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.61, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">21, 21, 1, 1, function</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 729</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, 0, 368, 728</column>
+<column name="Memory">0, -, 18, 2</column>
+<column name="Multiplexer">-, -, -, 16</column>
+<column name="Register">-, -, 413, 9</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, 2</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="svm_classifier_mul_10s_9ns_19_1_U0">svm_classifier_mul_10s_9ns_19_1, 0, 0, 0, 90</column>
+<column name="svm_classifier_mul_10s_9ns_19_1_U1">svm_classifier_mul_10s_9ns_19_1, 0, 0, 0, 90</column>
+<column name="svm_classifier_mul_10s_9ns_19_1_U2">svm_classifier_mul_10s_9ns_19_1, 0, 0, 0, 90</column>
+<column name="svm_classifier_mul_10s_9ns_19_1_U3">svm_classifier_mul_10s_9ns_19_1, 0, 0, 0, 90</column>
+<column name="svm_classifier_sdiv_13ns_8s_13_17_U4">svm_classifier_sdiv_13ns_8s_13_17, 0, 0, 368, 368</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="cosh_lut_V_U">svm_classifier_getTanh_cosh_lut_V, 0, 9, 1, 6, 9, 1, 54</column>
+<column name="sinh_lut_V_U">svm_classifier_getTanh_sinh_lut_V, 0, 9, 1, 6, 9, 1, 54</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="p_Val2_111_1_fu_439_p2">+, 0, 0, 13, 13, 13</column>
+<column name="p_Val2_111_2_fu_499_p2">+, 0, 0, 13, 13, 13</column>
+<column name="p_Val2_111_3_fu_693_p2">+, 0, 0, 15, 15, 15</column>
+<column name="p_Val2_111_4_fu_779_p2">+, 0, 0, 15, 15, 15</column>
+<column name="p_Val2_111_5_fu_874_p2">+, 0, 0, 15, 15, 15</column>
+<column name="p_Val2_114_1_fu_452_p2">+, 0, 0, 13, 13, 13</column>
+<column name="p_Val2_114_2_fu_550_p2">+, 0, 0, 14, 14, 14</column>
+<column name="p_Val2_114_3_fu_736_p2">+, 0, 0, 15, 15, 15</column>
+<column name="p_Val2_114_4_fu_822_p2">+, 0, 0, 15, 15, 15</column>
+<column name="p_Val2_114_5_fu_908_p2">+, 0, 0, 15, 15, 15</column>
+<column name="ret_V_1_fu_243_p2">+, 0, 0, 7, 1, 7</column>
+<column name="tmp_304_fu_1013_p2">+, 0, 0, 16, 16, 16</column>
+<column name="tmp_305_fu_1017_p2">+, 0, 0, 16, 16, 16</column>
+<column name="mf15_2_fu_509_p2">-, 0, 0, 14, 1, 14</column>
+<column name="mf15_3_fu_566_p2">-, 0, 0, 14, 1, 14</column>
+<column name="mf15_4_fu_785_p2">-, 0, 0, 15, 1, 15</column>
+<column name="mf15_5_fu_834_p2">-, 0, 0, 15, 1, 15</column>
+<column name="mf_2_fu_462_p2">-, 0, 0, 13, 1, 13</column>
+<column name="mf_3_fu_556_p2">-, 0, 0, 14, 1, 14</column>
+<column name="mf_4_fu_742_p2">-, 0, 0, 15, 1, 15</column>
+<column name="mf_5_fu_828_p2">-, 0, 0, 15, 1, 15</column>
+<column name="p_Val2_116_1_fu_349_p2">-, 0, 0, 21, 21, 21</column>
+<column name="p_Val2_116_2_fu_393_p2">-, 0, 0, 21, 21, 21</column>
+<column name="p_Val2_116_3_fu_600_p2">-, 0, 0, 21, 21, 21</column>
+<column name="p_Val2_116_4_fu_644_p2">-, 0, 0, 21, 21, 21</column>
+<column name="p_Val2_46_fu_305_p2">-, 0, 0, 21, 21, 21</column>
+<column name="p_Val2_47_fu_1064_p2">-, 0, 0, 8, 1, 8</column>
+<column name="p_Val2_s_fu_195_p2">-, 0, 0, 16, 1, 16</column>
+<column name="theta_in_V_assign_fu_272_p2">-, 0, 0, 16, 16, 16</column>
+<column name="ap_sig_311">and, 0, 0, 1, 1, 1</column>
+<column name="tmp_20_fu_237_p2">icmp, 0, 0, 3, 9, 1</column>
+<column name="tmp_s_fu_209_p2">icmp, 0, 0, 6, 16, 12</column>
+<column name="OP2_V_18_1_fu_414_p3">select, 0, 0, 11, 1, 11</column>
+<column name="ap_return">select, 0, 0, 8, 1, 8</column>
+<column name="mf_1_fu_421_p3">select, 0, 0, 11, 1, 10</column>
+<column name="p_1_fu_257_p3">select, 0, 0, 7, 1, 7</column>
+<column name="p_Val2_s_54_fu_201_p3">select, 0, 0, 16, 1, 16</column>
+<column name="p_s_fu_249_p3">select, 0, 0, 7, 1, 7</column>
+<column name="p_v1_fu_811_p3">select, 0, 0, 11, 1, 11</column>
+<column name="p_v2_fu_863_p3">select, 0, 0, 10, 1, 10</column>
+<column name="p_v3_fu_897_p3">select, 0, 0, 10, 1, 10</column>
+<column name="p_v9_fu_768_p3">select, 0, 0, 11, 1, 11</column>
+<column name="p_v_fu_682_p3">select, 0, 0, 10, 1, 10</column>
+<column name="tmp_127_1_fu_428_p3">select, 0, 0, 11, 1, 11</column>
+<column name="tmp_1356_1_cast_cast_fu_445_p3">select, 0, 0, 12, 1, 12</column>
+<column name="tmp_1418_1_cast_cast_fu_341_p3">select, 0, 0, 19, 1, 19</column>
+<column name="tmp_1418_2_cast_cast_fu_385_p3">select, 0, 0, 19, 1, 19</column>
+<column name="tmp_1418_3_cast_cast_fu_593_p3">select, 0, 0, 19, 1, 19</column>
+<column name="tmp_1418_4_cast_cast_fu_636_p3">select, 0, 0, 19, 1, 19</column>
+<column name="tmp_385_fu_407_p3">select, 0, 0, 13, 1, 13</column>
+<column name="tmp_413_fu_488_p3">select, 0, 0, 10, 1, 10</column>
+<column name="tmp_415_fu_539_p3">select, 0, 0, 11, 1, 11</column>
+<column name="tmp_421_fu_725_p3">select, 0, 0, 13, 1, 13</column>
+<column name="tmp_450_cast_cast_fu_297_p3">select, 0, 0, 19, 1, 19</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_reg_phiprechg_p_Val2_11_reg_176pp0_it2">8, 2, 8, 16</column>
+<column name="p_Val2_11_phi_fu_180_p4">8, 2, 8, 16</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_reg_phiprechg_p_Val2_11_reg_176pp0_it10">8, 0, 8, 0</column>
+<column name="ap_reg_phiprechg_p_Val2_11_reg_176pp0_it11">8, 0, 8, 0</column>
+<column name="ap_reg_phiprechg_p_Val2_11_reg_176pp0_it12">8, 0, 8, 0</column>
+<column name="ap_reg_phiprechg_p_Val2_11_reg_176pp0_it13">8, 0, 8, 0</column>
+<column name="ap_reg_phiprechg_p_Val2_11_reg_176pp0_it14">8, 0, 8, 0</column>
+<column name="ap_reg_phiprechg_p_Val2_11_reg_176pp0_it15">8, 0, 8, 0</column>
+<column name="ap_reg_phiprechg_p_Val2_11_reg_176pp0_it16">8, 0, 8, 0</column>
+<column name="ap_reg_phiprechg_p_Val2_11_reg_176pp0_it17">8, 0, 8, 0</column>
+<column name="ap_reg_phiprechg_p_Val2_11_reg_176pp0_it18">8, 0, 8, 0</column>
+<column name="ap_reg_phiprechg_p_Val2_11_reg_176pp0_it19">8, 0, 8, 0</column>
+<column name="ap_reg_phiprechg_p_Val2_11_reg_176pp0_it2">8, 0, 8, 0</column>
+<column name="ap_reg_phiprechg_p_Val2_11_reg_176pp0_it20">8, 0, 8, 0</column>
+<column name="ap_reg_phiprechg_p_Val2_11_reg_176pp0_it21">8, 0, 8, 0</column>
+<column name="ap_reg_phiprechg_p_Val2_11_reg_176pp0_it3">8, 0, 8, 0</column>
+<column name="ap_reg_phiprechg_p_Val2_11_reg_176pp0_it4">8, 0, 8, 0</column>
+<column name="ap_reg_phiprechg_p_Val2_11_reg_176pp0_it5">8, 0, 8, 0</column>
+<column name="ap_reg_phiprechg_p_Val2_11_reg_176pp0_it6">8, 0, 8, 0</column>
+<column name="ap_reg_phiprechg_p_Val2_11_reg_176pp0_it7">8, 0, 8, 0</column>
+<column name="ap_reg_phiprechg_p_Val2_11_reg_176pp0_it8">8, 0, 8, 0</column>
+<column name="ap_reg_phiprechg_p_Val2_11_reg_176pp0_it9">8, 0, 8, 0</column>
+<column name="ap_reg_ppiten_pp0_it1">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it10">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it11">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it12">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it13">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it14">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it15">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it16">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it17">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it18">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it19">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it2">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it20">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it21">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it3">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it4">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it5">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it6">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it7">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it8">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it9">1, 0, 1, 0</column>
+<column name="ap_reg_ppstg_tmp_416_reg_1121_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_reg_ppstg_tmp_427_reg_1156_pp0_iter3">1, 0, 1, 0</column>
+<column name="coscos_V_reg_1209">16, 0, 16, 0</column>
+<column name="cossin_V_reg_1204">16, 0, 16, 0</column>
+<column name="mf15_3_reg_1145">14, 0, 14, 0</column>
+<column name="mf15_5_reg_1179">15, 0, 15, 0</column>
+<column name="mf_3_reg_1140">14, 0, 14, 0</column>
+<column name="mf_5_reg_1174">15, 0, 15, 0</column>
+<column name="neg_reg_1077">1, 0, 1, 0</column>
+<column name="p_1_reg_1091">7, 0, 7, 0</column>
+<column name="p_Val2_111_2_reg_1128">13, 0, 13, 0</column>
+<column name="p_Val2_111_4_reg_1162">15, 0, 15, 0</column>
+<column name="p_Val2_114_2_reg_1134">14, 0, 14, 0</column>
+<column name="p_Val2_114_4_reg_1168">15, 0, 15, 0</column>
+<column name="p_Val2_116_2_reg_1116">19, 0, 21, 2</column>
+<column name="p_Val2_s_54_reg_1082">16, 0, 16, 0</column>
+<column name="sincos_V_reg_1194">16, 0, 16, 0</column>
+<column name="sinsin_V_reg_1199">16, 0, 16, 0</column>
+<column name="tmp_408_reg_1097">1, 0, 1, 0</column>
+<column name="tmp_409_reg_1104">1, 0, 1, 0</column>
+<column name="tmp_410_reg_1110">1, 0, 1, 0</column>
+<column name="tmp_416_reg_1121">1, 0, 1, 0</column>
+<column name="tmp_422_reg_1150">1, 0, 1, 0</column>
+<column name="tmp_427_reg_1156">1, 0, 1, 0</column>
+<column name="tmp_s_reg_1087">1, 0, 1, 0</column>
+<column name="neg_reg_1077">0, 1, 1, 0</column>
+<column name="p_1_reg_1091">0, 7, 7, 0</column>
+<column name="tmp_s_reg_1087">0, 1, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, svm_classifier_getTanh, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, svm_classifier_getTanh, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, svm_classifier_getTanh, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, svm_classifier_getTanh, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, svm_classifier_getTanh, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, svm_classifier_getTanh, return value</column>
+<column name="ap_return">out, 8, ap_ctrl_hs, svm_classifier_getTanh, return value</column>
+<column name="theta_in_V">in, 16, ap_none, theta_in_V, scalar</column>
+</table>
+</item>
+</section>
+</profile>

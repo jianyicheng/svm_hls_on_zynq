@@ -1,0 +1,7 @@
+Running: xsim.dir/svm_classifier/xsimk.exe -simmode gui -wdb svm_classifier.wdb -simrunnum 0 -socket 54900
+Design successfully loaded
+Design Loading Memory Usage: 13788 KB (Peak: 13788 KB)
+Design Loading CPU Usage: 92 ms
+Simulation completed
+Simulation Memory Usage: 16244 KB (Peak: 16244 KB)
+Simulation CPU Usage: 226077 ms
